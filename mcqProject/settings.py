@@ -82,6 +82,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    "https://mcqbackend-dzcukp3b2-anusuyas-projects-9666991e.vercel.app"
     # Add other origins as needed
 ]
 ROOT_URLCONF = 'mcqProject.urls'
