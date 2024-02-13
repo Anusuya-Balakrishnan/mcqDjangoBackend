@@ -69,7 +69,8 @@ urlpatterns = [
 }
 # add_many_questions
 {
-  "questions": [
+  "questions": 
+  [
     {
       "languageId": 1,
       "topicId": 1,
