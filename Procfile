@@ -1,1 +1,0 @@
-web gunicorn mcqProject.wsgi:application --log-file -
