@@ -15,7 +15,6 @@ class UserModel(models.Model):
     mark=models.FloatField()
     def __str__(self):
         return self.username
-    
 
 class Student(models.Model):
     
@@ -79,6 +78,7 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
 
+
     objects = CustomUserManager()
 
     USERNAME_FIELD = 'oceanRegisterNo'
@@ -88,38 +88,114 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
         return self.oceanRegisterNo
 
 class McqListDatatModel(models.Model):
-    mcqName=models.TextField()
+    id = models.IntegerField(primary_key=True)  # or models.AutoField(primary_key=True)
+    mcqName = models.TextField()
+    def save(self, *args, **kwargs):
+        if not self.id:
+            # Fetch the last used id and increment it
+            last_used_id = McqListDatatModel.objects.order_by('-id').first()
+            self.id = last_used_id.id + 1 if last_used_id else 1
+
+        super().save(*args, **kwargs)
+
     def __str__(self):
         return self.mcqName
+    
 
 class LanguageModel(models.Model):
-    mcqId=models.ForeignKey(McqListDatatModel,on_delete=models.CASCADE)
-    languageName=models.TextField()
+    mcqId = models.ForeignKey(McqListDatatModel, on_delete=models.CASCADE)
+    id = models.IntegerField(primary_key=True)
+    languageName = models.TextField()
+
+    def save(self, *args, **kwargs):
+        if not self.id:
+            # Fetch the last used id and increment it
+            last_used_id = LanguageModel.objects.order_by('-id').first()
+            self.id = last_used_id.id + 1 if last_used_id else 1
+
+        super().save(*args, **kwargs)
+
     def __str__(self):
         return self.languageName
+# class LanguageModel(models.Model):
+#     mcqId=models.ForeignKey(McqListDatatModel,on_delete=models.CASCADE)
+#     languageName=models.TextField()
+#     def __str__(self):
+#         return self.languageName
     
+# class TopicModel(models.Model):
+#     languageId=models.ForeignKey(LanguageModel, on_delete=models.CASCADE)
+#     topicName=models.TextField()
+#     def __str__(self):
+#         return self.topicName
+
 class TopicModel(models.Model):
-    languageId=models.ForeignKey(LanguageModel, on_delete=models.CASCADE)
-    topicName=models.TextField()
+    languageId = models.ForeignKey(LanguageModel, on_delete=models.CASCADE)
+    id = models.IntegerField(primary_key=True)
+    topicName = models.TextField()
+
+    def save(self, *args, **kwargs):
+        if not self.id:
+            # Fetch the last used id and increment it
+            last_used_id = TopicModel.objects.order_by('-id').first()
+            self.id = last_used_id.id + 1 if last_used_id else 1
+
+        super().save(*args, **kwargs)
+
     def __str__(self):
         return self.topicName
-    
+        
+# class QuestionModel(models.Model):
+#     languageId=models.ForeignKey(LanguageModel, on_delete=models.CASCADE)
+#     topicId=models.ForeignKey(TopicModel,on_delete=models.CASCADE)
+#     questions=models.JSONField()
+#     level=models.TextField()
+#     mark=models.IntegerField()
+#     time=models.IntegerField()
+#     def get_questions_as_dict(self):
+#         return json.loads(self.questions)
+
 class QuestionModel(models.Model):
-    languageId=models.ForeignKey(LanguageModel, on_delete=models.CASCADE)
-    topicId=models.ForeignKey(TopicModel,on_delete=models.CASCADE)
-    questions=models.JSONField()
-    level=models.TextField()
-    mark=models.IntegerField()
-    time=models.IntegerField()
+    languageId = models.ForeignKey(LanguageModel, on_delete=models.CASCADE)
+    topicId = models.ForeignKey(TopicModel, on_delete=models.CASCADE)
+    id = models.IntegerField(primary_key=True)
+    questions = models.JSONField()
+    level = models.TextField()
+    mark = models.IntegerField()
+    time = models.IntegerField()
+
+    def save(self, *args, **kwargs):
+        if not self.id:
+            # Fetch the last used id and increment it
+            last_used_id = QuestionModel.objects.order_by('-id').first()
+            self.id = last_used_id.id + 1 if last_used_id else 1
+
+        super().save(*args, **kwargs)
+
     def get_questions_as_dict(self):
         return json.loads(self.questions)
+    
+# class ResultModel(models.Model):
+#     userID=models.ForeignKey(CustomUser, on_delete=models.CASCADE)
+#     languageId=models.ForeignKey(LanguageModel, on_delete=models.CASCADE)
+#     topicId=models.ForeignKey(TopicModel,on_delete=models.CASCADE)
+#     answeredQuestions=models.JSONField()
+#     result=models.IntegerField()
+#     level=models.TextField()
 
 class ResultModel(models.Model):
-    userID=models.ForeignKey(CustomUser, on_delete=models.CASCADE)
-    languageId=models.ForeignKey(LanguageModel, on_delete=models.CASCADE)
-    topicId=models.ForeignKey(TopicModel,on_delete=models.CASCADE)
-    answeredQuestions=models.JSONField()
-    result=models.IntegerField()
-    level=models.TextField()
-    # currentDate=models.DateField()
-    # noOfTimeAttended=models.IntegerField()
+    userID = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
+    languageId = models.ForeignKey(LanguageModel, on_delete=models.CASCADE)
+    topicId = models.ForeignKey(TopicModel, on_delete=models.CASCADE)
+    id = models.IntegerField(primary_key=True)
+    answeredQuestions = models.JSONField()
+    result = models.IntegerField()
+    level = models.TextField()
+
+    def save(self, *args, **kwargs):
+        if not self.id:
+            # Fetch the last used id and increment it
+            last_used_id = ResultModel.objects.order_by('-id').first()
+            self.id = last_used_id.id + 1 if last_used_id else 1
+
+        super().save(*args, **kwargs)

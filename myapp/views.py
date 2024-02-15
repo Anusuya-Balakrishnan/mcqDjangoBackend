@@ -220,6 +220,7 @@ def get_mcqList(request):
                 existing_mcqName = McqListDatatModel.objects.get(mcqName=request.data.get('mcqName'))
                 return Response({"message": "MCQ already created"})
             except McqListDatatModel.DoesNotExist:
+                # No need to provide 'id' explicitly when creating an instance
                 serializer = McqListDataSerializer(data=request.data)
                 if serializer.is_valid(raise_exception=True):
                     serializer.save()

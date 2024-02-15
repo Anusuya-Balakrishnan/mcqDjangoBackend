@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-*524hw%#q*vjo38ghff!t&jf2u=assbkzeeexysm0ycyye$643
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['.vercel.app','127.0.0.1']
 
 
 # Application definition
@@ -120,7 +120,7 @@ WSGI_APPLICATION = 'mcqProject.wsgi.application'
 #     }
 # }
 
-# settings.py
+
 
 
 
