@@ -48,24 +48,29 @@ class CustomUserSerializer(serializers.ModelSerializer):
 class McqListDataSerializer(serializers.ModelSerializer):
      class Meta:
         model = McqListDatatModel
-        exclude = ['id'] 
+        fields = '__all__'
+        read_only_fields = ['id']
 
 class LanguageModelSerializer(serializers.ModelSerializer):
     class Meta:
         model = LanguageModel
-        exclude = ['id']
+        fields = '__all__'
+        read_only_fields = ['id']
 
 class TopicSerializer(serializers.ModelSerializer):
     class Meta:
         model = TopicModel
-        exclude = ['id'] 
-
+        fields = '__all__'
+        read_only_fields = ['id']
+        
 class QuestionSerializer(serializers.ModelSerializer):
     class Meta:
         model=QuestionModel
-        exclude = ['id'] 
+        fields = '__all__'
+        read_only_fields = ['id']
 
 class ResultSerializer(serializers.ModelSerializer):
     class Meta:
         model=ResultModel
-        exclude = ['id'] 
+        fields = '__all__'
+        read_only_fields = ['id']
