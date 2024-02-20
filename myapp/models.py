@@ -4,6 +4,7 @@ from djongo import models
 import json
 
 from django.contrib.auth.models import AbstractBaseUser,AbstractUser, BaseUserManager, PermissionsMixin
+from django.utils import timezone
 
 
 # Create your models here.
@@ -191,6 +192,7 @@ class ResultModel(models.Model):
     answeredQuestions = models.JSONField()
     result = models.IntegerField()
     level = models.TextField()
+    created_at = models.DateTimeField(default=timezone.now)
 
     def save(self, *args, **kwargs):
         if not self.id:

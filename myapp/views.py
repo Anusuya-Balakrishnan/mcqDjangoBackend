@@ -464,6 +464,7 @@ def add_resultData(request):
                     'languageId': LanguageModel.objects.get(id=int(languageId)).id,
                     'level': level,
                     'result':result
+                    
                     }
                 if( not return_value):  
                     addResultDatatoDatabase(result_data)
