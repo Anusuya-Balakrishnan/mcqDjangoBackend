@@ -195,6 +195,7 @@ class ResultModel(models.Model):
     created_at = models.DateTimeField(default=timezone.now)
 
     def save(self, *args, **kwargs):
+        self.created_at = timezone.now().astimezone(timezone.pytz.timezone('Asia/Kolkata'))
         if not self.id:
             # Fetch the last used id and increment it
             last_used_id = ResultModel.objects.order_by('-id').first()
