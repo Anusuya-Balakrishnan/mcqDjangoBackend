@@ -113,7 +113,24 @@ def custom_user_list(request):
                 return Response({"message":True,"token":token.key,"user":serializer.data}, status=status.HTTP_201_CREATED)
             return Response({"error":serializer.errors}, status=status.HTTP_400_BAD_REQUEST)
 
-
+@api_view(['DELETE'])
+def custom_user_delete(request):
+    ocean_register_no = request.data.get('oceanRegisterNo')
+    if ocean_register_no:
+        try:
+            user = CustomUser.objects.get(oceanRegisterNo=ocean_register_no)
+            serializer = CustomUserSerializer(user)
+            userId=serializer.data.get('id')
+            resultObject=ResultModel.objects.filter(userID_id=userId)
+            for eachObject in resultObject:
+                eachObject.delete()
+            user.delete()
+            return Response({"message": "User deleted successfully"}, status=status.HTTP_204_NO_CONTENT)
+        except CustomUser.DoesNotExist:
+            return Response({"message": "User not found"}, status=status.HTTP_404_NOT_FOUND)
+    else:
+        return Response({"message": "oceanRegisterNo not provided in the request body"}, status=status.HTTP_400_BAD_REQUEST)
+        
 
 
 

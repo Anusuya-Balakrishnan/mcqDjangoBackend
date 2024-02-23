@@ -42,6 +42,7 @@ INSTALLED_APPS = ['rest_framework',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "myapp.apps.MyappConfig",
+    "mcqadmin.apps.McqadminConfig",
     'corsheaders',
     # "knox",
     "rest_framework.authtoken"

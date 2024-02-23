@@ -3,12 +3,15 @@
 from django.urls import path
 # from .views import UserDetailView,UserListView,CreateUserView
 from . import views
+from . import adminViews
 
 urlpatterns = [
 
+# client side url
     path("user/",views.person,name="person"),
     path("student/",views.student,name="student"),
     path('users/', views.custom_user_list, name='custom_user_list'),
+    path("custom_user_delete/",views.custom_user_delete,name='delete_custom_user'),
     path("custom_user_check/",views.custom_user_check,name="custom_user_check"),
     path("userLogin/",views.custom_user_login,name='custom_login'),
     path("userLogout/",views.custom_user_logout,name="custom_logout"),
@@ -25,6 +28,9 @@ urlpatterns = [
     path("get_resultData/",views.get_resultData,name="get_resultData"),
     path("leaderBoardApi/",views.leaderBoardApi,name="leaderBoardApi"),
     path('users/<str:name>/', views.custom_user_detail, name='custom_user_detail'),
+
+# admin side url
+    path("quiz_list/",adminViews.quiz_List,name="add_update_quiz"),
 ]
 
 # {

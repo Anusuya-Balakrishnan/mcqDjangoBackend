@@ -62,12 +62,22 @@ class CustomUserManager(BaseUserManager):
         user.save(using=self._db)
         return user
 
-    def create_superuser(self, oceanRegisterNo, email, password=None, **extra_fields):
-        extra_fields.setdefault('is_staff', True)
-        extra_fields.setdefault('is_superuser', True)
-
+    def create_superuser(self, oceanRegisterNo,email, password=None, **extra_fields):
+        # Ensure that the email field is set and normalize it
+        if not email:
+            raise ValueError('The Email field must be set')
+        email = self.normalize_email(email)
         # Call the base class create_superuser method
-        return super().create_superuser(oceanRegisterNo, email, password, **extra_fields)
+        user = self.create_user(oceanRegisterNo, email, password, **extra_fields)
+        # Additional superuser-specific fields can be set here if needed
+        user.is_staff = True
+        user.is_superuser = True
+        user.save(using=self._db)
+        return user
+        # extra_fields.setdefault('is_staff', True)
+        # extra_fields.setdefault('is_superuser', True)
+        # # Call the base class create_superuser method
+        # return super().create_superuser( email, password, **extra_fields)
 
 
 class CustomUser(AbstractBaseUser, PermissionsMixin):
@@ -79,12 +89,9 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
 
-
     objects = CustomUserManager()
-
     USERNAME_FIELD = 'oceanRegisterNo'
     REQUIRED_FIELDS = []
-
     def __str__(self):
         return self.oceanRegisterNo
 
