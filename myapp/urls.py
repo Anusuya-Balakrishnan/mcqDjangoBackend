@@ -48,13 +48,13 @@ urlpatterns = [
 # "gender":"male"
 # }
 
-# {"languageId":1,
-# "topicId":1,
-# "questions":{"question":"Who invented Java Programming?","option":["Guido van Rossum","James Gosling","Dennis Ritchie","Bjarne Stroustrup"],"answer":"James Gosling"},
-# "level":"beginner",
-# "mark":1,
-# "time":1
-# }
+{"languageId":1,
+"topicId":1,
+"questions":{"question":"Who invented Java Programming?","code":"","option":["Guido van Rossum","James Gosling","Dennis Ritchie","Bjarne Stroustrup"],"answer":"James Gosling"},
+"level":"beginner",
+"mark":1,
+"time":1
+}
 
 
 # http://127.0.0.1:8000/mcq/get_mcqList/
@@ -82,6 +82,7 @@ urlpatterns = [
         "topicId": 1,
         "questions": {
             "question": "What is the correct syntax to declare a variable in Java?",
+            "code":"",
             "option": [
                 "variable int x;",
                 "int x = 10;",
@@ -99,6 +100,7 @@ urlpatterns = [
         "topicId": 1,
         "questions": {
             "question": "Which of the following is a valid variable name in Java?",
+            "code":"",
             "option": [
                 "123variable",
                 "_myVariable",
@@ -116,6 +118,7 @@ urlpatterns = [
         "topicId": 1,
         "questions": {
             "question": "What is the default value of an int variable in Java?",
+            "code":"",
             "option": [
                 "0",
                 "null",
@@ -133,6 +136,7 @@ urlpatterns = [
         "topicId": 1,
         "questions": {
             "question": "Which data type is used to store decimal numbers in Java?",
+            "code":"",
             "option": [
                 "int",
                 "float",
@@ -150,6 +154,7 @@ urlpatterns = [
         "topicId": 1,
         "questions": {
             "question": "How can you make a constant variable in Java?",
+            "code":"",
             "option": [
                 "final int x = 10;",
                 "const x = 10;",
@@ -167,6 +172,7 @@ urlpatterns = [
         "topicId": 1,
         "questions": {
             "question": "What is the scope of a local variable in Java?",
+            "code":"",
             "option": [
                 "Global",
                 "Class",
@@ -184,6 +190,7 @@ urlpatterns = [
         "topicId": 1,
         "questions": {
             "question": "Which keyword is used to declare a constant in Java?",
+            "code":"",
             "option": [
                 "static",
                 "const",
@@ -201,6 +208,7 @@ urlpatterns = [
         "topicId": 1,
         "questions": {
             "question": "What is the purpose of the 'this' keyword in Java?",
+            "code":"",
             "option": [
                 "Refers to the current instance of the class",
                 "Refers to the superclass",
@@ -218,6 +226,7 @@ urlpatterns = [
         "topicId": 1,
         "questions": {
             "question": "What is the range of a byte variable in Java?",
+            "code":"",
             "option": [
                 "-128 to 127",
                 "0 to 255",
@@ -235,6 +244,7 @@ urlpatterns = [
         "topicId": 1,
         "questions": {
             "question": "How do you declare a long variable in Java?",
+            "code":"",
             "option": [
                 "long x = 100L;",
                 "int x = 100;",
@@ -252,6 +262,7 @@ urlpatterns = [
         "topicId": 1,
         "questions": {
             "question": "Which of the following is a valid way to concatenate strings in Java?",
+            "code":"",
             "option": [
                 "str1 + str2",
                 "str1 .concat(str2)",
@@ -269,6 +280,7 @@ urlpatterns = [
         "topicId": 1,
         "questions": {
             "question": "What is the default value of a boolean variable in Java?",
+            "code":"",
             "option": [
                 "true",
                 "false",
@@ -286,6 +298,7 @@ urlpatterns = [
         "topicId": 1,
         "questions": {
             "question": "How do you declare a constant array in Java?",
+            "code":"",
             "option": [
                 "final int[] numbers = {1, 2, 3};",
                 "const int[] numbers = {1, 2, 3};",
@@ -303,6 +316,7 @@ urlpatterns = [
         "topicId": 1,
         "questions": {
             "question": "What is the default value of an object variable in Java?",
+            "code":"",
             "option": [
                 "0",
                 "null",
@@ -320,6 +334,7 @@ urlpatterns = [
         "topicId": 1,
         "questions": {
             "question": "Which data type is used to represent characters in Java?",
+            "code":"",
             "option": [
                 "char",
                 "string",
@@ -337,6 +352,7 @@ urlpatterns = [
         "topicId": 1,
         "questions": {
             "question": "How do you declare a constant String in Java?",
+            "code":"",
             "option": [
                 "const String name = 'John';",
                 "final String name = 'John';",
@@ -354,6 +370,7 @@ urlpatterns = [
         "topicId": 1,
         "questions": {
             "question": "What will be the result of the expression: 10 + 5 / 2?",
+            "code":"",
             "option": [
                 "12.5",
                 "15",
@@ -371,6 +388,7 @@ urlpatterns = [
         "topicId": 1,
         "questions": {
             "question": "Which of the following is a valid declaration of a double variable?",
+            "code":"",
             "option": [
                 "double x = 10;",
                 "float x = 10.0;",
@@ -388,6 +406,7 @@ urlpatterns = [
         "topicId": 1,
         "questions": {
             "question": "What is the purpose of the 'static' keyword in Java?",
+            "code":"",
             "option": [
                 "To make a variable non-modifiable",
                 "To make a variable belong to the class rather than an instance",
@@ -403,6 +422,8 @@ urlpatterns = [
 ]
 
 }
+
+
 
 
 
@@ -472,3 +493,220 @@ urlpatterns = [
     
   ]
 }
+
+# java beginner I
+
+{"questions":[
+
+{
+"languageId":1,
+"topicId":1,
+"questions":{
+"question":"What is the output of the following code snippet?",
+"code":"String str = \"Hello\";\nSystem.out.println(str.substring(2, 4));",
+"option":["a) Hel","b) lo","c) ell","d) llo"],
+"answer":"c) ell"
+},
+"level":"beginner",
+"mark":1,
+"time":1
+}
+,
+{
+"languageId":1,
+"topicId":1,
+"questions":{
+"question":"Which of the following is not a valid access specifier in Java?",
+"code":"",
+"option":["a) public","b) protected","c) private","d) package"],
+"answer":"d) package"
+},
+"level":"beginner",
+"mark":1,
+"time":1
+}
+,
+{
+"languageId":1,
+"topicId":1,
+"questions":{
+"question":"What does the \"break\" statement do in Java?",
+"code":"",
+"option":["a) Exits the loop or switch statement","b) Continues to the next iteration of the loop","c) Skips the current iteration of the loop","d) None of the above"],
+"answer":"a) Exits the loop or switch statement"
+},
+"level":"beginner",
+"mark":1,
+"time":1
+}
+,
+{
+"languageId":1,
+"topicId":1,
+"questions":{
+"question":"Which of the following is not a valid loop in Java?",
+"code":"",
+"option":["a) for","b) foreach","c) while","d) do-while"],
+"answer":"b) foreach"
+},
+"level":"beginner",
+"mark":1,
+"time":1
+}
+,
+{
+"languageId":1,
+"topicId":1,
+"questions":{
+"question":"What is the output of the following code snippet?",
+"code":"int i = 10;\nSystem.out.println(i++);",
+"option":["a) 10","b) 11","c) 12","d) Compile error"],
+"answer":"a) 10"
+},
+"level":"beginner",
+"mark":1,
+"time":1
+}
+,
+{
+"languageId":1,
+"topicId":1,
+"questions":{
+"question":"What is the output of the following code snippet?",
+"code":"System.out.println(Math.min(Double.MIN_VALUE, 0.0));",
+"option":["a) Double.MIN_VALUE","b) 0.0","c) 0.0 (negative)","d) 0.0 (positive)"],
+"answer":"b) 0.0"
+},
+"level":"beginner",
+"mark":1,
+"time":1
+}
+,
+{
+"languageId":1,
+"topicId":1,
+"questions":{
+"question":"What is the output of the following code snippet?",
+"code":"System.out.println(10 + 20 + \"Hello\");",
+"option":["a) 30Hello","b) 1020Hello","c) Compile error","d) Runtime error"],
+"answer":"a) 30Hello"
+},
+"level":"beginner",
+"mark":1,
+"time":1
+}
+,
+{
+"languageId":1,
+"topicId":1,
+"questions":{
+"question":"Which of the following is not a Java keyword?",
+"code":"",
+"option":["a) sizeof","b) instanceof","c) native","d) transient"],
+"answer":"a) sizeof"
+},
+"level":"beginner",
+"mark":1,
+"time":1
+}
+,
+{
+"languageId":1,
+"topicId":1,
+"questions":{
+"question":"What is the output of the following code snippet?",
+"code":"System.out.println(\"5\" + 3 + 2);",
+"option":["a) 532","b) 10","c) 5+3+2","d) Compile error"],
+"answer":"a) 532"
+},
+"level":"beginner",
+"mark":1,
+"time":1
+}
+,
+{
+"languageId":1,
+"topicId":1,
+"questions":{
+"question":"Which of the following is used to create an object in Java?",
+"code":"",
+"option":["a) new","b) class","c) create","d) instanceOf"],
+"answer":"a) new"
+},
+"level":"beginner",
+"mark":1,
+"time":1
+}
+,
+{
+"languageId":1,
+"topicId":1,
+"questions":{
+"question":"What is the output of the following code snippet?",
+"code":"System.out.println(5 == 5.0);",
+"option":["a) true","b) false","c) Compile error","d) Runtime error"],
+"answer":"a) true"
+},
+"level":"beginner",
+"mark":1,
+"time":1
+}
+,
+{
+"languageId":1,
+"topicId":1,
+"questions":{
+"question":"What is the output of the following code snippet?",
+"code":"System.out.println(10 % 3);",
+"option":["a) 1","b) 2","c) 3","d) 0"],
+"answer":"a) 1"
+},
+"level":"beginner",
+"mark":1,
+"time":1
+}
+,
+{
+"languageId":1,
+"topicId":1,
+"questions":{
+"question":"Which of the following statements is true about interfaces in Java?",
+"code":"",
+"option":["a) Interfaces can have constructors.","b) Interfaces can have method definitions.","c) Interfaces can extend classes.","d) Interfaces can have instance variables."],
+"answer":"b) Interfaces can have method definitions."
+},
+"level":"beginner",
+"mark":1,
+"time":1
+}
+,
+{
+"languageId":1,
+"topicId":1,
+"questions":{
+"question":"What is the output of the following code snippet?",
+"code":"System.out.println(\"abc\".toUpperCase());",
+"option":["a) abc","b) ABC","c) Compile error","d) Runtime error"],
+"answer":"b) ABC"
+},
+"level":"beginner",
+"mark":1,
+"time":1
+}
+,
+{
+"languageId":1,
+"topicId":1,
+"questions":{
+"question":"What is the correct way to declare a string variable in Java?",
+"code":"",
+"option":["a) string s;","b) String s;","c) string s = "";","d) String s = "";"],
+"answer":"d) String s = "";"
+},
+"level":"beginner",
+"mark":1,
+"time":1
+}]}
+
+
+
