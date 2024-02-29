@@ -630,17 +630,5309 @@ ControlFlow={
 "mark":1,
 "time":1
 },{
-"languageId":1,
-"topicId":3,
-"questions":{
-"question":"What will be the output of the following code snippet?",
-"code":"\nint x = 10;\nif (x > 5) {\n System.out.println(\"x is greater than 5\");\n}",
-"option":["x is greater than 5","x is less than 5","No output","Error"],
-"answer":"x is greater than 5"
+"languageId": 1,
+"topicId": 3,
+"questions": {
+"question": "What will be the output of the following code snippet?",
+"code": "\n\nint x = 5;\nif (x > 10) {\n System.out.println(\"x is greater than 10\");\n} else {\n System.out.println(\"x is not greater than 10\");\n}",
+"option": [
+"x is greater than 10",
+"x is not greater than 10",
+"Compilation error",
+"Runtime error"
+],
+"answer": "x is not greater than 10"
 },
-"level":"beginner",
-"mark":1,
-"time":1
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 3,
+"questions": {
+"question": "What is the purpose of the 'else' statement in Java?",
+"code": "",
+"option": [
+"To execute a block of code only if the condition in the preceding 'if' statement is false",
+"To terminate the execution of the program",
+"To loop through a block of code until a condition is met",
+"To execute a block of code unconditionally"
+],
+"answer": "To execute a block of code only if the condition in the preceding 'if' statement is false"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 3,
+"questions": {
+"question": "What will be the output of the following code snippet?",
+"code": "\n\nint day = 3;\nString dayName;\nswitch (day) {\n case 1: dayName = \"Monday\";\n break;\n case 2: dayName = \"Tuesday\";\n break;\n case 3: dayName = \"Wednesday\";\n break;\n default: dayName = \"Invalid day\";\n}\nSystem.out.println(dayName);",
+"option": [
+"Monday",
+"Tuesday",
+"Wednesday",
+"Invalid day"
+],
+"answer": "Wednesday"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 3,
+"questions": {
+"question": "Which keyword is used to exit from a loop in Java?",
+"code": "",
+"option": [
+"exit",
+"break",
+"terminate",
+"stop"
+],
+"answer": "break"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 3,
+"questions": {
+"question": "What is the purpose of the 'default' case in a 'switch' statement in Java?",
+"code": "",
+"option": [
+"To handle cases where no other case matches",
+"To provide a default value for the switch variable",
+"To specify the default data type of the switch variable",
+"To terminate the execution of the switch statement"
+],
+"answer": "To handle cases where no other case matches"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 3,
+"questions": {
+"question": "What is the output of the following code snippet?",
+"code": "\n\nint num = 7;\nif (num % 2 == 0) {\n System.out.println(\"Even\");\n} else {\n System.out.println(\"Odd\");\n}",
+"option": [
+"Even",
+"Odd",
+"Neither Even nor Odd",
+"Compilation error"
+],
+"answer": "Odd"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 3,
+"questions": {
+"question": "In a 'switch' statement, what will happen if a 'break' statement is omitted?",
+"code": "",
+"option": [
+"The switch statement will continue executing the next case regardless of whether it matches",
+"The switch statement will stop executing and exit the loop",
+"The switch statement will throw a compilation error",
+"The switch statement will throw a runtime error"
+],
+"answer": "The switch statement will continue executing the next case regardless of whether it matches"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 3,
+"questions": {
+"question": "What will be the output of the following code snippet?\n\nint a = 5, b = 3;\nint max = (a > b) ? a : b;\nSystem.out.println(max);",
+"code": "",
+"option": [
+"5",
+"3",
+"8",
+"Compilation error"
+],
+"answer": "5"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 3,
+"questions": {
+"question": "What is the primary use of the 'else if' statement in Java?",
+"code": "",
+"option": [
+"To execute a block of code if a condition is true",
+"To execute a block of code if none of the preceding conditions are true",
+"To execute a block of code if a condition is false",
+"To execute a block of code if a condition is true and none of the preceding conditions are true"
+],
+"answer": "To execute a block of code if a condition is true and none of the preceding conditions are true"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 3,
+"questions": {
+"question": "What will be the output of the following code snippet?",
+"code": "\n\nint x = 10;\nif (x == 10) {\n System.out.println(\"x is 10\");\n} else if (x == 20) {\n System.out.println(\"x is 20\");\n} else {\n System.out.println(\"x is neither 10 nor 20\");\n}",
+"option": [
+"x is 10",
+"x is 20",
+"x is neither 10 nor 20",
+"Compilation error"
+],
+"answer": "x is 10"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 3,
+"questions": {
+"question": "What is the purpose of the 'continue' statement in Java?",
+"code": "",
+"option": [
+"To exit the loop",
+"To skip the remaining code inside the loop and move to the next iteration",
+"To execute the code inside the loop multiple times",
+"To terminate the execution of the program"
+],
+"answer": "To skip the remaining code inside the loop and move to the next iteration"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 3,
+"questions": {
+"question": "What is the difference between the 'if-else' statement and the 'switch' statement in Java?",
+"code": "",
+"option": [
+"The 'if-else' statement can only be used with boolean expressions, whereas the 'switch' statement can be used with any data type",
+"The 'if-else' statement is more efficient than the 'switch' statement",
+"The 'if-else' statement allows complex conditions, whereas the 'switch' statement only allows simple comparisons",
+"The 'if-else' statement can only handle a limited number of cases, whereas the 'switch' statement can handle multiple cases"
+],
+"answer": "The 'if-else' statement allows complex conditions, whereas the 'switch' statement only allows simple comparisons"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 3,
+"questions": {
+"question": "What will be the output of the following code snippet?",
+"code": "\n\nint x = 5;\nint y = 10;\nif (x > 5 && y > 5) {\n System.out.println(\"Both x and y are greater than 5\");\n} else {\n System.out.println(\"Either x or y is not greater than 5\");\n}",
+"option": [
+"Both x and y are greater than 5",
+"Either x or y is not greater than 5",
+"Compilation error",
+"Runtime error"
+],
+"answer": "Either x or y is not greater than 5"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 3,
+"questions": {
+"question": "What is the output of the following code snippet?",
+"code": "\n\nint x = 5;\nif (x > 5 || x < 10) {\n System.out.println(\"x is either greater than 5 or less than 10\");\n} else {\n System.out.println(\"x is neither greater than 5 nor less than 10\");\n}",
+"option": [
+"x is either greater than 5 or less than 10",
+"x is neither greater than 5 nor less than 10",
+"Compilation error",
+"Runtime error"
+],
+"answer": "x is either greater than 5 or less than 10"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
 }
     ]
 }
+
+
+loop={
+    "questions":[
+        {
+"languageId": 1,
+"topicId": 4,
+"questions": {
+"question": "Which loop is guaranteed to execute at least once in Java?",
+"code": "",
+"option": [
+"for loop",
+"while loop",
+"do-while loop",
+"All loops execute at least once"
+],
+"answer": "do-while loop"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 4,
+"questions": {
+"question": "Which loop is ideal when the number of iterations is known?",
+"code": "",
+"option": [
+"for loop",
+"while loop",
+"do-while loop",
+"All loops are equally suitable"
+],
+"answer": "for loop"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 4,
+"questions": {
+"question": "What will be the output of the following code snippet?",
+"code": "\n\nfor (int i = 0; i < 5; i++) {\n System.out.print(i + \" \");\n}",
+"option": [
+"0 1 2 3 4",
+"1 2 3 4 5",
+"0 1 2 3",
+"1 2 3 4"
+],
+"answer": "0 1 2 3 4"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 4,
+"questions": {
+"question": "What is the output of the following code snippet?",
+"code": "\n\nint i = 0;\nwhile (i < 5) {\n System.out.print(i + \" \");\n i++;\n}",
+"option": [
+"0 1 2 3 4",
+"1 2 3 4 5",
+"0 1 2 3",
+"1 2 3 4"
+],
+"answer": "0 1 2 3 4"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 4,
+"questions": {
+"question": "What will be the output of the following code snippet?",
+"code": "\n\nint i = 5;\ndo {\n System.out.print(i + " ");\n i++;\n} while (i < 5);",
+"option": [
+"5",
+"5 6",
+"5 6 7",
+"Infinite loop"
+],
+"answer": "5 "
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 4,
+"questions": {
+"question": "What will be the output of the following code snippet?",
+"code": "\n\nint i = 0;\ndo {\n System.out.print(i + " ");\n i++;\n} while (i < 0);",
+"option": [
+"0",
+"0 1",
+"0 1 2",
+"Infinite loop"
+],
+"answer": "0 "
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 4,
+"questions": {
+"question": "What is the purpose of the 'break' statement in Java?",
+"code": "",
+"option": [
+"To terminate the loop and continue with the next iteration",
+"To skip the remaining code inside the loop and move to the next iteration",
+"To exit the loop and continue with the next statement after the loop",
+"To terminate the execution of the program"
+],
+"answer": "To exit the loop and continue with the next statement after the loop"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 4,
+"questions": {
+"question": "What is the output of the following code snippet?",
+"code": "\n\nfor (int i = 0; i < 5; i++) {\n if (i == 3)\n break;\n System.out.print(i + " ");\n}",
+"option": [
+"0 1 2",
+"0 1 2 3",
+"0 1 2 3 4",
+"1 2 3 4"
+],
+"answer": "0 1 2"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 4,
+"questions": {
+"question": "Which loop is appropriate for iterating over elements in an array?",
+"code": "",
+"option": [
+"for loop",
+"while loop",
+"do-while loop",
+"All loops are equally suitable"
+],
+"answer": "for loop"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 4,
+"questions": {
+"question": "What will be the output of the following code snippet?",
+"code": "\n\nfor (int i = 0; i < 5; i += 2) {\n System.out.print(i + \" \");\n}",
+"option": [
+"0 1 2 3 4",
+"0 2 4",
+"1 3",
+"Compilation error"
+],
+"answer": "0 2 4"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 4,
+"questions": {
+"question": "What is the output of the following code snippet?",
+"code": "\n\nint i = 0;\nwhile (i < 10) {\n System.out.print(i + " ");\n i += 3;\n}",
+"option": [
+"0 1 2 3 4 5 6 7 8 9",
+"0 3 6 9",
+"0 1 2 3 4 5 6 7 8",
+"Compilation error"
+],
+"answer": "0 3 6 9 "
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 4,
+"questions": {
+"question": "What is the output of the following code snippet?",
+"code": "\n\nint i = 0;\ndo {\n System.out.print(i + " ");\n i += 2;\n} while (i < 5);",
+"option": [
+"0 1 2 3 4",
+"0 2 4",
+"0 2 4 6",
+"Infinite loop"
+],
+"answer": "0 2 4 "
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 4,
+"questions": {
+"question": "What is the output of the following code snippet?",
+"code": "\n\nfor (int i = 0; i < 5; i--) {\n System.out.print(i + " ");\n}",
+"option": [
+"Infinite loop",
+"0 -1 -2 -3 -4",
+"5 4 3 2 1",
+"Compilation error"
+],
+"answer": "Infinite loop"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,{
+"languageId": 1,
+"topicId": 4,
+"questions": {
+"question": "What will be the output of the following code snippet?",
+"code": "\n\nint i = 5;\nwhile (i > 0) {\n System.out.print(i + " ");\n i--;\n}",
+"option": [
+"5 4 3 2 1",
+"4 3 2 1",
+"5 4 3 2",
+"Compilation error"
+],
+"answer": "5 4 3 2 1 "
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 4,
+"questions": {
+"question": "What is the output of the following code snippet?",
+"code": "\n\nint i = 10;\ndo {\n System.out.print(i + \" \");\n i--;\n} while (i > 5);",
+"option": [
+"10 9 8 7",
+"10 9 8 7 6",
+"10 9 8 7 6 5",
+"No output"
+],
+"answer": "10 9 8 7 6 "
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+    ]
+}
+
+print("loop",len(loop['questions']))
+
+array={
+    "questions":[{
+"languageId": 1,
+"topicId": 5,
+"questions": {
+"question": "Which of the following declares an array named 'arr' capable of holding 10 integers?",
+"code": "",
+"option": [
+"int[] arr = new int[10];",
+"int[10] arr;",
+"arr[] = new int[10];",
+"int arr[10];"
+],
+"answer": "int[] arr = new int[10];"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 5,
+"questions": {
+"question": "What is the index of the first element in an array?",
+"code": "",
+"option": [
+"0",
+"1",
+"-1",
+"Depends on the size of the array"
+],
+"answer": "0"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 5,
+"questions": {
+"question": "Which of the following is a valid way to initialize an array in Java?",
+"code": "",
+"option": [
+"int[] numbers = {1, 2, 3, 4, 5};",
+"int numbers[] = {1, 2, 3, 4, 5};",
+"int []numbers = {1, 2, 3, 4, 5};",
+"All of the above"
+],
+"answer": "All of the above"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 5,
+"questions": {
+"question": "What is the output of the following code snippet?",
+"code": "\n\nint[] arr = new int[5];\nSystem.out.println(arr[0]);",
+"option": [
+"0",
+"null",
+"Garbage value",
+"Compilation error"
+],
+"answer": "0"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+
+{
+"languageId": 1,
+"topicId": 5,
+"questions": {
+"question": "What is the length of the array 'arr' in the following code snippet?",
+"code": "\n\nint[] arr = {1, 2, 3, 4, 5};",
+"option": [
+"5",
+"6",
+"4",
+"Depends on the compiler"
+],
+"answer": "5"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 5,
+"questions": {
+"question": "What will be the output of the following code snippet?",
+"code": "\n\nint[] arr = new int[3];\nSystem.out.println(arr.length);",
+"option": [
+"3",
+"0",
+"null",
+"Compilation error"
+],
+"answer": "3"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 5,
+"questions": {
+"question": "What is the purpose of the 'length' property of an array in Java?",
+"code": "",
+"option": [
+"To determine the capacity of the array",
+"To determine the number of elements in the array",
+"To determine the type of elements in the array",
+"To determine the index of the last element in the array"
+],
+"answer": "To determine the number of elements in the array"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 5,
+"questions": {
+"question": "Which of the following statements is true regarding arrays in Java?",
+"code": "",
+"option": [
+"Arrays can hold elements of different data types",
+"Arrays can dynamically resize at runtime",
+"Arrays are objects in Java",
+"Arrays cannot be passed as arguments to methods"
+],
+"answer": "Arrays are objects in Java"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 5,
+"questions": {
+"question": "What will be the output of the following code snippet?",
+"code": "\n\nint[] arr = {1, 2, 3, 4, 5};\nSystem.out.println(arr[5]);",
+"option": [
+"5",
+"null",
+"ArrayIndexOutOfBoundsException",
+"Compilation error"
+],
+"answer": "ArrayIndexOutOfBoundsException"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 5,
+"questions": {
+"question": "What will be the output of the following code snippet?",
+"code": "\n\nint[] arr = new int[3];\nSystem.out.println(arr[2]);",
+"option": [
+"0",
+"null",
+"Garbage value",
+"IndexOutOfBoundsException"
+],
+"answer": "0"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+
+{
+"languageId": 1,
+"topicId": 5,
+"questions": {
+"question": "Which of the following is the correct way to access the last element of an array named 'arr'?",
+"code": "",
+"option": [
+"arr[arr.length - 1]",
+"arr[arr.length]",
+"arr[arr.length + 1]",
+"arr[length - 1]"
+],
+"answer": "arr[arr.length - 1]"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 5,
+"questions": {
+"question": "What is the output of the following code snippet?",
+"code": "\n\nint[] arr = {1, 2, 3};\nfor (int i = 0; i < arr.length; i++) {\n System.out.print(arr[i] + " ");\n}",
+"option": [
+"1 2 3",
+"3 2 1",
+"0 1 2",
+"Compilation error"
+],
+"answer": "1 2 3"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 5,
+"questions": {
+"question": "What is the output of the following code snippet?",
+"code": "\n\nint[] arr = {1, 2, 3};\nfor (int i = arr.length - 1; i >= 0; i--) {\n System.out.print(arr[i] + \" \");\n}",
+"option": [
+"3 2 1",
+"1 2 3",
+"0 1 2",
+"Compilation error"
+],
+"answer": "3 2 1"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 5,
+"questions": {
+"question": "Which of the following methods is used to copy an array in Java?",
+"code": "",
+"option": [
+"System.arrayCopy()",
+"Arrays.copy()",
+"Array.copy()",
+"Array.clone()"
+],
+"answer": "System.arrayCopy()"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 5,
+"questions": {
+"question": "What will be the output of the following code snippet?",
+"code": "\n\nint[] arr1 = {1, 2, 3};\nint[] arr2 = arr1;\narr2[0] = 5;\nSystem.out.println(arr1[0]);",
+"option": [
+"1",
+"5",
+"3",
+"Compilation error"
+],
+"answer": "5"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+]
+}
+print("array",len(array['questions']))
+
+methods={
+    "questions":[
+        {
+"languageId": 1,
+"topicId": 6,
+"questions": {
+"question": "Which keyword is used to define a method in Java?",
+"code": "",
+"option": [
+"define",
+"method",
+"func",
+"void"
+],
+"answer": "void"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 6,
+"questions": {
+"question": "What is the return type of a method that does not return any value in Java?",
+"code": "",
+"option": [
+"void",
+"null",
+"int",
+"String"
+],
+"answer": "void"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 6,
+"questions": {
+"question": "Which of the following is a valid method declaration in Java?",
+"code": "",
+"option": [
+"method myMethod() {}",
+"void myMethod() {}",
+"int myMethod {}",
+"myMethod() {}"
+],
+"answer": "void myMethod() {}"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 6,
+"questions": {
+"question": "Which of the following is true about method parameters in Java?",
+"code": "",
+"option": [
+"Method parameters are optional",
+"Method parameters are always required",
+"Method parameters are declared within curly braces",
+"Method parameters cannot have default values"
+],
+"answer": "Method parameters are optional"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 6,
+"questions": {
+"question": "Which of the following is a valid method signature in Java?",
+"code": "",
+"option": [
+"void myMethod()",
+"void myMethod(int a, int b)",
+"void myMethod(int a; int b)",
+"void myMethod(int a int b)"
+],
+"answer": "void myMethod(int a, int b)"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 6,
+"questions": {
+"question": "Which of the following statements is true about method overloading in Java?",
+"code": "",
+"option": [
+"Methods with the same name must have the same return type",
+"Methods with the same name can have different parameter types",
+"Methods with the same name must have the same number of parameters",
+"Methods with the same name must be declared in the same class"
+],
+"answer": "Methods with the same name can have different parameter types"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 6,
+"questions": {
+"question": "What is the purpose of the 'return' statement in a method?",
+"code": "",
+"option": [
+"To exit the method and return to the calling code",
+"To declare a method's return type",
+"To print output to the console",
+"To define the method's parameters"
+],
+"answer": "To exit the method and return to the calling code"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 6,
+"questions": {
+"question": "Which of the following is NOT a valid Java method modifier?",
+"code": "",
+"option": [
+"private",
+"protected",
+"static",
+"constant"
+],
+"answer": "constant"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 6,
+"questions": {
+"question": "What does the 'static' keyword indicate in a method declaration?",
+"code": "",
+"option": [
+"The method can be called without creating an instance of the class",
+"The method cannot be overridden",
+"The method is visible only within the same package",
+"The method cannot be accessed outside its class"
+],
+"answer": "The method can be called without creating an instance of the class"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 6,
+"questions": {
+"question": "What is the purpose of the 'void' keyword in a method declaration?",
+"code": "",
+"option": [
+"To specify that the method returns no value",
+"To specify that the method is static",
+"To specify that the method is private",
+"To specify that the method is abstract"
+],
+"answer": "To specify that the method returns no value"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 6,
+"questions": {
+"question": "What is the output of the following code snippet?",
+"code": "\n\npublic class Test {\n public static void main(String[] args) {\n int result = sum(5, 3);\n System.out.println(result);\n }\n public static int sum(int a, int b) {\n return a + b;\n }\n}",
+"option": [
+"8",
+"15",
+"Compilation error",
+"Runtime error"
+],
+"answer": "8"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 6,
+"questions": {
+"question": "Which of the following is true about method arguments in Java?",
+"code": "",
+"option": [
+"Method arguments are optional",
+"Method arguments are always required",
+"Method arguments are declared within parentheses",
+"Method arguments cannot have default values"
+],
+"answer": "Method arguments are declared within parentheses"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 6,
+"questions": {
+"question": "What is the output of the following code snippet?",
+"code": "\n\npublic class Test {\n public static void main(String[] args) {\n display();\n }\n public static void display() {\n System.out.println(\"Hello, World!\");\n }\n}",
+"option": [
+"Hello, World!",
+"Compilation error",
+"Runtime error",
+"No output"
+],
+"answer": "Hello, World!"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 6,
+"questions": {
+"question": "Which of the following is true about method parameters in Java?",
+"code": "",
+"option": [
+"Method parameters are required",
+"Method parameters are optional",
+"Method parameters are declared within braces",
+"Method parameters must have default values"
+],
+"answer": "Method parameters are optional"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 6,
+"questions": {
+"question": "What is the output of the following code snippet?",
+"code": "\n\npublic class Test {\n public static void main(String[] args) {\n int result = multiply(5, 3);\n System.out.println(result);\n }\n public static int multiply(int a, int b) {\n return a * b;\n }\n}",
+"option": [
+"15",
+"8",
+"Compilation error",
+"Runtime error"
+],
+"answer": "15"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 6,
+"questions": {
+"question": "Which keyword is used to define a method that belongs to a class rather than to any particular instance of the class?",
+"code": "",
+"option": [
+"class",
+"object",
+"static",
+"void"
+],
+"answer": "static"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 6,
+"questions": {
+"question": "What is the output of the following code snippet?",
+"code": "\n\npublic class Test {\n public static void main(String[] args) {\n int result = max(5, 3);\n System.out.println(result);\n }\n public static int max(int a, int b) {\n return (a > b) ? a : b;\n }\n}",
+"option": [
+"5",
+"3",
+"8",
+"Compilation error"
+],
+"answer": "5"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 6,
+"questions": {
+"question": "What is the output of the following code snippet?",
+"code": "\n\npublic class Test {\n public static void main(String[] args) {\n System.out.println(message());\n }\n public static String message() {\n return \"Hello, World!\";\n }\n}",
+"option": [
+"Hello, World!",
+"Compilation error",
+"Runtime error",
+"No output"
+],
+"answer": "Hello, World!"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 6,
+"questions": {
+"question": "What is the output of the following code snippet?",
+"code": "\n\npublic class Test {\n public static void main(String[] args) {\n greet(\"John\");\n }\n public static void greet(String name) {\n System.out.println(\"Hello, \" + name + \"!\");\n }\n}",
+"option": [
+"Hello, John!",
+"Compilation error",
+"Runtime error",
+"No output"
+],
+"answer": "Hello, John!"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 6,
+"questions": {
+"question": "What is the output of the following code snippet?",
+"code": "\n\npublic class Test {\n public static void main(String[] args) {\n int result = add(1, 2, 3);\n System.out.println(result);\n }\n public static int add(int a, int b, int c) {\n return a + b + c;\n }\n}",
+"option": [
+"6",
+"8",
+"9",
+"Compilation error"
+],
+"answer": "6"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+    ]
+}
+print("methods",len(methods['questions']))
+
+class_object={
+    "questions":[
+        {
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "Which keyword is used to create an object of a class in Java?",
+"code": "",
+"option": [
+"new",
+"object",
+"create",
+"instance"
+],
+"answer": "new"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "Which of the following is true about classes in Java?",
+"code": "",
+"option": [
+"Classes can only have one method",
+"Classes can contain fields and methods",
+"Classes cannot be instantiated",
+"Classes cannot have access modifiers"
+],
+"answer": "Classes can contain fields and methods"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "Which of the following statements is true about objects in Java?",
+"code": "",
+"option": [
+"Objects are instances of classes",
+"Objects cannot have methods",
+"Objects cannot have fields",
+"Objects cannot be passed as arguments to methods"
+],
+"answer": "Objects are instances of classes"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "What is the purpose of the 'this' keyword in Java?",
+"code": "",
+"option": [
+"To refer to the superclass",
+"To refer to the current object",
+"To create a new object",
+"To define a constructor"
+],
+"answer": "To refer to the current object"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "Which of the following is true about constructors in Java?",
+"code": "",
+"option": [
+"Constructors can have a return type",
+"Constructors are used to create objects",
+"Constructors can be inherited",
+"Constructors can be static"
+],
+"answer": "Constructors are used to create objects"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "Which of the following statements is true about static methods in Java?",
+"code": "",
+"option": [
+"Static methods can access instance variables",
+"Static methods can be overridden",
+"Static methods are called using object references",
+"Static methods can be called without creating an instance of the class"
+],
+"answer": "Static methods can be called without creating an instance of the class"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "What is the purpose of the 'static' keyword in Java?",
+"code": "",
+"option": [
+"To indicate that a method belongs to a class rather than to any particular instance of the class",
+"To indicate that a method can be overridden",
+"To indicate that a method is abstract",
+"To indicate that a method cannot be accessed outside its class"
+],
+"answer": "To indicate that a method belongs to a class rather than to any particular instance of the class"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+  "languageId": 1,
+  "topicId": 7,
+  "questions": {
+    "question": "What is the output of the following code snippet?",
+    "code": "\n\npublic class MyClass {\n public static void main(String[] args) {\n MyClass obj = new MyClass();\n System.out.println(obj);\n }\n}",
+    "option": [
+      "MyClass@<hashcode>",
+      "null",
+      "Compilation error",
+      "Runtime error"
+    ],
+    "answer": "MyClass@<hashcode>"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+
+,
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "Which of the following is true about instance variables in Java?",
+"code": "",
+"option": [
+"Instance variables are declared with the 'static' keyword",
+"Instance variables are shared across all instances of a class",
+"Instance variables are declared within a method",
+"Instance variables are initialized with a default value"
+],
+"answer": "Instance variables are initialized with a default value"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "What is the output of the following code snippet?",
+"code": "\n\npublic class MyClass {\n int x;\n public static void main(String[] args) {\n MyClass obj = new MyClass();\n System.out.println(obj.x);\n }\n}",
+"option": [
+"0",
+"null",
+"Compilation error",
+"Runtime error"
+],
+"answer": "0"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "Which of the following is true about instance methods in Java?",
+"code": "",
+"option": [
+"Instance methods are declared with the 'static' keyword",
+"Instance methods can access static variables directly",
+"Instance methods cannot access instance variables",
+"Instance methods cannot be called without creating an instance of the class"
+],
+"answer": "Instance methods cannot be called without creating an instance of the class"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "What is the output of the following code snippet?",
+"code": "\n\npublic class MyClass {\n public void display() {\n System.out.println(\"Hello, World!\");\n }\n public static void main(String[] args) {\n MyClass obj = new MyClass();\n obj.display();\n }\n}",
+"option": [
+"Hello, World!",
+"null",
+"Compilation error",
+"Runtime error"
+],
+"answer": "Hello, World!"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+
+,
+
+
+
+
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "What is the output of the following code snippet?\n\npublic class MyClass {\n public void display() {\n System.out.println(\"Hello, World!\");\n }\n public static void main(String[] args) {\n MyClass obj = null;\n obj.display();\n }\n}",
+"code": "",
+"option": [
+"Hello, World!",
+"null",
+"Compilation error",
+"Runtime error"
+],
+"answer": "Runtime error"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "Which of the following is true about objects in Java?",
+"code": "",
+"option": [
+"Objects can exist without classes",
+"Objects cannot have fields",
+"Objects cannot have methods",
+"Objects cannot be passed as arguments to methods"
+],
+"answer": "Objects cannot be passed as arguments to methods"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 7,
+  "questions": {
+    "question": "What is the difference between a class and an object in Java?",
+    "code": "",
+    "option": [
+      "Classes are blueprints for objects, while objects are instances of classes",
+      "Classes represent data, while objects represent behavior",
+      "Classes cannot contain methods, while objects can",
+      "Classes and objects are the same thing"
+    ],
+    "answer": "Classes are blueprints for objects, while objects are instances of classes"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+    ]
+}
+print("class",len(class_object["questions"]))
+
+inheritance={
+    "questions":[{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "What is inheritance in Java?",
+"code": "",
+"option": [
+"Inheritance is the process of creating a new class from an existing class",
+"Inheritance is the process of hiding the internal implementation of a class",
+"Inheritance is the process of defining multiple methods with the same name in a class",
+"Inheritance is the process of accessing methods of one class from another class"
+],
+"answer": "Inheritance is the process of creating a new class from an existing class"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "Which keyword is used to implement inheritance in Java?",
+"code": "",
+"option": [
+"extends",
+"inherits",
+"inheritsFrom",
+"inherit"
+],
+"answer": "extends"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "Which of the following is true about inheritance in Java?",
+"code": "",
+"option": [
+"Java supports multiple inheritance",
+"Java supports multilevel inheritance",
+"Java does not support inheritance",
+"Java supports hierarchical inheritance"
+],
+"answer": "Java supports multilevel inheritance"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "Which of the following is a disadvantage of inheritance?",
+"code": "",
+"option": [
+"Increases code reusability",
+"Promotes code organization",
+"Can lead to tight coupling between classes",
+"Facilitates polymorphism"
+],
+"answer": "Can lead to tight coupling between classes"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "Which of the following statements is true about super keyword in Java?",
+"code": "",
+"option": [
+"super keyword is used to create objects of a class",
+"super keyword is used to call the constructor of the superclass",
+"super keyword is used to access static methods of a class",
+"super keyword is used to access instance variables of a class"
+],
+"answer": "super keyword is used to call the constructor of the superclass"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "Which of the following is true about constructors in inheritance?",
+"code": "",
+"option": [
+"Constructors cannot be inherited",
+"Constructors can be overridden",
+"Constructors cannot have access modifiers",
+"Constructors are automatically called when an object is created"
+],
+"answer": "Constructors are automatically called when an object is created"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "What is hierarchical inheritance in Java?",
+"code": "",
+"option": [
+"Hierarchical inheritance is the process of inheriting from multiple classes",
+"Hierarchical inheritance is the process of defining multiple methods with the same name in a class",
+"Hierarchical inheritance is the process of defining a new class from an existing class",
+"Hierarchical inheritance is the process of inheriting from a single parent class"
+],
+"answer": "Hierarchical inheritance is the process of inheriting from a single parent class"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "What is multilevel inheritance in Java?",
+"code": "",
+"option": [
+"Multilevel inheritance is the process of defining multiple methods with the same name in a class",
+"Multilevel inheritance is the process of defining a new class from an existing class",
+"Multilevel inheritance is the process of inheriting from multiple classes",
+"Multilevel inheritance is the process of inheriting from a chain of parent classes"
+],
+"answer": "Multilevel inheritance is the process of inheriting from a chain of parent classes"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "What is the primary purpose of inheritance in object-oriented programming?",
+"code": "",
+"option": [
+"To allow multiple classes to share the same instance variables",
+"To allow a class to inherit methods and properties from another class",
+"To define multiple methods with the same name in a class",
+"To encapsulate data within a class"
+],
+"answer": "To allow a class to inherit methods and properties from another class"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "What is the superclass of all classes in Java?",
+"code": "",
+"option": [
+"Object",
+"Super",
+"Parent",
+"Base"
+],
+"answer": "Object"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "What is hybrid inheritance in Java?",
+"code": "",
+"option": [
+"Hybrid inheritance is a combination of single inheritance and hierarchical inheritance",
+"Hybrid inheritance is a combination of multiple inheritance and multilevel inheritance",
+"Hybrid inheritance is a combination of multiple inheritance and hierarchical inheritance",
+"Hybrid inheritance is a combination of single inheritance and multilevel inheritance"
+],
+"answer": "Hybrid inheritance is a combination of single inheritance and multiple inheritance"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "Which of the following statements is true about multiple inheritance in Java?",
+"code": "",
+"option": [
+"Java supports multiple inheritance of classes",
+"Java supports multiple inheritance of interfaces",
+"Java supports multiple inheritance of both classes and interfaces",
+"Java does not support multiple inheritance"
+],
+"answer": "Java does not support multiple inheritance"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "What is the syntax to inherit a class named 'Parent' in Java?",
+"code": "",
+"option": [
+"class Child extends Parent { }",
+"class Child : Parent { }",
+"class Child inherits Parent { }",
+"class Child implements Parent { }"
+],
+"answer": "class Child extends Parent { }"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "Which keyword is used to access superclass members in Java?",
+"code": "",
+"option": [
+"super",
+"this",
+"extends",
+"inherits"
+],
+"answer": "super"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 7,
+  "questions": {
+    "question": "In Java, can constructors be inherited?",
+    "code": "",
+    "option": [
+      "Yes, constructors can be inherited like other class members",
+      "No, constructors cannot be inherited",
+      "Yes, but only if the superclass constructor is public",
+      "No, but subclasses can call the superclass constructor"
+    ],
+    "answer": "No, but subclasses can call the superclass constructor"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+
+]
+}
+print("inheritance",len(inheritance["questions"]))
+
+
+constructor={
+    "questions":[
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "What is the purpose of a constructor in Java?",
+"code": "",
+"option": [
+"To initialize the class variables",
+"To define methods in the class",
+"To declare variables in the class",
+"To specify access modifiers for class members"
+],
+"answer": "To initialize the class variables"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "Can a constructor have a return type in Java?",
+"code": "",
+"option": [
+"Yes",
+"No"
+],
+"answer": "No"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "What is the default access modifier of a constructor if not specified?",
+"code": "",
+"option": [
+"public",
+"private",
+"protected",
+"default (package-private)"
+],
+"answer": "default (package-private)"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "What is the purpose of a default constructor in Java?",
+"code": "",
+"option": [
+"To initialize class variables to default values",
+"To create an instance of the class without arguments",
+"To access superclass members",
+"To provide access to private members of the class"
+],
+"answer": "To create an instance of the class without arguments"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "Which of the following statements about constructors is true?",
+"code": "",
+"option": [
+"Constructors can have a return type",
+"Constructors are inherited by subclasses",
+"Constructors can be overloaded",
+"Constructors can be declared final"
+],
+"answer": "Constructors can be overloaded"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "What is the purpose of parameterized constructors in Java?",
+"code": "",
+"option": [
+"To initialize class variables with default values",
+"To initialize class variables using parameters passed during object creation",
+"To provide access to private members of the class",
+"To access superclass members"
+],
+"answer": "To initialize class variables using parameters passed during object creation"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "Which of the following statements about constructors is false?",
+"code": "",
+"option": [
+"Constructors cannot have a return type",
+"Constructors can be called explicitly",
+"Constructors are called implicitly when an object is created",
+"Constructors can be overloaded"
+],
+"answer": "Constructors can be called explicitly"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "What is the role of the 'super' keyword in a constructor?",
+"code": "",
+"option": [
+"To access superclass methods",
+"To call the superclass constructor",
+"To access subclass methods",
+"To call the subclass constructor"
+],
+"answer": "To call the superclass constructor"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "What happens if no constructor is defined in a Java class?",
+"code": "",
+"option": [
+"The class cannot be instantiated",
+"The compiler automatically generates a default constructor",
+"The class is instantiated with all variables set to their default values",
+"The class is instantiated with all variables set to null"
+],
+"answer": "The compiler automatically generates a default constructor"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "What is the difference between constructors and methods in Java?",
+"code": "",
+"option": [
+"Constructors have a return type, methods do not",
+"Constructors can be overloaded, methods cannot",
+"Constructors are used to initialize objects, methods are used to perform operations",
+"Constructors cannot have parameters, methods can"
+],
+"answer": "Constructors are used to initialize objects, methods are used to perform operations"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "What is the significance of the 'this' keyword in a constructor?",
+"code": "",
+"option": [
+"To call the superclass constructor",
+"To access static variables",
+"To refer to the current instance of the class",
+"To create a new instance of the class"
+],
+"answer": "To refer to the current instance of the class"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "Which of the following statements about constructor chaining is true?",
+"code": "",
+"option": [
+"A constructor can call multiple constructors within the same class",
+"A constructor can call only one constructor within the same class",
+"A constructor cannot call another constructor within the same class",
+"A constructor can call constructors from any class"
+],
+"answer": "A constructor can call multiple constructors within the same class"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 7,
+  "questions": {
+    "question": "Which of the following statements about constructors in Java is true?",
+    "code": "",
+    "option": [
+      "Constructors can have a return type",
+      "Constructors can be declared static",
+      "Constructors can access instance variables directly",
+      "Constructors cannot be inherited by subclasses"
+    ],
+    "answer": "Constructors can access instance variables directly"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 7,
+  "questions": {
+    "question": "Which keyword is used to create a constructor in Java?",
+    "code": "",
+    "option": [
+      "this",
+      "new",
+      "constructor",
+      "None of the above"
+    ],
+    "answer": "None of the above"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "What is the purpose of constructor overloading in Java?",
+"code": "",
+"option": [
+"To provide multiple constructors with the same parameters",
+"To provide multiple constructors with different parameters",
+"To provide access to superclass constructors",
+"To provide access to private members of the class"
+],
+"answer": "To provide multiple constructors with different parameters"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+    ]
+}
+print("constructor",len(constructor["questions"]))
+
+polymorphism={
+    "questions":[
+        {
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "What is Polymorphism in Java?",
+"code": "",
+"option": [
+"The ability of a method to do different things based on the object it is acting upon",
+"The ability of a class to have multiple constructors",
+"The ability of a class to inherit properties and behavior from another class",
+"The ability of a method to access private members of another class"
+],
+"answer": "The ability of a method to do different things based on the object it is acting upon"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "Which type of polymorphism is achieved by method overriding in Java?",
+"code": "",
+"option": [
+"Compile-time polymorphism",
+"Runtime polymorphism",
+"Static polymorphism",
+"Dynamic polymorphism"
+],
+"answer": "Runtime polymorphism"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "Which keyword is used to denote method overriding in Java?",
+"code": "",
+"option": [
+"override",
+"extends",
+"implements",
+"None of the above"
+],
+"answer": "None of the above"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "What is method overloading?",
+"code": "",
+"option": [
+"Defining multiple methods with the same name but different parameters in the same class",
+"Defining multiple methods with the same name and same parameters in the same class",
+"Defining multiple methods with the same name and different return types in the same class",
+"Defining multiple methods with different access modifiers in the same class"
+],
+"answer": "Defining multiple methods with the same name but different parameters in the same class"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "Which of the following is an advantage of polymorphism in Java?",
+"code": "",
+"option": [
+"Reduced code duplication",
+"Improved code readability",
+"Enhanced code performance",
+"All of the above"
+],
+"answer": "All of the above"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "What is the use of the 'instanceof' operator in Java?",
+"code": "",
+"option": [
+"To check if an object is an instance of a particular class",
+"To instantiate an object of a class",
+"To call a method of a class",
+"To access static variables of a class"
+],
+"answer": "To check if an object is an instance of a particular class"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "What is the main advantage of method overriding?",
+"code": "",
+"option": [
+"Enhanced code performance",
+"Improved code readability",
+"Reduced code duplication",
+"Dynamic method dispatch"
+],
+"answer": "Dynamic method dispatch"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "What is the purpose of method overriding in Java?",
+"code": "",
+"option": [
+"To allow a subclass to define a method with the same signature as a method in its superclass",
+"To allow a subclass to define a method with a different signature as a method in its superclass",
+"To allow a superclass to override a method defined in its subclass",
+"To allow a subclass to call a private method of its superclass"
+],
+"answer": "To allow a subclass to define a method with the same signature as a method in its superclass"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "What is the output of the following code snippet?",
+"code": "\n\npublic class MyClass {\n public static void main(String[] args) {\n Parent obj = new Child();\n obj.display();\n }\n}\nclass Parent {\n public void display() {\n System.out.println(\"Parent's display()\");\n }\n}\nclass Child extends Parent {\n public void display() {\n System.out.println(\"Child's display()\");\n }\n}",
+"option": [
+"Parent's display()",
+"Child's display()",
+"Compilation error",
+"Runtime error"
+],
+"answer": "Child's display()"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 7,
+"questions": {
+"question": "Which of the following statements is true about polymorphism in Java?",
+"code": "",
+"option": [
+"Polymorphism allows a superclass to override a method defined in its subclass",
+"Polymorphism allows a subclass to define a method with a different signature as a method in its superclass",
+"Polymorphism allows a subclass reference to be used to call overridden methods",
+"Polymorphism allows a superclass reference to be used to call subclass-specific methods"
+],
+"answer": "Polymorphism allows a subclass reference to be used to call overridden methods"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 7,
+  "questions": {
+    "question": "What happens if a method is declared as final?",
+    "code": "",
+    "option": [
+      "It cannot be overridden",
+      "It cannot be overloaded",
+      "It cannot be accessed outside the class",
+      "It cannot have a return type"
+    ],
+    "answer": "It cannot be overridden"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+,{
+  "languageId": 1,
+  "topicId": 7,
+  "questions": {
+    "question": "What is the main difference between method overriding and method overloading in Java?",
+    "code": "",
+    "option": [
+      "Method overriding occurs at compile time, while method overloading occurs at runtime",
+      "Method overriding allows a subclass to define a method with the same name as a method in its superclass, while method overloading allows multiple methods with the same name but different parameters",
+      "Method overriding allows a superclass to call a method of its subclass, while method overloading allows a subclass to call a method of its superclass",
+      "Method overriding allows a subclass to define a method with a different name as a method in its superclass, while method overloading allows a subclass to define a method with the same name as a method in its superclass"
+    ],
+    "answer": "Method overriding allows a subclass to define a method with the same name as a method in its superclass, while method overloading allows multiple methods with the same name but different parameters"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+,{
+  "languageId": 1,
+  "topicId": 7,
+  "questions": {
+    "question": "Can constructors be overridden in Java?",
+    "code": "",
+    "option": [
+      "Yes, using the 'override' keyword",
+      "Yes, by redefining a constructor with the same name and parameters in a subclass",
+      "No, constructors cannot be overridden in Java",
+      "No, constructors are automatically inherited and cannot be overridden"
+    ],
+    "answer": "No, constructors cannot be overridden in Java"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+,{
+  "languageId": 1,
+  "topicId": 7,
+  "questions": {
+    "question": "What is method hiding in Java?",
+    "code": "",
+    "option": [
+      "A mechanism by which a subclass method can hide a superclass method",
+      "A mechanism by which a subclass constructor can hide a superclass constructor",
+      "A mechanism by which methods are statically bound during compilation",
+      "A mechanism by which methods are dynamically bound during runtime"
+    ],
+    "answer": "A mechanism by which a subclass method can hide a superclass method"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+,
+{
+  "languageId": 1,
+  "topicId": 7,
+  "questions": {
+    "question": "What is covariant return type in Java?",
+    "code": "",
+    "option": [
+      "A feature that allows a method in a subclass to return a subclass type of the return type declared in the superclass method",
+      "A feature that allows a method in a subclass to return a superclass type of the return type declared in the superclass method",
+      "A feature that allows a method to have multiple return types",
+      "A feature that allows a method to return different types based on the method parameters"
+    ],
+    "answer": "A feature that allows a method in a subclass to return a subclass type of the return type declared in the superclass method"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+
+    ]
+}
+print("Polymorphism",len(polymorphism["questions"]))
+
+encapsulation={
+    "questions":[
+{
+  "languageId": 1,
+  "topicId": 7,
+  "questions": {
+    "question": "What is encapsulation in Java?",
+    "code": "",
+    "option": [
+      "A mechanism for restricting access to certain components within objects",
+      "A mechanism for creating multiple instances of a class",
+      "A mechanism for defining inheritance relationships between classes",
+      "A mechanism for implementing polymorphism in Java"
+    ],
+    "answer": "A mechanism for restricting access to certain components within objects"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 7,
+  "questions": {
+    "question": "Which access modifiers are typically used to implement encapsulation in Java?",
+    "code": "",
+    "option": [
+      "public and protected",
+      "private and protected",
+      "public and private",
+      "private and default"
+    ],
+    "answer": "public and private"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 7,
+  "questions": {
+    "question": "What is the primary purpose of encapsulation?",
+    "code": "",
+    "option": [
+      "To improve code performance",
+      "To improve code readability",
+      "To prevent unauthorized access to sensitive data",
+      "To enable multiple inheritance in Java"
+    ],
+    "answer": "To prevent unauthorized access to sensitive data"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+,
+{
+  "languageId": 1,
+  "topicId": 7,
+  "questions": {
+    "question": "Which of the following Java features is closely associated with encapsulation?",
+    "code": "",
+    "option": [
+      "Inheritance",
+      "Polymorphism",
+      "Abstraction",
+      "Composition"
+    ],
+    "answer": "Abstraction"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+,
+{
+  "languageId": 1,
+  "topicId": 7,
+  "questions": {
+    "question": "Which statement is true about encapsulation?",
+    "code": "",
+    "option": [
+      "Encapsulation ensures that all methods in a class are accessible to other classes",
+      "Encapsulation allows direct access to class variables from outside the class",
+      "Encapsulation hides the implementation details of a class from other classes",
+      "Encapsulation is only used for defining data types in Java"
+    ],
+    "answer": "Encapsulation hides the implementation details of a class from other classes"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+,
+{
+  "languageId": 1,
+  "topicId": 7,
+  "questions": {
+    "question": "Which statement best describes the benefits of encapsulation?",
+    "code": "",
+    "option": [
+      "Encapsulation allows any class to access and modify data directly",
+      "Encapsulation makes it easier to extend or modify code without affecting other parts of the program",
+      "Encapsulation increases coupling between classes",
+      "Encapsulation reduces the need for code documentation"
+    ],
+    "answer": "Encapsulation makes it easier to extend or modify code without affecting other parts of the program"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+,
+{
+  "languageId": 1,
+  "topicId": 7,
+  "questions": {
+    "question": "Which of the following is an example of encapsulation?",
+    "code": "",
+    "option": [
+      "A class with all data members declared as public",
+      "A class with data members declared as private and accessed through public methods",
+      "A class with no data members",
+      "A class with all data members declared as static"
+    ],
+    "answer": "A class with data members declared as private and accessed through public methods"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+,{
+  "languageId": 1,
+  "topicId": 7,
+  "questions": {
+    "question": "Which of the following is an example of encapsulation?",
+    "code": "",
+    "option": [
+      "A class with all data members declared as public",
+      "A class with data members declared as private and accessed through public methods",
+      "A class with no data members",
+      "A class with all data members declared as static"
+    ],
+    "answer": "A class with data members declared as private and accessed through public methods"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 7,
+  "questions": {
+    "question": "In Java, which access modifier should be used for methods that encapsulate data?",
+    "code": "",
+    "option": [
+      "public",
+      "private",
+      "protected",
+      "default"
+    ],
+    "answer": "private"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+,{
+  "languageId": 1,
+  "topicId": 7,
+  "questions": {
+    "question": "What is the main purpose of encapsulating data in Java?",
+    "code": "",
+    "option": [
+      "To make data members accessible from any class",
+      "To prevent data members from being accessed and modified by unauthorized classes",
+      "To increase coupling between classes",
+      "To decrease the number of classes in a program"
+    ],
+    "answer": "To prevent data members from being accessed and modified by unauthorized classes"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+,{
+  "languageId": 1,
+  "topicId": 7,
+  "questions": {
+    "question": "Which statement best describes the concept of data hiding in encapsulation?",
+    "code": "",
+    "option": [
+      "Data hiding refers to the process of exposing all class data to other classes",
+      "Data hiding refers to the process of restricting access to certain class data",
+      "Data hiding refers to the process of declaring all class data as public",
+      "Data hiding refers to the process of declaring all class data as private"
+    ],
+    "answer": "Data hiding refers to the process of restricting access to certain class data"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 7,
+  "questions": {
+    "question": "Which statement best describes the role of access modifiers in encapsulation?",
+    "code": "",
+    "option": [
+      "Access modifiers are used to provide unrestricted access to class members",
+      "Access modifiers are used to restrict access to class members",
+      "Access modifiers are not related to encapsulation",
+      "Access modifiers are used to make all class members public"
+    ],
+    "answer": "Access modifiers are used to restrict access to class members"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+,{
+  "languageId": 1,
+  "topicId": 7,
+  "questions": {
+    "question": "Which of the following is not a benefit of encapsulation?",
+    "code": "",
+    "option": [
+      "Enhanced security",
+      "Increased code flexibility",
+      "Reduced code complexity",
+      "Decreased code reusability"
+    ],
+    "answer": "Decreased code reusability"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+,{
+  "languageId": 1,
+  "topicId": 7,
+  "questions": {
+    "question": "What is the main goal of encapsulation in Java?",
+    "code": "",
+    "option": [
+      "To make all class members public",
+      "To make code less readable",
+      "To hide implementation details and protect data",
+      "To expose all class data to other classes"
+    ],
+    "answer": "To hide implementation details and protect data"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+
+,{
+  "languageId": 1,
+  "topicId": 7,
+  "questions": {
+    "question": "Which Java feature is closely related to encapsulation?",
+    "code": "",
+    "option": [
+      "Inheritance",
+      "Abstraction",
+      "Polymorphism",
+      "Overriding"
+    ],
+    "answer": "Abstraction"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+    ]
+}
+print("encapsulation",len(encapsulation['questions']))
+
+abstraction={
+    "questions":[{
+  "languageId": 1,
+  "topicId": 8,
+  "questions": {
+    "question": "What is abstraction in Java?",
+    "code": "",
+    "option": [
+      "Abstraction is the process of hiding implementation details and showing only essential features of an object",
+      "Abstraction is the process of exposing all class data to other classes",
+      "Abstraction is the process of making all class members public",
+      "Abstraction is the process of declaring all methods as static"
+    ],
+    "answer": "Abstraction is the process of hiding implementation details and showing only essential features of an object"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+,
+{
+  "languageId": 1,
+  "topicId": 8,
+  "questions": {
+    "question": "Which keyword is used to declare an interface in Java?",
+    "code": "",
+    "option": [
+      "interface",
+      "class",
+      "abstract",
+      "implements"
+    ],
+    "answer": "interface"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+,
+{
+  "languageId": 1,
+  "topicId": 8,
+  "questions": {
+    "question": "Which of the following is not a valid access specifier for interface members in Java?",
+    "code": "",
+    "option": [
+      "public",
+      "private",
+      "protected",
+      "default"
+    ],
+    "answer": "private"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+,
+{
+  "languageId": 1,
+  "topicId": 8,
+  "questions": {
+    "question": "What is the purpose of an abstract class in Java?",
+    "code": "",
+    "option": [
+      "To define a blueprint for other classes",
+      "To create instances directly",
+      "To make all methods public",
+      "To prevent inheritance"
+    ],
+    "answer": "To define a blueprint for other classes"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 8,
+  "questions": {
+    "question": "Which of the following best describes an interface in Java?",
+    "code": "",
+    "option": [
+      "An interface is a concrete class",
+      "An interface can contain implementation details",
+      "An interface defines a contract for classes that implement it",
+      "An interface cannot have any methods"
+    ],
+    "answer": "An interface defines a contract for classes that implement it"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 8,
+  "questions": {
+    "question": "Which of the following is true about abstract methods in Java?",
+    "code": "",
+    "option": [
+      "Abstract methods must have a body",
+      "Abstract methods cannot be overridden",
+      "Abstract methods must be declared final",
+      "Abstract methods must be implemented by concrete subclasses"
+    ],
+    "answer": "Abstract methods must be implemented by concrete subclasses"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 8,
+  "questions": {
+    "question": "What is the main difference between an abstract class and an interface in Java?",
+    "code": "",
+    "option": [
+      "Abstract classes can have constructors, while interfaces cannot",
+      "Interfaces can have constructors, while abstract classes cannot",
+      "Abstract classes can provide partial implementation, while interfaces cannot",
+      "Interfaces can provide partial implementation, while abstract classes cannot"
+    ],
+    "answer": "Abstract classes can provide partial implementation, while interfaces cannot"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 8,
+  "questions": {
+    "question": "Which of the following is not a valid modifier for interface methods in Java?",
+    "code": "",
+    "option": [
+      "public",
+      "protected",
+      "default",
+      "static"
+    ],
+    "answer": "protected"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+,
+{
+  "languageId": 1,
+  "topicId": 8,
+  "questions": {
+    "question": "What is the purpose of declaring a method as abstract in an abstract class?",
+    "code": "",
+    "option": [
+      "To provide a concrete implementation in the abstract class",
+      "To prevent subclasses from overriding the method",
+      "To enforce subclasses to provide their own implementation",
+      "To make the method accessible only within the same package"
+    ],
+    "answer": "To enforce subclasses to provide their own implementation"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 8,
+  "questions": {
+    "question": "Which of the following statements about interfaces in Java is true?",
+    "code": "",
+    "option": [
+      "Interfaces can extend multiple classes",
+      "Interfaces can have constructors",
+      "Interfaces can contain instance variables",
+      "Interfaces cannot have static methods"
+    ],
+    "answer": "Interfaces cannot have static methods"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 8,
+  "questions": {
+    "question": "What is the significance of the 'default' keyword when used in interface methods?",
+    "code": "",
+    "option": [
+      "It specifies a default implementation for the method",
+      "It makes the method accessible only within the same package",
+      "It indicates that the method cannot be overridden",
+      "It specifies that the method is optional for implementing classes"
+    ],
+    "answer": "It specifies a default implementation for the method"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 8,
+  "questions": {
+    "question": "Which of the following is true about interfaces in Java?",
+    "code": "",
+    "option": [
+      "Interfaces can extend multiple interfaces",
+      "Interfaces can have constructors",
+      "Interfaces can contain static fields",
+      "Interfaces can have access modifiers other than public"
+    ],
+    "answer": "Interfaces can extend multiple interfaces"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 8,
+  "questions": {
+    "question": "In Java, can an interface extend a class?",
+    "code": "",
+    "option": [
+      "Yes, using the 'extends' keyword",
+      "Yes, using the 'implements' keyword",
+      "No, interfaces cannot extend classes",
+      "No, interfaces can only extend other interfaces"
+    ],
+    "answer": "No, interfaces cannot extend classes"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 8,
+  "questions": {
+    "question": "Which keyword is used to declare a method as abstract in an interface?",
+    "code": "",
+    "option": [
+      "abstract",
+      "void",
+      "interface",
+      "implements"
+    ],
+    "answer": "abstract"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+
+{
+  "languageId": 1,
+  "topicId": 8,
+  "questions": {
+    "question": "Which of the following can an interface extend in Java?",
+    "code": "",
+    "option": [
+      "Class",
+      "Interface",
+      "Abstract class",
+      "All of the above"
+    ],
+    "answer": "Interface"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+
+]
+}
+
+print("abstraction",len(abstraction['questions']))
+
+string={
+    "questions":[{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following is the correct way to declare a String variable in Java?",
+    "code": "",
+    "option": [
+      "String str;",
+      "str = new String();",
+      "String str = new String();",
+      "All of the above"
+    ],
+    "answer": "All of the above"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "What does the length() method of the String class in Java return?",
+    "code": "",
+    "option": [
+      "The number of characters in the String",
+      "The size of the String object",
+      "The capacity of the String buffer",
+      "The byte length of the String"
+    ],
+    "answer": "The number of characters in the String"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to concatenate two strings in Java?",
+    "code": "",
+    "option": [
+      "concat()",
+      "append()",
+      "+ operator",
+      "addAll()"
+    ],
+    "answer": "concat()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to compare two strings for equality in Java?",
+    "code": "",
+    "option": [
+      "equals()",
+      "compareTo()",
+      "== operator",
+      "equalsIgnoreCase()"
+    ],
+    "answer": "equals()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to convert all characters in a String to lowercase in Java?",
+    "code": "",
+    "option": [
+      "toLowerCase()",
+      "toLower()",
+      "convertToLower()",
+      "lowerCase()"
+    ],
+    "answer": "toLowerCase()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to find the index of a specific character or substring within a string in Java?",
+    "code": "",
+    "option": [
+      "indexOf()",
+      "find()",
+      "search()",
+      "locate()"
+    ],
+    "answer": "indexOf()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to extract a substring from a string in Java?",
+    "code": "",
+    "option": [
+      "substring()",
+      "extract()",
+      "slice()",
+      "splice()"
+    ],
+    "answer": "substring()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to replace characters in a string in Java?",
+    "code": "",
+    "option": [
+      "replace()",
+      "substitute()",
+      "change()",
+      "modify()"
+    ],
+    "answer": "replace()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to trim leading and trailing whitespace from a string in Java?",
+    "code": "",
+    "option": [
+      "trim()",
+      "strip()",
+      "clean()",
+      "clear()"
+    ],
+    "answer": "trim()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to split a string into an array of substrings based on a delimiter in Java?",
+    "code": "",
+    "option": [
+      "split()",
+      "divide()",
+      "separate()",
+      "break()"
+    ],
+    "answer": "split()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "What does the charAt() method of the String class in Java return?",
+    "code": "",
+    "option": [
+      "The character at the specified index",
+      "The ASCII value of the character at the specified index",
+      "The substring starting at the specified index",
+      "The index of the specified character"
+    ],
+    "answer": "The character at the specified index"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to convert primitive data types to strings in Java?",
+    "code": "",
+    "option": [
+      "valueOf()",
+      "toString()",
+      "convert()",
+      "asString()"
+    ],
+    "answer": "valueOf()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to compare two strings ignoring their case in Java?",
+    "code": "",
+    "option": [
+      "equalsIgnoreCase()",
+      "compare()",
+      "equalsIgnoreCase()",
+      "compareIgnoreCase()"
+    ],
+    "answer": "equalsIgnoreCase()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "What is the result of the expression \"hello\".equals(\"HELLO\") in Java?",
+    "code": "",
+    "option": [
+      "true",
+      "false",
+      "Compilation error",
+      "Runtime error"
+    ],
+    "answer": "false"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "What is the result of the expression \"hello\".compareTo(\"HELLO\") in Java?",
+    "code": "",
+    "option": [
+      "0",
+      "1",
+      "-1",
+      "Compilation error"
+    ],
+    "answer": "-1"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "What is the result of the expression \"abc\" + 1 + 2 in Java?",
+    "code": "",
+    "option": [
+      "abc12",
+      "abc3",
+      "3abc",
+      "Compilation error"
+    ],
+    "answer": "abc12"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+,
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "What is the result of the expression 1 + 2 + \"abc\" in Java?",
+    "code": "",
+    "option": [
+      "3abc",
+      "abc3",
+      "12abc",
+      "Compilation error"
+    ],
+    "answer": "3abc"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+,{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "What is the result of the expression \"abcde\".substring(1, 3) in Java?",
+    "code": "",
+    "option": [
+      "bc",
+      "bcd",
+      "cd",
+      "ab"
+    ],
+    "answer": "bc"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "What is the result of the expression \"java\".indexOf('a') in Java?",
+    "code": "",
+    "option": [
+      "0",
+      "1",
+      "-1",
+      "2"
+    ],
+    "answer": "1"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "What is the result of the expression \"java\".replace('a', 'o') in Java?",
+    "code": "",
+    "option": [
+      "jovo",
+      "java",
+      "jovao",
+      "jovo"
+    ],
+    "answer": "jovo"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+]
+}
+print("string",len(string['questions']))
+
+lists={
+    "questions":[
+        {
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following statements is true about ArrayList in Java?",
+    "code": "",
+    "option": [
+      "ArrayList is a synchronized collection",
+      "ArrayList can contain duplicate elements",
+      "ArrayList does not allow random access to elements",
+      "ArrayList is a class that implements the Set interface"
+    ],
+    "answer": "ArrayList can contain duplicate elements"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to add an element to the end of an ArrayList?",
+    "code": "",
+    "option": [
+      "addFirst()",
+      "append()",
+      "push()",
+      "add()"
+    ],
+    "answer": "add()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following is true about LinkedList in Java?",
+    "code": "",
+    "option": [
+      "LinkedList allows constant-time access to any element",
+      "LinkedList does not allow null elements",
+      "LinkedList is implemented as a resizable array",
+      "LinkedList implements the List interface but not the Queue interface"
+    ],
+    "answer": "LinkedList implements the List interface but not the Queue interface"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to remove the first occurrence of a specified element in an ArrayList?",
+    "code": "",
+    "option": [
+      "removeFirst()",
+      "remove()",
+      "delete()",
+      "removeElement()"
+    ],
+    "answer": "remove()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to retrieve the first element of a LinkedList?",
+    "code": "",
+    "option": [
+      "getFirst()",
+      "retrieveFirst()",
+      "peekFirst()",
+      "fetchFirst()"
+    ],
+    "answer": "getFirst()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to retrieve the last element of an ArrayList?",
+    "code": "",
+    "option": [
+      "getLast()",
+      "peekLast()",
+      "retrieveLast()",
+      "fetchLast()"
+    ],
+    "answer": "getLast()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to check if an ArrayList contains a specified element?",
+    "code": "",
+    "option": [
+      "contains()",
+      "exist()",
+      "check()",
+      "containsElement()"
+    ],
+    "answer": "contains()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to remove all elements from an ArrayList?",
+    "code": "",
+    "option": [
+      "clear()",
+      "removeAll()",
+      "erase()",
+      "deleteAll()"
+    ],
+    "answer": "clear()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to add an element at the specified index in an ArrayList?",
+    "code": "",
+    "option": [
+      "addToIndex()",
+      "add()",
+      "insert()",
+      "append()"
+    ],
+    "answer": "add()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+,{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to get the number of elements in an ArrayList?",
+    "code": "",
+    "option": [
+      "getSize()",
+      "count()",
+      "size()",
+      "length()"
+    ],
+    "answer": "size()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to check if a LinkedList is empty?",
+    "code": "",
+    "option": [
+      "isEmpty()",
+      "checkEmpty()",
+      "hasElements()",
+      "isEmptyList()"
+    ],
+    "answer": "isEmpty()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to retrieve and remove the first element of a LinkedList?",
+    "code": "",
+    "option": [
+      "getFirst()",
+      "pollFirst()",
+      "retrieveFirst()",
+      "fetchFirst()"
+    ],
+    "answer": "pollFirst()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+,{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to replace the element at a specified position in an ArrayList?",
+    "code": "",
+    "option": [
+      "replace()",
+      "set()",
+      "update()",
+      "modify()"
+    ],
+    "answer": "set()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to iterate over the elements of an ArrayList?",
+    "code": "",
+    "option": [
+      "for(int i = 0; i < list.size(); i++)",
+      "for(int i = 0; i <= list.size(); i++)",
+      "for(int i = 1; i <= list.size(); i++)",
+      "for(int i = 1; i < list.size(); i++)"
+    ],
+    "answer": "for(int i = 0; i < list.size(); i++)"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to add all elements of a collection to the end of an ArrayList?",
+    "code": "",
+    "option": [
+      "addAll()",
+      "appendAll()",
+      "addAllElements()",
+      "addCollection()"
+    ],
+    "answer": "addAll()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+    
+
+    ]
+}
+print("lists",len(lists['questions']))
+
+sets={
+    "questions":[
+        {
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to add an element to a HashSet in Java?",
+    "code": "",
+    "option": [
+      "add()",
+      "insert()",
+      "put()",
+      "addElement()"
+    ],
+    "answer": "add()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "What is the main characteristic of a TreeSet in Java?",
+    "code": "",
+    "option": [
+      "Maintains insertion order",
+      "Allows duplicate elements",
+      "Maintains natural sorting order",
+      "Does not allow null elements"
+    ],
+    "answer": "Maintains natural sorting order"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following sets does not allow duplicate elements in Java?",
+    "code": "",
+    "option": [
+      "HashSet",
+      "LinkedHashSet",
+      "TreeSet",
+      "All of them allow duplicate elements"
+    ],
+    "answer": "All of them allow duplicate elements"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "What is the time complexity of the add() method in a HashSet in Java?",
+    "code": "",
+    "option": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "Depends on the implementation"
+    ],
+    "answer": "O(1)"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following statements is true about a LinkedHashSet in Java?",
+    "code": "",
+    "option": [
+      "Maintains insertion order",
+      "Maintains natural sorting order",
+      "Allows null elements",
+      "Does not allow duplicate elements"
+    ],
+    "answer": "Maintains insertion order"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+,
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to remove all elements from a HashSet in Java?",
+    "code": "",
+    "option": [
+      "removeAll()",
+      "clear()",
+      "deleteAll()",
+      "eraseAll()"
+    ],
+    "answer": "clear()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "What happens if you try to add a null element to a TreeSet in Java?",
+    "code": "",
+    "option": [
+      "NullPointerException is thrown",
+      "The element is added at the beginning of the set",
+      "The element is added at the end of the set",
+      "The set remains unchanged"
+    ],
+    "answer": "NullPointerException is thrown"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following sets is based on a hash table data structure?",
+    "code": "",
+    "option": [
+      "HashSet",
+      "LinkedHashSet",
+      "TreeSet",
+      "All of the above"
+    ],
+    "answer": "HashSet"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "What is the main characteristic of a HashSet in Java?",
+    "code": "",
+    "option": [
+      "Maintains insertion order",
+      "Allows duplicate elements",
+      "Maintains natural sorting order",
+      "Does not allow null elements"
+    ],
+    "answer": "Does not allow null elements"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to obtain the number of elements in a Set in Java?",
+    "code": "",
+    "option": [
+      "size()",
+      "length()",
+      "count()",
+      "getSize()"
+    ],
+    "answer": "size()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following sets is ordered in the sequence of insertion in Java?",
+    "code": "",
+    "option": [
+      "HashSet",
+      "LinkedHashSet",
+      "TreeSet",
+      "All of the above"
+    ],
+    "answer": "LinkedHashSet"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "What happens when you try to add a duplicate element to a HashSet in Java?",
+    "code": "",
+    "option": [
+      "The element is added",
+      "The element replaces the existing one",
+      "The set remains unchanged",
+      "An exception is thrown"
+    ],
+    "answer": "The set remains unchanged"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to iterate through elements in a TreeSet in Java?",
+    "code": "",
+    "option": [
+      "for-each loop",
+      "forEach() method",
+      "iterator() method",
+      "All of the above"
+    ],
+    "answer": "All of the above"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to remove an element from a TreeSet in Java?",
+    "code": "",
+    "option": [
+      "remove()",
+      "delete()",
+      "erase()",
+      "pollFirst()"
+    ],
+    "answer": "remove()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 9,
+  "questions": {
+    "question": "Which of the following methods is used to obtain the first element in a TreeSet in Java?",
+    "code": "",
+    "option": [
+      "getFirst()",
+      "first()",
+      "get(0)",
+      "pollFirst()"
+    ],
+    "answer": "first()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+
+    ]
+}
+
+print("sets",len(sets['questions']))
+
+map={
+    "questions":[{
+  "languageId": 1,
+  "topicId": 10,
+  "questions": {
+    "question": "Which of the following implementations does not maintain the order of elements based on their insertion order?",
+    "code": "",
+    "option": [
+      "HashMap",
+      "LinkedHashMap",
+      "TreeMap",
+      "All of the above maintain insertion order"
+    ],
+    "answer": "HashMap"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 10,
+  "questions": {
+    "question": "Which of the following implementations does not allow `null` keys?",
+    "code": "",
+    "option": [
+      "HashMap",
+      "LinkedHashMap",
+      "TreeMap",
+      "All of the above allow null keys"
+    ],
+    "answer": "TreeMap"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 10,
+  "questions": {
+    "question": "Which of the following implementations provides a sorted order of elements based on their natural ordering or a custom comparator?",
+    "code": "",
+    "option": [
+      "HashMap",
+      "LinkedHashMap",
+      "TreeMap",
+      "All of the above provide sorted order"
+    ],
+    "answer": "TreeMap"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 10,
+  "questions": {
+    "question": "Which of the following implementations guarantees constant-time performance for basic operations, such as get and put?",
+    "code": "",
+    "option": [
+      "HashMap",
+      "LinkedHashMap",
+      "TreeMap",
+      "All of the above guarantee constant-time performance"
+    ],
+    "answer": "HashMap"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 10,
+  "questions": {
+    "question": "Which of the following implementations allows duplicate values but not duplicate keys?",
+    "code": "",
+    "option": [
+      "HashMap",
+      "LinkedHashMap",
+      "TreeMap",
+      "All of the above allow duplicate values"
+    ],
+    "answer": "All of the above allow duplicate values"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 10,
+  "questions": {
+    "question": "Which of the following methods is used to retrieve a value associated with a specified key in a Map?",
+    "code": "",
+    "option": [
+      "getValue()",
+      "retrieve()",
+      "get()",
+      "fetch()"
+    ],
+    "answer": "get()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 10,
+  "questions": {
+    "question": "Which of the following methods is used to check if a Map contains a mapping for a specified key?",
+    "code": "",
+    "option": [
+      "contains()",
+      "containsKey()",
+      "hasKey()",
+      "checkKey()"
+    ],
+    "answer": "containsKey()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 10,
+  "questions": {
+    "question": "Which of the following methods is used to remove a mapping for a specified key from a Map?",
+    "code": "",
+    "option": [
+      "remove()",
+      "delete()",
+      "removeKey()",
+      "eliminate()"
+    ],
+    "answer": "remove()"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+"languageId": 1,
+"topicId": 10,
+"questions": {
+"question": "Which implementation of Map interface maintains the insertion order of keys?",
+"code": "",
+"option": [
+"HashMap",
+"LinkedHashMap",
+"TreeMap",
+"Hashtable"
+],
+"answer": "LinkedHashMap"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+  "languageId": 1,
+  "topicId": 10,
+  "questions": {
+    "question": "Which implementation of Map interface maintains a doubly linked list of entries?",
+    "code": "",
+    "option": [
+      "HashMap",
+      "LinkedHashMap",
+      "TreeMap",
+      "Hashtable"
+    ],
+    "answer": "LinkedHashMap"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+},
+{
+"languageId": 1,
+"topicId": 10,
+"questions": {
+"question": "Which implementation of Map interface uses a Red-Black tree to store key-value pairs?",
+"code": "",
+"option": [
+"HashMap",
+"LinkedHashMap",
+"TreeMap",
+"Hashtable"
+],
+"answer": "TreeMap"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+
+{
+"languageId": 1,
+"topicId": 10,
+"questions": {
+"question": "Which implementation of Map interface provides a fail-fast iterator?",
+"code": "",
+"option": [
+"HashMap",
+"LinkedHashMap",
+"TreeMap",
+"Hashtable"
+],
+"answer": "HashMap"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+  "languageId": 1,
+  "topicId": 10,
+  "questions": {
+    "question": "Which implementation of Map interface provides predictable iteration order?",
+    "code": "",
+    "option": [
+      "HashMap",
+      "LinkedHashMap",
+      "TreeMap",
+      "Hashtable"
+    ],
+    "answer": "LinkedHashMap"
+  },
+  "level": "beginner",
+  "mark": 1,
+  "time": 1
+}
+,{
+"languageId": 1,
+"topicId": 10,
+"questions": {
+"question": "Which implementation of the Map interface provides the best average and worst-case time complexity for key-based operations?",
+"code": "",
+"option": [
+"HashMap",
+"LinkedHashMap",
+"TreeMap",
+"Hashtable"
+],
+"answer": "TreeMap"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,{
+"languageId": 1,
+"topicId": 10,
+"questions": {
+"question": "Which implementation of the Map interface is best suited for applications where high concurrency is required?",
+"code": "",
+"option": [
+"HashMap",
+"LinkedHashMap",
+"TreeMap",
+"Hashtable"
+],
+"answer": "ConcurrentHashMap"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+
+
+
+
+
+
+
+]
+}
+print("map",len(map['questions']))
+
+
+exceptionHandling={
+    "questions":[{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "What is an exception in Java?",
+"code": "",
+"option": [
+"An unexpected event that disrupts the normal flow of the program",
+"A predefined error in Java",
+"A syntax error in Java",
+"An object that holds data related to a specific error or warning"
+],
+"answer": "An unexpected event that disrupts the normal flow of the program"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which keyword is used to handle exceptions in Java?",
+"code": "",
+"option": [
+"try",
+"catch",
+"throw",
+"finally"
+],
+"answer": "try"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "What is the purpose of the 'catch' block in Java exception handling?",
+"code": "",
+"option": [
+"To execute the code regardless of whether an exception occurs",
+"To define a block of code that will be executed if an exception occurs",
+"To throw an exception explicitly",
+"To indicate the end of the try block"
+],
+"answer": "To define a block of code that will be executed if an exception occurs"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which of the following statements is true about checked exceptions in Java?",
+"code": "",
+"option": [
+"Checked exceptions are subclasses of RuntimeException",
+"Checked exceptions must be caught or declared in the method signature",
+"Checked exceptions are optional to handle",
+"Checked exceptions are always caught by the catch block"
+],
+"answer": "Checked exceptions must be caught or declared in the method signature"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "What is the purpose of the 'finally' block in Java exception handling?",
+"code": "",
+"option": [
+"To execute the code regardless of whether an exception occurs",
+"To define a block of code that will be executed if an exception occurs",
+"To throw an exception explicitly",
+"To indicate the end of the try block"
+],
+"answer": "To execute the code regardless of whether an exception occurs"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which of the following statements is true about unchecked exceptions in Java?",
+"code": "",
+"option": [
+"Unchecked exceptions must be caught or declared in the method signature",
+"Unchecked exceptions are always checked at compile-time",
+"Unchecked exceptions are subclasses of RuntimeException",
+"Unchecked exceptions are always caught by the catch block"
+],
+"answer": "Unchecked exceptions are subclasses of RuntimeException"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which of the following is a checked exception in Java?",
+"code": "",
+"option": [
+"NullPointerException",
+"ArrayIndexOutOfBoundsException",
+"ArithmeticException",
+"IOException"
+],
+"answer": "IOException"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which of the following is an unchecked exception in Java?",
+"code": "",
+"option": [
+"FileNotFoundException",
+"ClassNotFoundException",
+"NumberFormatException",
+"InterruptedException"
+],
+"answer": "NumberFormatException"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "What happens if an exception is thrown but not caught in Java?",
+"code": "",
+"option": [
+"The program continues to execute without interruption",
+"The program terminates abruptly",
+"The program enters an infinite loop",
+"The program displays an error message"
+],
+"answer": "The program terminates abruptly"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "What is the purpose of the 'throw' keyword in Java?",
+"code": "",
+"option": [
+"To declare a new exception class",
+"To handle exceptions in the catch block",
+"To explicitly throw an exception",
+"To indicate the end of the try block"
+],
+"answer": "To explicitly throw an exception"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which of the following is not a standard Java exception class?",
+"code": "",
+"option": [
+"IOException",
+"NumberFormatException",
+"NullPointerException",
+"ExceptionOccurred"
+],
+"answer": "ExceptionOccurred"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "What is the purpose of the 'throws' keyword in Java?",
+"code": "",
+"option": [
+"To handle exceptions in the catch block",
+"To explicitly throw an exception",
+"To declare that a method may throw a particular type of exception",
+"To indicate the end of the try block"
+],
+"answer": "To declare that a method may throw a particular type of exception"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "What is the result of dividing by zero in Java?",
+"code": "",
+"option": [
+"Infinity",
+"NaN",
+"ArithmeticException",
+"NullPointerException"
+],
+"answer": "ArithmeticException"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "What is the purpose of the 'getMessage()' method in the Exception class in Java?",
+"code": "",
+"option": [
+"To get the error message associated with the exception",
+"To print the stack trace of the exception",
+"To get the cause of the exception",
+"To create a new exception"
+],
+"answer": "To get the error message associated with the exception"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which of the following statements is true about the 'throws' clause in Java?",
+"code": "",
+"option": [
+"The 'throws' clause is used to declare checked exceptions",
+"The 'throws' clause is used to catch exceptions",
+"The 'throws' clause is used to define multiple catch blocks",
+"The 'throws' clause is used to close resources automatically"
+],
+"answer": "The 'throws' clause is used to declare checked exceptions"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+
+]
+}
+print("exceptionHandling",len(exceptionHandling['questions']))
+
+
+filehandling={
+    "questions":[
+        {
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "What is the purpose of the 'File' class in Java?",
+"code": "",
+"option": [
+"To represent a file in the file system",
+"To read and write data from and to a file",
+"To create directories",
+"To handle exceptions related to file operations"
+],
+"answer": "To represent a file in the file system"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which class in Java is used for reading text from a character-input stream?",
+"code": "",
+"option": [
+"FileInputStream",
+"FileReader",
+"BufferedReader",
+"Scanner"
+],
+"answer": "FileReader"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which of the following methods is used to check if a file or directory exists in Java?",
+"code": "",
+"option": [
+"exists()",
+"isFile()",
+"isDirectory()",
+"All of the above"
+],
+"answer": "exists()"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which of the following is true about FileInputStream in Java?",
+"code": "",
+"option": [
+"It reads bytes from a file",
+"It reads characters from a file",
+"It writes bytes to a file",
+"It writes characters to a file"
+],
+"answer": "It reads bytes from a file"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which of the following classes is used to write characters to a file in Java?",
+"code": "",
+"option": [
+"FileWriter",
+"FileOutputStream",
+"PrintWriter",
+"BufferedWriter"
+],
+"answer": "FileWriter"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which exception is thrown when a file or directory does not exist?",
+"code": "",
+"option": [
+"FileNotFoundException",
+"IOException",
+"NoSuchElementException",
+"FileSystemNotFoundException"
+],
+"answer": "FileNotFoundException"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which of the following methods is used to create a new directory in Java?",
+"code": "",
+"option": [
+"createDirectory()",
+"makeDirectory()",
+"newDirectory()",
+"mkdir()"
+],
+"answer": "mkdir()"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which class in Java is used to manipulate files and directories?",
+"code": "",
+"option": [
+"File",
+"FileReader",
+"FileWriter",
+"BufferedReader"
+],
+"answer": "File"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which method is used to read a single byte of data from an input stream in Java?",
+"code": "",
+"option": [
+"readByte()",
+"read()",
+"readBytes()",
+"readChar()"
+],
+"answer": "read()"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which method is used to write a string to a file in Java?",
+"code": "",
+"option": [
+"writeString()",
+"write()",
+"writeLine()",
+"writeStringToFile()"
+],
+"answer": "write()"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which of the following methods is used to delete a file in Java?",
+"code": "",
+"option": [
+"deleteFile()",
+"remove()",
+"delete()",
+"erase()"
+],
+"answer": "delete()"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which of the following classes is used to read character-based input from a file in Java?",
+"code": "",
+"option": [
+"FileInputStream",
+"FileReader",
+"BufferedReader",
+"Scanner"
+],
+"answer": "FileReader"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which of the following methods is used to determine the length of a file in Java?",
+"code": "",
+"option": [
+"length()",
+"getSize()",
+"size()",
+"getLength()"
+],
+"answer": "length()"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which method is used to create a new file in Java?",
+"code": "",
+"option": [
+"createNewFile()",
+"newFile()",
+"makeFile()",
+"createFile()"
+],
+"answer": "createNewFile()"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which method is used to close an open file in Java?",
+"code": "",
+"option": [
+"closeFile()",
+"close()",
+"dispose()",
+"shutdown()"
+],
+"answer": "close()"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which class in Java is used to read binary data from a file?",
+"code": "",
+"option": [
+"FileInputStream",
+"FileReader",
+"DataInputStream",
+"BufferedInputStream"
+],
+"answer": "DataInputStream"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which of the following methods is used to rename a file in Java?",
+"code": "",
+"option": [
+"rename()",
+"renameTo()",
+"changeName()",
+"updateName()"
+],
+"answer": "renameTo()"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which method is used to read the next line of text from a file in Java?",
+"code": "",
+"option": [
+"readLine()",
+"readText()",
+"nextLine()",
+"read()"
+],
+"answer": "readLine()"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which of the following is true about FileReader in Java?",
+"code": "",
+"option": [
+"It reads bytes from a file",
+"It reads characters from a file",
+"It writes bytes to a file",
+"It writes characters to a file"
+],
+"answer": "It reads characters from a file"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+,
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which class in Java is used to write binary data to a file?",
+"code": "",
+"option": [
+"FileWriter",
+"FileOutputStream",
+"PrintWriter",
+"DataOutputStream"
+],
+"answer": "DataOutputStream"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+
+    ]
+}
+
+print("filehandling",len(filehandling['questions']))
+
+
+multithreading={
+    "questions":[{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "What is a thread in Java?",
+"code": "",
+"option": [
+"A thread represents a static method",
+"A thread is a lightweight process that shares the same memory space",
+"A thread is an instance of a class that extends the Thread class",
+"A thread is a data structure used for exception handling"
+],
+"answer": "A thread is a lightweight process that shares the same memory space"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which of the following is true about multithreading in Java?",
+"code": "",
+"option": [
+"Multithreading allows a program to execute multiple threads simultaneously",
+"Multithreading is achieved by creating multiple processes",
+"Multithreading is a feature provided only by the Java Virtual Machine (JVM)",
+"Multithreading is useful only in single-core processors"
+],
+"answer": "Multithreading allows a program to execute multiple threads simultaneously"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which of the following methods is used to create a new thread in Java?",
+"code": "",
+"option": [
+"newThread()",
+"start()",
+"createThread()",
+"run()"
+],
+"answer": "start()"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "What is the purpose of the sleep() method in Java?",
+"code": "",
+"option": [
+"To pause the execution of the current thread for a specified period of time",
+"To terminate the current thread",
+"To start a new thread",
+"To synchronize the execution of multiple threads"
+],
+"answer": "To pause the execution of the current thread for a specified period of time"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "What is synchronization in Java multithreading?",
+"code": "",
+"option": [
+"Synchronization is the process of creating multiple threads",
+"Synchronization is the process of ensuring that only one thread can access a shared resource at a time",
+"Synchronization is the process of terminating a thread",
+"Synchronization is the process of pausing the execution of a thread"
+],
+"answer": "Synchronization is the process of ensuring that only one thread can access a shared resource at a time"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "What is deadlock in Java multithreading?",
+"code": "",
+"option": [
+"Deadlock is a situation where a thread is terminated abruptly",
+"Deadlock is a situation where multiple threads are waiting indefinitely for each other to release resources",
+"Deadlock is a situation where a thread executes faster than other threads",
+"Deadlock is a situation where multiple threads access a shared resource simultaneously"
+],
+"answer": "Deadlock is a situation where multiple threads are waiting indefinitely for each other to release resources"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which method is used to pause the current thread execution indefinitely in Java?",
+"code": "",
+"option": [
+"pause()",
+"sleep()",
+"wait()",
+"yield()"
+],
+"answer": "wait()"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "What is a race condition in Java multithreading?",
+"code": "",
+"option": [
+"A race condition is a situation where multiple threads are waiting indefinitely for each other to release resources",
+"A race condition is a situation where a thread executes faster than other threads",
+"A race condition is a situation where multiple threads access a shared resource simultaneously",
+"A race condition is a situation where a thread is terminated abruptly"
+],
+"answer": "A race condition is a situation where multiple threads access a shared resource simultaneously"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "What is the purpose of the join() method in Java multithreading?",
+"code": "",
+"option": [
+"To pause the execution of the current thread for a specified period of time",
+"To terminate the current thread",
+"To start a new thread",
+"To wait for another thread to complete its execution"
+],
+"answer": "To wait for another thread to complete its execution"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "What is the purpose of the interrupt() method in Java?",
+"code": "",
+"option": [
+"To pause the execution of the current thread for a specified period of time",
+"To terminate the current thread",
+"To start a new thread",
+"To interrupt the execution of a thread that is blocked or waiting"
+],
+"answer": "To interrupt the execution of a thread that is blocked or waiting"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which of the following is true about daemon threads in Java?",
+"code": "",
+"option": [
+"Daemon threads are created using the Thread class constructor",
+"Daemon threads are always higher priority than user threads",
+"Daemon threads are automatically terminated when all user threads have terminated",
+"Daemon threads cannot be used in Java"
+],
+"answer": "Daemon threads are automatically terminated when all user threads have terminated"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which of the following methods is used to get the current thread in Java?",
+"code": "",
+"option": [
+"Thread.getCurrentThread()",
+"Thread.currentThread()",
+"Thread.getCurrent()",
+"Thread.this()"
+],
+"answer": "Thread.currentThread()"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "What is the purpose of the yield() method in Java?",
+"code": "",
+"option": [
+"To pause the execution of the current thread for a specified period of time",
+"To terminate the current thread",
+"To start a new thread",
+"To give up the current thread's CPU time to another thread"
+],
+"answer": "To give up the current thread's CPU time to another thread"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "What is the purpose of the isAlive() method in Java?",
+"code": "",
+"option": [
+"To check if a thread is sleeping",
+"To check if a thread is alive",
+"To check if a thread is waiting",
+"To check if a thread is paused"
+],
+"answer": "To check if a thread is alive"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "What is the purpose of the wait() method in Java?",
+"code": "",
+"option": [
+"To pause the execution of the current thread for a specified period of time",
+"To terminate the current thread",
+"To start a new thread",
+"To wait for another thread to notify it"
+],
+"answer": "To wait for another thread to notify it"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+
+]
+}
+
+print("multithreading",len(multithreading['questions']))
+
+jdbc={
+    "questions":[
+        {
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "What is the purpose of the wait() method in Java?",
+"code": "",
+"option": [
+"To pause the execution of the current thread for a specified period of time",
+"To terminate the current thread",
+"To start a new thread",
+"To wait for another thread to notify it"
+],
+"answer": "To wait for another thread to notify it"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+
+"question": "Which of the following statements is true about JDBC?",
+"code": "",
+"options": [
+"JDBC is a programming interface to connect Java applications to a database.",
+"JDBC is primarily used for developing GUI applications.",
+"JDBC is only compatible with Oracle databases.",
+"JDBC is a standalone database management system."
+],
+"answer": "JDBC is a programming interface to connect Java applications to a database.",
+
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which package in Java contains the JDBC API classes?",
+"code": "",
+"options": [
+"java.sql",
+"java.db",
+"java.jdbc",
+"java.connection"
+],
+"answer": "java.sql"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "What is the role of DriverManager class in JDBC?",
+"code": "",
+"options": [
+"It is used to manage the drivers for different databases.",
+"It is used to execute SQL queries.",
+"It is used to manage database transactions.",
+"It is used to define database schemas."
+],
+"answer": "It is used to manage the drivers for different databases."
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which interface in Java is used to represent a SQL statement?",
+"code": "",
+"options": [
+"Statement",
+"ResultSet",
+"PreparedStatement",
+"CallableStatement"
+],
+"answer": "Statement",
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "What is a JDBC driver?",
+"code": "",
+"options": [
+"A software component that allows Java applications to interact with a database.",
+"A tool used to visualize database schema.",
+"A database management system.",
+"A programming language used to write SQL queries."
+],
+"answer": "A software component that allows Java applications to interact with a database."
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which method of ResultSet interface is used to move the cursor to the next row?",
+"code": "",
+"options": [
+"next()",
+"moveNext()",
+"moveToNext()",
+"fetchNext()"
+],
+"answer": "next()"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which of the following is used to execute a parameterized SQL query in JDBC?",
+"code": "",
+"options": [
+"PreparedStatement",
+"Statement",
+"CallableStatement",
+"ResultSet"
+],
+"answer": "PreparedStatement"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+
+"question": "Which method of Connection interface is used to create a Statement object?",
+"code": "",
+"options": [
+"createStatement()",
+"newStatement()",
+"makeStatement()",
+"statement()"
+],
+"answer": "createStatement()"
+
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "What is the role of ResultSet interface in JDBC?",
+"code": "",
+"options": [
+"It represents the results of a SQL query.",
+"It is used to establish a connection to the database.",
+"It is used to manage database transactions.",
+"It is used to execute SQL queries."
+],
+"answer": "It represents the results of a SQL query."
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+    "question": "What is the purpose of executeUpdate() method in JDBC?",
+"code": "",
+"options": [
+"To execute SQL queries that return multiple rows.",
+"To execute SQL queries that don't return any rows.",
+"To execute SELECT queries only.",
+"To execute DDL (Data Definition Language) statements like INSERT, UPDATE, DELETE."
+],
+"answer": "To execute DDL (Data Definition Language) statements like INSERT, UPDATE, DELETE."
+
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "What is the role of Connection interface in JDBC?",
+"code": "",
+"options": [
+"It represents the results of a SQL query.",
+"It is used to establish a connection to the database.",
+"It is used to manage database transactions.",
+"It is used to execute SQL queries."
+],
+"answer": "It is used to establish a connection to the database."
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "Which method of ResultSet interface is used to retrieve data from a specific column?",
+"code": "",
+"options": [
+"getInt()",
+"retrieve()",
+"getData()",
+"getColumn()"
+],
+"answer": "getInt()"
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+"question": "In JDBC, what does a SQLException indicate?",
+"code": "",
+"options": [
+"A successful execution of a SQL query.",
+"An error occurred during the execution of a SQL query.",
+"A warning message from the database server.",
+"A connection to the database is established."
+],
+"answer": "An error occurred during the execution of a SQL query."
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+},
+{
+"languageId": 1,
+"topicId": 11,
+"questions": {
+
+},
+"level": "beginner",
+"mark": 1,
+"time": 1
+}
+
+    ]
+}
+
+print("jdbc",len(jdbc["questions"]))

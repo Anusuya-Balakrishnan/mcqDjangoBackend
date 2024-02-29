@@ -289,12 +289,43 @@ def get_topic(request,languageId):
         token=Token.objects.get(key=request.auth.key)
         user=token.user
         serializer = CustomUserSerializer(user)
-        
+        # Filter ResultModel instances based on the user
+        results = ResultModel.objects.filter(userID=user,languageId=languageId)
+        completedTopic=[]
+        topicList=[]
+        # collecting no of topics student completed in one language
+        # filtering result document based on student id and language id
+        for eachResult in results:
+            serializer=ResultSerializer(eachResult)
+            completedTopic.append(serializer.data.get("topicId"))
+        completedTopic.sort()
+ 
         try:
             if(request.method=="GET"):
                 topic = TopicModel.objects.filter(languageId=languageId)
                 serializer = TopicSerializer(topic, many=True)
-                return Response({"topic":serializer.data}) 
+                # collecting id of all topic in one language and then sorted in ascending order
+                for eachData in serializer.data:
+                    topicList.append(json.loads(json.dumps(eachData)).get("id"))
+                topicList.sort()
+                completedTopicSet=set(completedTopic)
+                allTopicSet=set(topicList)
+                yetToCompleteTopicList=list(allTopicSet.difference(completedTopicSet))
+                toProceedTopicId=yetToCompleteTopicList[0]
+                lockTopicList=yetToCompleteTopicList[1:]
+                
+                finalData=[]
+                for eachData in serializer.data:
+                    eachDocument=json.loads(json.dumps(eachData))
+                    if(eachDocument.get("id") in completedTopic):
+                        eachDocument["status"]="completed"
+                    elif (eachDocument.get("id") in lockTopicList):
+                        eachDocument['status']="lock"
+                    elif (eachDocument.get("id")==toProceedTopicId):
+                        eachDocument['status']="proceed"
+                    finalData.append(eachDocument)
+                
+                return Response({"topic":finalData}) 
         except:
             return Response({"Message": "error"})
     except :
