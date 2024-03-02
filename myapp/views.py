@@ -694,9 +694,33 @@ def leaderBoardApi(request):
 def showResult(request):
     try:
         serializer=authorize(request)
-
         if(request.method=="POST"):
-            pass
+            resultData=request.data
+            questionNos=list(resultData.keys())
+            answerList=[]
+            finalList=[]
+            questionId=[]
+            for eachQuestion in questionNos:
+                questionObject=QuestionModel.objects.get(id=eachQuestion)
+                serializer=QuestionSerializer(questionObject)
+                questionId.append(serializer.data["id"])
+                answerList.append(json.loads(json.dumps(serializer.data["questions"])))
+            questionsList=[]
+            for eachAnswer in answerList:
+                ordered_dict = eval(eachAnswer, {'OrderedDict': OrderedDict})
+                myDict={}
+                for key, value in ordered_dict.items():
+                    myDict[key]=value
+                questionsList.append(myDict)
+            for key,value in zip(questionId,questionsList):
+                answerDict=dict(value)
+                answerDict["selectedAnswer"]=resultData[str(key)].get("selectedAnswer")
+                answerDict["isCorrect"]=resultData[str(key)].get("isCorrect")
+                finalList.append({key:answerDict})
+
+
+            
+            return Response({"data":finalList})
 
     except Exception as e:
         return Response({"error":f"error message{e}"})
