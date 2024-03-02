@@ -28,7 +28,7 @@ urlpatterns = [
     path("get_resultData/",views.get_resultData,name="get_resultData"),
     path("leaderBoardApi/",views.leaderBoardApi,name="leaderBoardApi"),
     path('users/<str:name>/', views.custom_user_detail, name='custom_user_detail'),
-
+    path("showResult/",views.showResult,name="showResult"),
 # admin side url
     path("quiz_list/",adminViews.quiz_List,name="add_update_quiz"),
 ]

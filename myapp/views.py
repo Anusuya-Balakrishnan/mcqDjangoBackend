@@ -397,6 +397,14 @@ def add_many_questions(request):
     except Exception as e:
         return Response({"Message": f"An error occurred: {str(e)}"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
+
+def authorize(request):
+    token = Token.objects.get(key=request.auth.key)
+    user = token.user
+    serializer = CustomUserSerializer(user)
+    return serializer
+
+
 @api_view(["GET"])
 def get_questions(request, languageId, topicId):
     try:
@@ -681,3 +689,14 @@ def leaderBoardApi(request):
         return Response({"message":"invalid Request"})
     except:
         return Response({"Message":"invalid"})
+
+@api_view(["POST"])
+def showResult(request):
+    try:
+        serializer=authorize(request)
+
+        if(request.method=="POST"):
+            pass
+
+    except Exception as e:
+        return Response({"error":f"error message{e}"})
