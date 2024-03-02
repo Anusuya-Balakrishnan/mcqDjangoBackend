@@ -695,7 +695,7 @@ def showResult(request):
     try:
         serializer=authorize(request)
         if(request.method=="POST"):
-            resultData=request.data
+            resultData=request.data["answeredQuestions"]
             questionNos=list(resultData.keys())
             answerList=[]
             finalList=[]
@@ -716,7 +716,8 @@ def showResult(request):
                 answerDict=dict(value)
                 answerDict["selectedAnswer"]=resultData[str(key)].get("selectedAnswer")
                 answerDict["isCorrect"]=resultData[str(key)].get("isCorrect")
-                finalList.append({key:answerDict})
+                answerDict["id"]=key
+                finalList.append(answerDict)
 
 
             
