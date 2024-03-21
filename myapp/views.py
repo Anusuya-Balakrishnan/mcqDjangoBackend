@@ -13,6 +13,7 @@ from django.shortcuts import get_object_or_404
 from rest_framework.authentication import TokenAuthentication
 import ast
 from collections import OrderedDict
+import math
 # from .emailAuthenticate import EmailBackend
 from django.contrib.auth import authenticate
 
@@ -723,5 +724,54 @@ def showResult(request):
             
             return Response({"data":finalList})
 
+    except Exception as e:
+        return Response({"error":f"error message{e}"})
+
+
+
+@api_view(["GET"])
+def getDashboard(request):
+    try:
+        token=Token.objects.get(key=request.auth.key)
+        user=token.user
+        serializer = CustomUserSerializer(user)
+        
+        if(request.method=="GET"):
+            results = ResultModel.objects.filter(userID=user)
+            completedTopic=[]
+        # collecting no of topics student completed in one language
+        # filtering result document based on student id and language id
+            topic = TopicModel.objects.filter()
+            serializer = TopicSerializer(topic, many=True)
+            totalTopic=len(serializer.data)
+            for eachResult in results:
+                serializer=ResultSerializer(eachResult)
+                completedTopic.append(serializer.data.get("topicId"))
+            
+
+            noOfTopicCompleted=len(completedTopic)
+            noOfPendingTopic=totalTopic-noOfTopicCompleted
+            completedPercentage=math.floor((noOfTopicCompleted/totalTopic)*100)
+            # pendingPercentage=math.floor(((totalTopic-noOfTopicCompleted)/totalTopic)*100)
+            
+
+            # collecting no of Language
+            language=LanguageModel.objects.filter()
+            resultData=[]
+            for eachLanguage in language:
+                eachSerializerObject=LanguageModelSerializer(eachLanguage)
+                languageId=eachSerializerObject.data.get("id")
+                topic = TopicModel.objects.filter(languageId=languageId)
+                serializer = TopicSerializer(topic, many=True)
+                totalTopic=len(serializer.data)
+                resultObjects=ResultModel.objects.filter(userID=user,languageId=languageId)
+                serializer=ResultSerializer(resultObjects,many=True)
+                resultTopicCompleted=len(serializer.data)
+                if(totalTopic>0 and resultTopicCompleted>0 ):
+                    completedPercent=math.floor((resultTopicCompleted/totalTopic)*100)
+                    resultData.append({"languageName":eachSerializerObject.data.get("languageName")
+                                       ,"totalTopic":totalTopic,"completedTopic":resultTopicCompleted,"completedPercentage":completedPercent})
+            return Response({"noOfTopicCompleted":noOfTopicCompleted,"noOfPendingTopic":noOfPendingTopic,
+                             "completedPercentage":completedPercentage,"resultData":resultData})
     except Exception as e:
         return Response({"error":f"error message{e}"})

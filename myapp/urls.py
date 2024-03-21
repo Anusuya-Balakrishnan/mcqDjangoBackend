@@ -29,6 +29,7 @@ urlpatterns = [
     path("leaderBoardApi/",views.leaderBoardApi,name="leaderBoardApi"),
     path('users/<str:name>/', views.custom_user_detail, name='custom_user_detail'),
     path("showResult/",views.showResult,name="showResult"),
+    path("getDashboard/",views.getDashboard,name="getDashboard"),
 # admin side url
     path("quiz_list/",adminViews.quiz_List,name="add_update_quiz"),
 ]
