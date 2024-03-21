@@ -691,37 +691,42 @@ def leaderBoardApi(request):
     except:
         return Response({"Message":"invalid"})
 
+def getAnswer(resultData):
+    questionNos=list(resultData.keys())
+    answerList=[]
+    finalList=[]
+    questionId=[]
+    questionsList=[]
+    for eachQuestion in questionNos:
+        questionObject=QuestionModel.objects.get(id=eachQuestion)
+        serializer=QuestionSerializer(questionObject)
+        questionId.append(serializer.data["id"])
+        answerList.append(json.loads(json.dumps(serializer.data["questions"])))
+            
+    for eachAnswer in answerList:
+        ordered_dict = eval(eachAnswer, {'OrderedDict': OrderedDict})
+        myDict={}
+        for key, value in ordered_dict.items():
+            myDict[key]=value
+        questionsList.append(myDict)
+    for key,value in zip(questionId,questionsList):
+        answerDict=dict(value)
+        answerDict["selectedAnswer"]=resultData[str(key)].get("selectedAnswer")
+        answerDict["isCorrect"]=resultData[str(key)].get("isCorrect")
+        answerDict["id"]=key
+        finalList.append(answerDict)
+    return finalList
+
+
+
 @api_view(["POST"])
 def showResult(request):
     try:
         serializer=authorize(request)
         if(request.method=="POST"):
             resultData=request.data["answeredQuestions"]
-            questionNos=list(resultData.keys())
-            answerList=[]
-            finalList=[]
-            questionId=[]
-            for eachQuestion in questionNos:
-                questionObject=QuestionModel.objects.get(id=eachQuestion)
-                serializer=QuestionSerializer(questionObject)
-                questionId.append(serializer.data["id"])
-                answerList.append(json.loads(json.dumps(serializer.data["questions"])))
-            questionsList=[]
-            for eachAnswer in answerList:
-                ordered_dict = eval(eachAnswer, {'OrderedDict': OrderedDict})
-                myDict={}
-                for key, value in ordered_dict.items():
-                    myDict[key]=value
-                questionsList.append(myDict)
-            for key,value in zip(questionId,questionsList):
-                answerDict=dict(value)
-                answerDict["selectedAnswer"]=resultData[str(key)].get("selectedAnswer")
-                answerDict["isCorrect"]=resultData[str(key)].get("isCorrect")
-                answerDict["id"]=key
-                finalList.append(answerDict)
+            finalList=getAnswer(resultData)
 
-
-            
             return Response({"data":finalList})
 
     except Exception as e:
@@ -773,5 +778,61 @@ def getDashboard(request):
                                        ,"totalTopic":totalTopic,"completedTopic":resultTopicCompleted,"completedPercentage":completedPercent})
             return Response({"noOfTopicCompleted":noOfTopicCompleted,"noOfPendingTopic":noOfPendingTopic,
                              "completedPercentage":completedPercentage,"resultData":resultData})
+    except Exception as e:
+        return Response({"error":f"error message{e}"})
+
+
+
+@api_view(["GET"])
+def getTopicCompleted(request,languageId):
+    try:
+        # converting token into user object else it return error
+        token=Token.objects.get(key=request.auth.key)
+        user=token.user
+        serializer = CustomUserSerializer(user)
+
+        if(request.method=="GET"):
+            # collecting topic object based on language id
+            topic = TopicModel.objects.filter(languageId=languageId)
+
+            # get language name by using language id
+            langObject=LanguageModel.objects.get(id=languageId)
+            languageName=LanguageModelSerializer(langObject).data.get("languageName")
+
+            # converting topic object into json format using serializer
+            topicSerializer = TopicSerializer(topic, many=True)
+            
+            # total no of topics
+            totalTopic=len(topicSerializer.data)
+
+            # filtering result collection based on user id and language id
+            results = ResultModel.objects.filter(userID=user,languageId=languageId)
+            resultSerializer=ResultSerializer(results,many=True)
+            
+            # total no of completed topic
+            completedTopicCount=len(resultSerializer.data)
+
+
+            topicIdList=[]
+            for eachResult in results:
+                # get result object id
+                resultId=ResultSerializer(eachResult).data.get("id")
+                
+                # get topic object from result object
+                topicId=ResultSerializer(eachResult).data.get("topicId")
+                # get topic object
+                topic = TopicModel.objects.get(id=topicId)
+                topicObject=TopicSerializer(topic)
+                # get topic name using topicId 
+                topicName=topicObject.data.get("topicName")
+    
+                topicIdList.append({"topicName":topicName,"resultId":resultId})
+
+            # final result value
+            resultData={"Totaltopic":totalTopic,
+                        "completedTopicCount":completedTopicCount,"topicIdList":topicIdList,
+                        "languageName":languageName}
+            return Response(resultData)
+
     except Exception as e:
         return Response({"error":f"error message{e}"})

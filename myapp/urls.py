@@ -30,6 +30,7 @@ urlpatterns = [
     path('users/<str:name>/', views.custom_user_detail, name='custom_user_detail'),
     path("showResult/",views.showResult,name="showResult"),
     path("dashboard/",views.getDashboard,name="getDashboard"),
+    path("resultTopicList/<int:languageId>/",views.getTopicCompleted,name="resultTopicList"),
 # admin side url
     path("quiz_list/",adminViews.quiz_List,name="add_update_quiz"),
 ]
