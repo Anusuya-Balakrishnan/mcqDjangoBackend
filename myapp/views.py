@@ -774,7 +774,8 @@ def getDashboard(request):
                 resultTopicCompleted=len(serializer.data)
                 if(totalTopic>0 and resultTopicCompleted>0):
                     completedPercent=math.floor((resultTopicCompleted/totalTopic)*100)
-                    resultData.append({"languageName":eachSerializerObject.data.get("languageName")
+                    resultData.append({"languageName":eachSerializerObject.data.get("languageName"),
+                                       "languageId":languageId
                                        ,"totalTopic":totalTopic,"completedTopic":resultTopicCompleted,"completedPercentage":completedPercent})
             return Response({"noOfTopicCompleted":noOfTopicCompleted,"noOfPendingTopic":noOfPendingTopic,
                              "completedPercentage":completedPercentage,"resultData":resultData})
