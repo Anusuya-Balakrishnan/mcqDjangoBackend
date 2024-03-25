@@ -31,6 +31,7 @@ urlpatterns = [
     path("showResult/",views.showResult,name="showResult"),
     path("dashboard/",views.getDashboard,name="getDashboard"),
     path("resultTopicList/<int:languageId>/",views.getTopicCompleted,name="resultTopicList"),
+    path("answerValueInTopicPage/<int:resultId>/",views.answerValueInTopicPage,name="answerValueInTopicPage"),
 # admin side url
     path("quiz_list/",adminViews.quiz_List,name="add_update_quiz"),
 ]

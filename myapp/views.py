@@ -14,6 +14,7 @@ from rest_framework.authentication import TokenAuthentication
 import ast
 from collections import OrderedDict
 import math
+
 # from .emailAuthenticate import EmailBackend
 from django.contrib.auth import authenticate
 
@@ -835,5 +836,25 @@ def getTopicCompleted(request,languageId):
                         "languageName":languageName}
             return Response(resultData)
 
+    except Exception as e:
+        return Response({"error":f"error message{e}"})
+
+
+
+
+@api_view(["GET"])
+def answerValueInTopicPage(request,resultId):
+    try:
+        authorize(request)
+        if request.method=="GET":
+            resultObject=ResultModel.objects.get(id=resultId)
+            resultSerializer=ResultSerializer(resultObject).data
+            result={}
+            for each in resultSerializer:
+                if(each=="answeredQuestions"):
+                    dictValue = eval(resultSerializer[each])
+                    result = {key: dict(value) for key, value in dictValue.items()}
+            data=getAnswer(result)
+            return Response(data)
     except Exception as e:
         return Response({"error":f"error message{e}"})
