@@ -524,7 +524,7 @@ def add_resultData(request):
                     'result':result
                     
                     }
-                if( not return_value):  
+                if( not bool(return_value)):  
                     addResultDatatoDatabase(result_data)
                     resultDict=get_resultValue(resultData=resultQuestionList)
                     resultDict["topicName"]=TopicModel.objects.get(id=int(topicId)).topicName
