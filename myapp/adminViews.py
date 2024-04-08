@@ -36,4 +36,24 @@ def quiz_List(request):
                 serializer.save()
                 return Response({"data": "mcq added successfully"},status=status.HTTP_201_CREATED)
             return Response({"Error": "invalid"})
-        
+    
+
+@api_view(["DELETE","PATCH"])
+def quizName_update_delete(request):
+    if request.method == "PATCH":  # Update functionality
+        try:
+            mcq_instance = McqListDatatModel.objects.get(id=request.data.get('mcqId'))
+            serializer = McqListDataSerializer(mcq_instance,data={'mcqName': request.data.get('newMcqName')}, partial=True)
+            if serializer.is_valid(raise_exception=True):
+                serializer.save()
+            return Response({"data": "mcq updated successfully"}, status=status.HTTP_200_OK)
+        except McqListDatatModel.DoesNotExist:
+            return Response({"data": "MCQ not found"}, status=status.HTTP_404_NOT_FOUND)
+
+    elif request.method == "DELETE":  # Delete functionality
+        try:
+            mcq_instance = McqListDatatModel.objects.get(id=request.data.get('mcqId'))
+            mcq_instance.delete()
+            return Response({"data": "success"}, status=status.HTTP_204_NO_CONTENT)
+        except McqListDatatModel.DoesNotExist:
+            return Response({"data": "failure"}, status=status.HTTP_404_NOT_FOUND)

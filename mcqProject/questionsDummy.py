@@ -3,7 +3,7 @@ basicJava={"questions":
  [
 {
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"Who invented Java Programming?",
 "code":"",
@@ -16,7 +16,7 @@ basicJava={"questions":
 },
 {
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"What is the purpose of Java?",
 "code":"",
@@ -29,7 +29,7 @@ basicJava={"questions":
 },
 {
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"What is the main characteristic of Java that makes it suitable for developing cross-platform applications?",
 "code":"",
@@ -42,7 +42,7 @@ basicJava={"questions":
 },
 {
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"What are the two main components of Java?",
 "code":"",
@@ -55,7 +55,7 @@ basicJava={"questions":
 },
 {
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"What is the Java Development Kit (JDK)?",
 "code":"",
@@ -68,7 +68,7 @@ basicJava={"questions":
 },
 {
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"What is the Java Virtual Machine (JVM)?",
 "code":"",
@@ -81,7 +81,7 @@ basicJava={"questions":
 },
 {
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"Which of the following is not a feature of Java?",
 "code":"",
@@ -94,7 +94,7 @@ basicJava={"questions":
 },
 {
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"What is bytecode in Java?",
 "code":"",
@@ -107,7 +107,7 @@ basicJava={"questions":
 },
 {
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"What is the entry point for a Java program?",
 "code":"",
@@ -120,7 +120,7 @@ basicJava={"questions":
 },
 {
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"Which tool is used to compile Java source code?",
 "code":"",
@@ -133,7 +133,7 @@ basicJava={"questions":
 },
 {
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"What is the syntax for a single-line comment in Java?",
 "code":"",
@@ -146,7 +146,7 @@ basicJava={"questions":
 },
 {
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"What is the main advantage of using an IDE for Java development?",
 "code":"",
@@ -159,7 +159,7 @@ basicJava={"questions":
 }
 ,{
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"Which statement best describes the Java programming language?",
 "code":"",
@@ -172,7 +172,7 @@ basicJava={"questions":
 },
 {
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"Which part of the JDK contains tools such as javac and java?",
 "code":"",
@@ -184,7 +184,7 @@ basicJava={"questions":
 "time":1
 },{
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"Which of the following is true about Java comments?",
 "code":"",
@@ -403,7 +403,7 @@ javaBeginner1={"questions":[
 
 {
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"What is the output of the following code snippet?",
 "code":"String str = \"Hello\";\nSystem.out.println(str.substring(2, 4));",
@@ -417,7 +417,7 @@ javaBeginner1={"questions":[
 ,
 {
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"Which of the following is not a valid access specifier in Java?",
 "code":"",
@@ -431,7 +431,7 @@ javaBeginner1={"questions":[
 ,
 {
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"What does the \"break\" statement do in Java?",
 "code":"",
@@ -445,7 +445,7 @@ javaBeginner1={"questions":[
 ,
 {
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"Which of the following is not a valid loop in Java?",
 "code":"",
@@ -459,7 +459,7 @@ javaBeginner1={"questions":[
 ,
 {
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"What is the output of the following code snippet?",
 "code":"int i = 10;\nSystem.out.println(i++);",
@@ -473,7 +473,7 @@ javaBeginner1={"questions":[
 ,
 {
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"What is the output of the following code snippet?",
 "code":"System.out.println(Math.min(Double.MIN_VALUE, 0.0));",
@@ -487,7 +487,7 @@ javaBeginner1={"questions":[
 ,
 {
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"What is the output of the following code snippet?",
 "code":"System.out.println(10 + 20 + \"Hello\");",
@@ -501,7 +501,7 @@ javaBeginner1={"questions":[
 ,
 {
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"Which of the following is not a Java keyword?",
 "code":"",
@@ -515,7 +515,7 @@ javaBeginner1={"questions":[
 ,
 {
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"What is the output of the following code snippet?",
 "code":"System.out.println(\"5\" + 3 + 2);",
@@ -529,7 +529,7 @@ javaBeginner1={"questions":[
 ,
 {
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"Which of the following is used to create an object in Java?",
 "code":"",
@@ -543,7 +543,7 @@ javaBeginner1={"questions":[
 ,
 {
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"What is the output of the following code snippet?",
 "code":"System.out.println(5 == 5.0);",
@@ -557,7 +557,7 @@ javaBeginner1={"questions":[
 ,
 {
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"What is the output of the following code snippet?",
 "code":"System.out.println(10 % 3);",
@@ -571,7 +571,7 @@ javaBeginner1={"questions":[
 ,
 {
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"Which of the following statements is true about interfaces in Java?",
 "code":"",
@@ -585,7 +585,7 @@ javaBeginner1={"questions":[
 ,
 {
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"What is the output of the following code snippet?",
 "code":"System.out.println(\"abc\".toUpperCase());",
@@ -599,7 +599,7 @@ javaBeginner1={"questions":[
 ,
 {
 "languageId":1,
-"topicId":1,
+"topicId":21,
 "questions":{
 "question":"What is the correct way to declare a string variable in Java?",
 "code":"",
@@ -629,7 +629,8 @@ ControlFlow={
 "level":"beginner",
 "mark":1,
 "time":1
-},{
+},
+{
 "languageId": 1,
 "topicId": 3,
 "questions": {
@@ -1839,7 +1840,7 @@ class_object={
     "questions":[
         {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "Which keyword is used to create an object of a class in Java?",
 "code": "",
@@ -1858,7 +1859,7 @@ class_object={
 ,
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "Which of the following is true about classes in Java?",
 "code": "",
@@ -1877,7 +1878,7 @@ class_object={
 ,
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "Which of the following statements is true about objects in Java?",
 "code": "",
@@ -1896,7 +1897,7 @@ class_object={
 ,
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "What is the purpose of the 'this' keyword in Java?",
 "code": "",
@@ -1915,7 +1916,7 @@ class_object={
 ,
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "Which of the following is true about constructors in Java?",
 "code": "",
@@ -1934,7 +1935,7 @@ class_object={
 ,
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "Which of the following statements is true about static methods in Java?",
 "code": "",
@@ -1953,7 +1954,7 @@ class_object={
 ,
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "What is the purpose of the 'static' keyword in Java?",
 "code": "",
@@ -1972,7 +1973,7 @@ class_object={
 ,
 {
   "languageId": 1,
-  "topicId": 7,
+  "topicId": 20,
   "questions": {
     "question": "What is the output of the following code snippet?",
     "code": "\n\npublic class MyClass {\n public static void main(String[] args) {\n MyClass obj = new MyClass();\n System.out.println(obj);\n }\n}",
@@ -1992,7 +1993,7 @@ class_object={
 ,
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "Which of the following is true about instance variables in Java?",
 "code": "",
@@ -2011,7 +2012,7 @@ class_object={
 ,
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "What is the output of the following code snippet?",
 "code": "\n\npublic class MyClass {\n int x;\n public static void main(String[] args) {\n MyClass obj = new MyClass();\n System.out.println(obj.x);\n }\n}",
@@ -2030,7 +2031,7 @@ class_object={
 ,
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "Which of the following is true about instance methods in Java?",
 "code": "",
@@ -2049,7 +2050,7 @@ class_object={
 ,
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "What is the output of the following code snippet?",
 "code": "\n\npublic class MyClass {\n public void display() {\n System.out.println(\"Hello, World!\");\n }\n public static void main(String[] args) {\n MyClass obj = new MyClass();\n obj.display();\n }\n}",
@@ -2073,7 +2074,7 @@ class_object={
 
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "What is the output of the following code snippet?\n\npublic class MyClass {\n public void display() {\n System.out.println(\"Hello, World!\");\n }\n public static void main(String[] args) {\n MyClass obj = null;\n obj.display();\n }\n}",
 "code": "",
@@ -2092,7 +2093,7 @@ class_object={
 ,
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "Which of the following is true about objects in Java?",
 "code": "",
@@ -2110,7 +2111,7 @@ class_object={
 },
 {
   "languageId": 1,
-  "topicId": 7,
+  "topicId": 20,
   "questions": {
     "question": "What is the difference between a class and an object in Java?",
     "code": "",
@@ -2133,7 +2134,7 @@ print("class",len(class_object["questions"]))
 inheritance={
     "questions":[{
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "What is inheritance in Java?",
 "code": "",
@@ -2151,7 +2152,7 @@ inheritance={
 },
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "Which keyword is used to implement inheritance in Java?",
 "code": "",
@@ -2169,7 +2170,7 @@ inheritance={
 },
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "Which of the following is true about inheritance in Java?",
 "code": "",
@@ -2188,7 +2189,7 @@ inheritance={
 
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "Which of the following is a disadvantage of inheritance?",
 "code": "",
@@ -2207,7 +2208,7 @@ inheritance={
 
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "Which of the following statements is true about super keyword in Java?",
 "code": "",
@@ -2225,7 +2226,7 @@ inheritance={
 },
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "Which of the following is true about constructors in inheritance?",
 "code": "",
@@ -2243,7 +2244,7 @@ inheritance={
 },
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "What is hierarchical inheritance in Java?",
 "code": "",
@@ -2261,7 +2262,7 @@ inheritance={
 },
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "What is multilevel inheritance in Java?",
 "code": "",
@@ -2279,7 +2280,7 @@ inheritance={
 }
 ,{
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "What is the primary purpose of inheritance in object-oriented programming?",
 "code": "",
@@ -2297,7 +2298,7 @@ inheritance={
 }
 ,{
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "What is the superclass of all classes in Java?",
 "code": "",
@@ -2315,7 +2316,7 @@ inheritance={
 },
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "What is hybrid inheritance in Java?",
 "code": "",
@@ -2333,7 +2334,7 @@ inheritance={
 },
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "Which of the following statements is true about multiple inheritance in Java?",
 "code": "",
@@ -2351,7 +2352,7 @@ inheritance={
 },
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "What is the syntax to inherit a class named 'Parent' in Java?",
 "code": "",
@@ -2369,7 +2370,7 @@ inheritance={
 },
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "Which keyword is used to access superclass members in Java?",
 "code": "",
@@ -2387,7 +2388,7 @@ inheritance={
 },
 {
   "languageId": 1,
-  "topicId": 7,
+  "topicId": 20,
   "questions": {
     "question": "In Java, can constructors be inherited?",
     "code": "",
@@ -2413,7 +2414,7 @@ constructor={
     "questions":[
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "What is the purpose of a constructor in Java?",
 "code": "",
@@ -2432,7 +2433,7 @@ constructor={
 
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "Can a constructor have a return type in Java?",
 "code": "",
@@ -2449,7 +2450,7 @@ constructor={
 
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "What is the default access modifier of a constructor if not specified?",
 "code": "",
@@ -2467,7 +2468,7 @@ constructor={
 },
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "What is the purpose of a default constructor in Java?",
 "code": "",
@@ -2485,7 +2486,7 @@ constructor={
 },
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "Which of the following statements about constructors is true?",
 "code": "",
@@ -2503,7 +2504,7 @@ constructor={
 },
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "What is the purpose of parameterized constructors in Java?",
 "code": "",
@@ -2521,7 +2522,7 @@ constructor={
 },
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "Which of the following statements about constructors is false?",
 "code": "",
@@ -2539,7 +2540,7 @@ constructor={
 },
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "What is the role of the 'super' keyword in a constructor?",
 "code": "",
@@ -2557,7 +2558,7 @@ constructor={
 },
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "What happens if no constructor is defined in a Java class?",
 "code": "",
@@ -2576,7 +2577,7 @@ constructor={
 ,
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "What is the difference between constructors and methods in Java?",
 "code": "",
@@ -2595,7 +2596,7 @@ constructor={
 ,
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "What is the significance of the 'this' keyword in a constructor?",
 "code": "",
@@ -2613,7 +2614,7 @@ constructor={
 },
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "Which of the following statements about constructor chaining is true?",
 "code": "",
@@ -2631,7 +2632,7 @@ constructor={
 },
 {
   "languageId": 1,
-  "topicId": 7,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following statements about constructors in Java is true?",
     "code": "",
@@ -2649,7 +2650,7 @@ constructor={
 },
 {
   "languageId": 1,
-  "topicId": 7,
+  "topicId": 20,
   "questions": {
     "question": "Which keyword is used to create a constructor in Java?",
     "code": "",
@@ -2668,7 +2669,7 @@ constructor={
 ,
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "What is the purpose of constructor overloading in Java?",
 "code": "",
@@ -2692,7 +2693,7 @@ polymorphism={
     "questions":[
         {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "What is Polymorphism in Java?",
 "code": "",
@@ -2710,7 +2711,7 @@ polymorphism={
 },
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "Which type of polymorphism is achieved by method overriding in Java?",
 "code": "",
@@ -2728,7 +2729,7 @@ polymorphism={
 },
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "Which keyword is used to denote method overriding in Java?",
 "code": "",
@@ -2746,7 +2747,7 @@ polymorphism={
 },
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "What is method overloading?",
 "code": "",
@@ -2764,7 +2765,7 @@ polymorphism={
 },
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "Which of the following is an advantage of polymorphism in Java?",
 "code": "",
@@ -2782,7 +2783,7 @@ polymorphism={
 },
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "What is the use of the 'instanceof' operator in Java?",
 "code": "",
@@ -2800,7 +2801,7 @@ polymorphism={
 },
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "What is the main advantage of method overriding?",
 "code": "",
@@ -2818,7 +2819,7 @@ polymorphism={
 },
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "What is the purpose of method overriding in Java?",
 "code": "",
@@ -2836,7 +2837,7 @@ polymorphism={
 },
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "What is the output of the following code snippet?",
 "code": "\n\npublic class MyClass {\n public static void main(String[] args) {\n Parent obj = new Child();\n obj.display();\n }\n}\nclass Parent {\n public void display() {\n System.out.println(\"Parent's display()\");\n }\n}\nclass Child extends Parent {\n public void display() {\n System.out.println(\"Child's display()\");\n }\n}",
@@ -2854,7 +2855,7 @@ polymorphism={
 },
 {
 "languageId": 1,
-"topicId": 7,
+"topicId": 20,
 "questions": {
 "question": "Which of the following statements is true about polymorphism in Java?",
 "code": "",
@@ -2872,7 +2873,7 @@ polymorphism={
 },
 {
   "languageId": 1,
-  "topicId": 7,
+  "topicId": 20,
   "questions": {
     "question": "What happens if a method is declared as final?",
     "code": "",
@@ -2890,7 +2891,7 @@ polymorphism={
 }
 ,{
   "languageId": 1,
-  "topicId": 7,
+  "topicId": 20,
   "questions": {
     "question": "What is the main difference between method overriding and method overloading in Java?",
     "code": "",
@@ -2908,7 +2909,7 @@ polymorphism={
 }
 ,{
   "languageId": 1,
-  "topicId": 7,
+  "topicId": 20,
   "questions": {
     "question": "Can constructors be overridden in Java?",
     "code": "",
@@ -2926,7 +2927,7 @@ polymorphism={
 }
 ,{
   "languageId": 1,
-  "topicId": 7,
+  "topicId": 20,
   "questions": {
     "question": "What is method hiding in Java?",
     "code": "",
@@ -2945,7 +2946,7 @@ polymorphism={
 ,
 {
   "languageId": 1,
-  "topicId": 7,
+  "topicId": 20,
   "questions": {
     "question": "What is covariant return type in Java?",
     "code": "",
@@ -2970,7 +2971,7 @@ encapsulation={
     "questions":[
 {
   "languageId": 1,
-  "topicId": 7,
+  "topicId": 20,
   "questions": {
     "question": "What is encapsulation in Java?",
     "code": "",
@@ -2988,7 +2989,7 @@ encapsulation={
 },
 {
   "languageId": 1,
-  "topicId": 7,
+  "topicId": 20,
   "questions": {
     "question": "Which access modifiers are typically used to implement encapsulation in Java?",
     "code": "",
@@ -3006,7 +3007,7 @@ encapsulation={
 },
 {
   "languageId": 1,
-  "topicId": 7,
+  "topicId": 20,
   "questions": {
     "question": "What is the primary purpose of encapsulation?",
     "code": "",
@@ -3025,7 +3026,7 @@ encapsulation={
 ,
 {
   "languageId": 1,
-  "topicId": 7,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following Java features is closely associated with encapsulation?",
     "code": "",
@@ -3044,7 +3045,7 @@ encapsulation={
 ,
 {
   "languageId": 1,
-  "topicId": 7,
+  "topicId": 20,
   "questions": {
     "question": "Which statement is true about encapsulation?",
     "code": "",
@@ -3063,7 +3064,7 @@ encapsulation={
 ,
 {
   "languageId": 1,
-  "topicId": 7,
+  "topicId": 20,
   "questions": {
     "question": "Which statement best describes the benefits of encapsulation?",
     "code": "",
@@ -3082,7 +3083,7 @@ encapsulation={
 ,
 {
   "languageId": 1,
-  "topicId": 7,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following is an example of encapsulation?",
     "code": "",
@@ -3100,7 +3101,7 @@ encapsulation={
 }
 ,{
   "languageId": 1,
-  "topicId": 7,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following is an example of encapsulation?",
     "code": "",
@@ -3118,7 +3119,7 @@ encapsulation={
 },
 {
   "languageId": 1,
-  "topicId": 7,
+  "topicId": 20,
   "questions": {
     "question": "In Java, which access modifier should be used for methods that encapsulate data?",
     "code": "",
@@ -3136,7 +3137,7 @@ encapsulation={
 }
 ,{
   "languageId": 1,
-  "topicId": 7,
+  "topicId": 20,
   "questions": {
     "question": "What is the main purpose of encapsulating data in Java?",
     "code": "",
@@ -3154,7 +3155,7 @@ encapsulation={
 }
 ,{
   "languageId": 1,
-  "topicId": 7,
+  "topicId": 20,
   "questions": {
     "question": "Which statement best describes the concept of data hiding in encapsulation?",
     "code": "",
@@ -3172,7 +3173,7 @@ encapsulation={
 },
 {
   "languageId": 1,
-  "topicId": 7,
+  "topicId": 20,
   "questions": {
     "question": "Which statement best describes the role of access modifiers in encapsulation?",
     "code": "",
@@ -3190,7 +3191,7 @@ encapsulation={
 }
 ,{
   "languageId": 1,
-  "topicId": 7,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following is not a benefit of encapsulation?",
     "code": "",
@@ -3208,7 +3209,7 @@ encapsulation={
 }
 ,{
   "languageId": 1,
-  "topicId": 7,
+  "topicId": 20,
   "questions": {
     "question": "What is the main goal of encapsulation in Java?",
     "code": "",
@@ -3227,7 +3228,7 @@ encapsulation={
 
 ,{
   "languageId": 1,
-  "topicId": 7,
+  "topicId": 20,
   "questions": {
     "question": "Which Java feature is closely related to encapsulation?",
     "code": "",
@@ -3250,7 +3251,7 @@ print("encapsulation",len(encapsulation['questions']))
 abstraction={
     "questions":[{
   "languageId": 1,
-  "topicId": 8,
+  "topicId": 20,
   "questions": {
     "question": "What is abstraction in Java?",
     "code": "",
@@ -3269,7 +3270,7 @@ abstraction={
 ,
 {
   "languageId": 1,
-  "topicId": 8,
+  "topicId": 20,
   "questions": {
     "question": "Which keyword is used to declare an interface in Java?",
     "code": "",
@@ -3288,7 +3289,7 @@ abstraction={
 ,
 {
   "languageId": 1,
-  "topicId": 8,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following is not a valid access specifier for interface members in Java?",
     "code": "",
@@ -3307,7 +3308,7 @@ abstraction={
 ,
 {
   "languageId": 1,
-  "topicId": 8,
+  "topicId": 20,
   "questions": {
     "question": "What is the purpose of an abstract class in Java?",
     "code": "",
@@ -3325,7 +3326,7 @@ abstraction={
 },
 {
   "languageId": 1,
-  "topicId": 8,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following best describes an interface in Java?",
     "code": "",
@@ -3343,7 +3344,7 @@ abstraction={
 },
 {
   "languageId": 1,
-  "topicId": 8,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following is true about abstract methods in Java?",
     "code": "",
@@ -3361,7 +3362,7 @@ abstraction={
 },
 {
   "languageId": 1,
-  "topicId": 8,
+  "topicId": 20,
   "questions": {
     "question": "What is the main difference between an abstract class and an interface in Java?",
     "code": "",
@@ -3379,7 +3380,7 @@ abstraction={
 },
 {
   "languageId": 1,
-  "topicId": 8,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following is not a valid modifier for interface methods in Java?",
     "code": "",
@@ -3398,7 +3399,7 @@ abstraction={
 ,
 {
   "languageId": 1,
-  "topicId": 8,
+  "topicId": 20,
   "questions": {
     "question": "What is the purpose of declaring a method as abstract in an abstract class?",
     "code": "",
@@ -3416,7 +3417,7 @@ abstraction={
 },
 {
   "languageId": 1,
-  "topicId": 8,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following statements about interfaces in Java is true?",
     "code": "",
@@ -3434,7 +3435,7 @@ abstraction={
 },
 {
   "languageId": 1,
-  "topicId": 8,
+  "topicId": 20,
   "questions": {
     "question": "What is the significance of the 'default' keyword when used in interface methods?",
     "code": "",
@@ -3452,7 +3453,7 @@ abstraction={
 },
 {
   "languageId": 1,
-  "topicId": 8,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following is true about interfaces in Java?",
     "code": "",
@@ -3470,7 +3471,7 @@ abstraction={
 },
 {
   "languageId": 1,
-  "topicId": 8,
+  "topicId": 20,
   "questions": {
     "question": "In Java, can an interface extend a class?",
     "code": "",
@@ -3488,7 +3489,7 @@ abstraction={
 },
 {
   "languageId": 1,
-  "topicId": 8,
+  "topicId": 20,
   "questions": {
     "question": "Which keyword is used to declare a method as abstract in an interface?",
     "code": "",
@@ -3507,7 +3508,7 @@ abstraction={
 
 {
   "languageId": 1,
-  "topicId": 8,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following can an interface extend in Java?",
     "code": "",
@@ -3532,7 +3533,7 @@ print("abstraction",len(abstraction['questions']))
 string={
     "questions":[{
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following is the correct way to declare a String variable in Java?",
     "code": "",
@@ -3550,7 +3551,7 @@ string={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "What does the length() method of the String class in Java return?",
     "code": "",
@@ -3568,7 +3569,7 @@ string={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to concatenate two strings in Java?",
     "code": "",
@@ -3586,7 +3587,7 @@ string={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to compare two strings for equality in Java?",
     "code": "",
@@ -3604,7 +3605,7 @@ string={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to convert all characters in a String to lowercase in Java?",
     "code": "",
@@ -3622,7 +3623,7 @@ string={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to find the index of a specific character or substring within a string in Java?",
     "code": "",
@@ -3640,7 +3641,7 @@ string={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to extract a substring from a string in Java?",
     "code": "",
@@ -3658,7 +3659,7 @@ string={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to replace characters in a string in Java?",
     "code": "",
@@ -3676,7 +3677,7 @@ string={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to trim leading and trailing whitespace from a string in Java?",
     "code": "",
@@ -3694,7 +3695,7 @@ string={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to split a string into an array of substrings based on a delimiter in Java?",
     "code": "",
@@ -3712,7 +3713,7 @@ string={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "What does the charAt() method of the String class in Java return?",
     "code": "",
@@ -3730,7 +3731,7 @@ string={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to convert primitive data types to strings in Java?",
     "code": "",
@@ -3748,7 +3749,7 @@ string={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to compare two strings ignoring their case in Java?",
     "code": "",
@@ -3766,7 +3767,7 @@ string={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "What is the result of the expression \"hello\".equals(\"HELLO\") in Java?",
     "code": "",
@@ -3784,7 +3785,7 @@ string={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "What is the result of the expression \"hello\".compareTo(\"HELLO\") in Java?",
     "code": "",
@@ -3802,7 +3803,7 @@ string={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "What is the result of the expression \"abc\" + 1 + 2 in Java?",
     "code": "",
@@ -3821,7 +3822,7 @@ string={
 ,
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "What is the result of the expression 1 + 2 + \"abc\" in Java?",
     "code": "",
@@ -3839,7 +3840,7 @@ string={
 }
 ,{
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "What is the result of the expression \"abcde\".substring(1, 3) in Java?",
     "code": "",
@@ -3857,7 +3858,7 @@ string={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "What is the result of the expression \"java\".indexOf('a') in Java?",
     "code": "",
@@ -3875,7 +3876,7 @@ string={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "What is the result of the expression \"java\".replace('a', 'o') in Java?",
     "code": "",
@@ -3899,7 +3900,7 @@ lists={
     "questions":[
         {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following statements is true about ArrayList in Java?",
     "code": "",
@@ -3917,7 +3918,7 @@ lists={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to add an element to the end of an ArrayList?",
     "code": "",
@@ -3935,7 +3936,7 @@ lists={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following is true about LinkedList in Java?",
     "code": "",
@@ -3953,7 +3954,7 @@ lists={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to remove the first occurrence of a specified element in an ArrayList?",
     "code": "",
@@ -3971,7 +3972,7 @@ lists={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to retrieve the first element of a LinkedList?",
     "code": "",
@@ -3989,7 +3990,7 @@ lists={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to retrieve the last element of an ArrayList?",
     "code": "",
@@ -4007,7 +4008,7 @@ lists={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to check if an ArrayList contains a specified element?",
     "code": "",
@@ -4025,7 +4026,7 @@ lists={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to remove all elements from an ArrayList?",
     "code": "",
@@ -4043,7 +4044,7 @@ lists={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to add an element at the specified index in an ArrayList?",
     "code": "",
@@ -4061,7 +4062,7 @@ lists={
 }
 ,{
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to get the number of elements in an ArrayList?",
     "code": "",
@@ -4079,7 +4080,7 @@ lists={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to check if a LinkedList is empty?",
     "code": "",
@@ -4097,7 +4098,7 @@ lists={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to retrieve and remove the first element of a LinkedList?",
     "code": "",
@@ -4115,7 +4116,7 @@ lists={
 }
 ,{
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to replace the element at a specified position in an ArrayList?",
     "code": "",
@@ -4133,7 +4134,7 @@ lists={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to iterate over the elements of an ArrayList?",
     "code": "",
@@ -4151,7 +4152,7 @@ lists={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to add all elements of a collection to the end of an ArrayList?",
     "code": "",
@@ -4177,7 +4178,7 @@ sets={
     "questions":[
         {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to add an element to a HashSet in Java?",
     "code": "",
@@ -4195,7 +4196,7 @@ sets={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "What is the main characteristic of a TreeSet in Java?",
     "code": "",
@@ -4213,7 +4214,7 @@ sets={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following sets does not allow duplicate elements in Java?",
     "code": "",
@@ -4231,7 +4232,7 @@ sets={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "What is the time complexity of the add() method in a HashSet in Java?",
     "code": "",
@@ -4249,7 +4250,7 @@ sets={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following statements is true about a LinkedHashSet in Java?",
     "code": "",
@@ -4268,7 +4269,7 @@ sets={
 ,
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to remove all elements from a HashSet in Java?",
     "code": "",
@@ -4286,7 +4287,7 @@ sets={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "What happens if you try to add a null element to a TreeSet in Java?",
     "code": "",
@@ -4304,7 +4305,7 @@ sets={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following sets is based on a hash table data structure?",
     "code": "",
@@ -4322,7 +4323,7 @@ sets={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "What is the main characteristic of a HashSet in Java?",
     "code": "",
@@ -4340,7 +4341,7 @@ sets={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to obtain the number of elements in a Set in Java?",
     "code": "",
@@ -4358,7 +4359,7 @@ sets={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following sets is ordered in the sequence of insertion in Java?",
     "code": "",
@@ -4376,7 +4377,7 @@ sets={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "What happens when you try to add a duplicate element to a HashSet in Java?",
     "code": "",
@@ -4394,7 +4395,7 @@ sets={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to iterate through elements in a TreeSet in Java?",
     "code": "",
@@ -4412,7 +4413,7 @@ sets={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to remove an element from a TreeSet in Java?",
     "code": "",
@@ -4430,7 +4431,7 @@ sets={
 },
 {
   "languageId": 1,
-  "topicId": 9,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to obtain the first element in a TreeSet in Java?",
     "code": "",
@@ -4455,7 +4456,7 @@ print("sets",len(sets['questions']))
 map={
     "questions":[{
   "languageId": 1,
-  "topicId": 10,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following implementations does not maintain the order of elements based on their insertion order?",
     "code": "",
@@ -4473,7 +4474,7 @@ map={
 },
 {
   "languageId": 1,
-  "topicId": 10,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following implementations does not allow `null` keys?",
     "code": "",
@@ -4491,7 +4492,7 @@ map={
 },
 {
   "languageId": 1,
-  "topicId": 10,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following implementations provides a sorted order of elements based on their natural ordering or a custom comparator?",
     "code": "",
@@ -4509,7 +4510,7 @@ map={
 },
 {
   "languageId": 1,
-  "topicId": 10,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following implementations guarantees constant-time performance for basic operations, such as get and put?",
     "code": "",
@@ -4527,7 +4528,7 @@ map={
 },
 {
   "languageId": 1,
-  "topicId": 10,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following implementations allows duplicate values but not duplicate keys?",
     "code": "",
@@ -4545,7 +4546,7 @@ map={
 },
 {
   "languageId": 1,
-  "topicId": 10,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to retrieve a value associated with a specified key in a Map?",
     "code": "",
@@ -4563,7 +4564,7 @@ map={
 },
 {
   "languageId": 1,
-  "topicId": 10,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to check if a Map contains a mapping for a specified key?",
     "code": "",
@@ -4581,7 +4582,7 @@ map={
 },
 {
   "languageId": 1,
-  "topicId": 10,
+  "topicId": 20,
   "questions": {
     "question": "Which of the following methods is used to remove a mapping for a specified key from a Map?",
     "code": "",
@@ -4599,7 +4600,7 @@ map={
 },
 {
 "languageId": 1,
-"topicId": 10,
+"topicId": 20,
 "questions": {
 "question": "Which implementation of Map interface maintains the insertion order of keys?",
 "code": "",
@@ -4617,7 +4618,7 @@ map={
 },
 {
   "languageId": 1,
-  "topicId": 10,
+  "topicId": 20,
   "questions": {
     "question": "Which implementation of Map interface maintains a doubly linked list of entries?",
     "code": "",
@@ -4635,7 +4636,7 @@ map={
 },
 {
 "languageId": 1,
-"topicId": 10,
+"topicId": 20,
 "questions": {
 "question": "Which implementation of Map interface uses a Red-Black tree to store key-value pairs?",
 "code": "",
@@ -4654,7 +4655,7 @@ map={
 
 {
 "languageId": 1,
-"topicId": 10,
+"topicId": 20,
 "questions": {
 "question": "Which implementation of Map interface provides a fail-fast iterator?",
 "code": "",
@@ -4673,7 +4674,7 @@ map={
 ,
 {
   "languageId": 1,
-  "topicId": 10,
+  "topicId": 20,
   "questions": {
     "question": "Which implementation of Map interface provides predictable iteration order?",
     "code": "",
@@ -4691,7 +4692,7 @@ map={
 }
 ,{
 "languageId": 1,
-"topicId": 10,
+"topicId": 20,
 "questions": {
 "question": "Which implementation of the Map interface provides the best average and worst-case time complexity for key-based operations?",
 "code": "",
@@ -4709,7 +4710,7 @@ map={
 }
 ,{
 "languageId": 1,
-"topicId": 10,
+"topicId": 20,
 "questions": {
 "question": "Which implementation of the Map interface is best suited for applications where high concurrency is required?",
 "code": "",
@@ -4740,7 +4741,7 @@ print("map",len(map['questions']))
 exceptionHandling={
     "questions":[{
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "What is an exception in Java?",
 "code": "",
@@ -4758,7 +4759,7 @@ exceptionHandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which keyword is used to handle exceptions in Java?",
 "code": "",
@@ -4776,7 +4777,7 @@ exceptionHandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "What is the purpose of the 'catch' block in Java exception handling?",
 "code": "",
@@ -4794,7 +4795,7 @@ exceptionHandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which of the following statements is true about checked exceptions in Java?",
 "code": "",
@@ -4812,7 +4813,7 @@ exceptionHandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "What is the purpose of the 'finally' block in Java exception handling?",
 "code": "",
@@ -4830,7 +4831,7 @@ exceptionHandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which of the following statements is true about unchecked exceptions in Java?",
 "code": "",
@@ -4848,7 +4849,7 @@ exceptionHandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which of the following is a checked exception in Java?",
 "code": "",
@@ -4866,7 +4867,7 @@ exceptionHandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which of the following is an unchecked exception in Java?",
 "code": "",
@@ -4884,7 +4885,7 @@ exceptionHandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "What happens if an exception is thrown but not caught in Java?",
 "code": "",
@@ -4902,7 +4903,7 @@ exceptionHandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "What is the purpose of the 'throw' keyword in Java?",
 "code": "",
@@ -4919,7 +4920,7 @@ exceptionHandling={
 "time": 1
 },{
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which of the following is not a standard Java exception class?",
 "code": "",
@@ -4937,7 +4938,7 @@ exceptionHandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "What is the purpose of the 'throws' keyword in Java?",
 "code": "",
@@ -4955,7 +4956,7 @@ exceptionHandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "What is the result of dividing by zero in Java?",
 "code": "",
@@ -4974,7 +4975,7 @@ exceptionHandling={
 
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "What is the purpose of the 'getMessage()' method in the Exception class in Java?",
 "code": "",
@@ -4993,7 +4994,7 @@ exceptionHandling={
 
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which of the following statements is true about the 'throws' clause in Java?",
 "code": "",
@@ -5019,7 +5020,7 @@ filehandling={
     "questions":[
         {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "What is the purpose of the 'File' class in Java?",
 "code": "",
@@ -5037,7 +5038,7 @@ filehandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which class in Java is used for reading text from a character-input stream?",
 "code": "",
@@ -5055,7 +5056,7 @@ filehandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which of the following methods is used to check if a file or directory exists in Java?",
 "code": "",
@@ -5073,7 +5074,7 @@ filehandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which of the following is true about FileInputStream in Java?",
 "code": "",
@@ -5091,7 +5092,7 @@ filehandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which of the following classes is used to write characters to a file in Java?",
 "code": "",
@@ -5109,7 +5110,7 @@ filehandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which exception is thrown when a file or directory does not exist?",
 "code": "",
@@ -5127,7 +5128,7 @@ filehandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which of the following methods is used to create a new directory in Java?",
 "code": "",
@@ -5145,7 +5146,7 @@ filehandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which class in Java is used to manipulate files and directories?",
 "code": "",
@@ -5163,7 +5164,7 @@ filehandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which method is used to read a single byte of data from an input stream in Java?",
 "code": "",
@@ -5181,7 +5182,7 @@ filehandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which method is used to write a string to a file in Java?",
 "code": "",
@@ -5199,7 +5200,7 @@ filehandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which of the following methods is used to delete a file in Java?",
 "code": "",
@@ -5217,7 +5218,7 @@ filehandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which of the following classes is used to read character-based input from a file in Java?",
 "code": "",
@@ -5235,7 +5236,7 @@ filehandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which of the following methods is used to determine the length of a file in Java?",
 "code": "",
@@ -5253,7 +5254,7 @@ filehandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which method is used to create a new file in Java?",
 "code": "",
@@ -5271,7 +5272,7 @@ filehandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which method is used to close an open file in Java?",
 "code": "",
@@ -5289,7 +5290,7 @@ filehandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which class in Java is used to read binary data from a file?",
 "code": "",
@@ -5307,7 +5308,7 @@ filehandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which of the following methods is used to rename a file in Java?",
 "code": "",
@@ -5325,7 +5326,7 @@ filehandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which method is used to read the next line of text from a file in Java?",
 "code": "",
@@ -5343,7 +5344,7 @@ filehandling={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which of the following is true about FileReader in Java?",
 "code": "",
@@ -5362,7 +5363,7 @@ filehandling={
 ,
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which class in Java is used to write binary data to a file?",
 "code": "",
@@ -5388,7 +5389,7 @@ print("filehandling",len(filehandling['questions']))
 multithreading={
     "questions":[{
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "What is a thread in Java?",
 "code": "",
@@ -5406,7 +5407,7 @@ multithreading={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which of the following is true about multithreading in Java?",
 "code": "",
@@ -5424,7 +5425,7 @@ multithreading={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which of the following methods is used to create a new thread in Java?",
 "code": "",
@@ -5442,7 +5443,7 @@ multithreading={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "What is the purpose of the sleep() method in Java?",
 "code": "",
@@ -5460,7 +5461,7 @@ multithreading={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "What is synchronization in Java multithreading?",
 "code": "",
@@ -5478,7 +5479,7 @@ multithreading={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "What is deadlock in Java multithreading?",
 "code": "",
@@ -5496,7 +5497,7 @@ multithreading={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which method is used to pause the current thread execution indefinitely in Java?",
 "code": "",
@@ -5514,7 +5515,7 @@ multithreading={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "What is a race condition in Java multithreading?",
 "code": "",
@@ -5532,7 +5533,7 @@ multithreading={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "What is the purpose of the join() method in Java multithreading?",
 "code": "",
@@ -5550,7 +5551,7 @@ multithreading={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "What is the purpose of the interrupt() method in Java?",
 "code": "",
@@ -5568,7 +5569,7 @@ multithreading={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which of the following is true about daemon threads in Java?",
 "code": "",
@@ -5587,7 +5588,7 @@ multithreading={
 
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which of the following methods is used to get the current thread in Java?",
 "code": "",
@@ -5605,7 +5606,7 @@ multithreading={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "What is the purpose of the yield() method in Java?",
 "code": "",
@@ -5622,7 +5623,7 @@ multithreading={
 "time": 1
 },{
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "What is the purpose of the isAlive() method in Java?",
 "code": "",
@@ -5640,7 +5641,7 @@ multithreading={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "What is the purpose of the wait() method in Java?",
 "code": "",
@@ -5666,7 +5667,7 @@ jdbc={
     "questions":[
         {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "What is the purpose of the wait() method in Java?",
 "code": "",
@@ -5684,7 +5685,7 @@ jdbc={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 
 "question": "Which of the following statements is true about JDBC?",
@@ -5705,7 +5706,7 @@ jdbc={
 
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which package in Java contains the JDBC API classes?",
 "code": "",
@@ -5723,7 +5724,7 @@ jdbc={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "What is the role of DriverManager class in JDBC?",
 "code": "",
@@ -5741,7 +5742,7 @@ jdbc={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which interface in Java is used to represent a SQL statement?",
 "code": "",
@@ -5759,7 +5760,7 @@ jdbc={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "What is a JDBC driver?",
 "code": "",
@@ -5777,7 +5778,7 @@ jdbc={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which method of ResultSet interface is used to move the cursor to the next row?",
 "code": "",
@@ -5795,7 +5796,7 @@ jdbc={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which of the following is used to execute a parameterized SQL query in JDBC?",
 "code": "",
@@ -5813,7 +5814,7 @@ jdbc={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 
 "question": "Which method of Connection interface is used to create a Statement object?",
@@ -5833,7 +5834,7 @@ jdbc={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "What is the role of ResultSet interface in JDBC?",
 "code": "",
@@ -5850,7 +5851,7 @@ jdbc={
 "time": 1
 },{
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
     "question": "What is the purpose of executeUpdate() method in JDBC?",
 "code": "",
@@ -5869,7 +5870,7 @@ jdbc={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "What is the role of Connection interface in JDBC?",
 "code": "",
@@ -5887,7 +5888,7 @@ jdbc={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "Which method of ResultSet interface is used to retrieve data from a specific column?",
 "code": "",
@@ -5905,7 +5906,7 @@ jdbc={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 "question": "In JDBC, what does a SQLException indicate?",
 "code": "",
@@ -5923,7 +5924,7 @@ jdbc={
 },
 {
 "languageId": 1,
-"topicId": 11,
+"topicId": 20,
 "questions": {
 
 },

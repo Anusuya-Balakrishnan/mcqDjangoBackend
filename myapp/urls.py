@@ -33,7 +33,8 @@ urlpatterns = [
     path("resultTopicList/<int:languageId>/",views.getTopicCompleted,name="resultTopicList"),
     path("answerValueInTopicPage/<int:resultId>/",views.answerValueInTopicPage,name="answerValueInTopicPage"),
 # admin side url
-    path("quiz_list/",adminViews.quiz_List,name="add_update_quiz"),
+    path("quiz_list/",adminViews.quiz_List,name="add_get_quiz"),
+    path("quiz_update_delete/",adminViews.quizName_update_delete,name="update_delete_quiz")
 ]
 
 # {

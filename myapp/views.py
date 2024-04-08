@@ -454,7 +454,7 @@ def get_results_by_user( user_id):
     results = ResultModel.objects.filter(userID=user)
     
     if(len(list(results))==0):
-        return False
+        return list(results)
     else:
         # Extract 'answeredQuestions' values from results
         answered_questions_list = [result.answeredQuestions for result in results]
@@ -524,6 +524,7 @@ def add_resultData(request):
                     'result':result
                     
                     }
+                print("return_value",return_value)
                 if( not bool(return_value)):  
                     addResultDatatoDatabase(result_data)
                     resultDict=get_resultValue(resultData=resultQuestionList)
