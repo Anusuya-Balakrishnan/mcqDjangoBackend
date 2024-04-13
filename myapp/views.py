@@ -629,7 +629,7 @@ def leaderBoardApi(request):
         serializer = CustomUserSerializer(user)
         userData=serializer.data
         currentUserName=userData.get("studentName")
-        print("currentUserName",currentUserName)
+        # print("currentUserName",currentUserName)
         if(request.method=="GET"):
             try:
                 # Retrieve all ResultModel objects
@@ -658,15 +658,6 @@ def leaderBoardApi(request):
                             resultDict["result"]=eachResult[eachKey]
                         resultDict["currentUser"]=currentUser
                     resultList.append(resultDict)
-                
-                
-            #     resultList=[{'username': 'anusuya', 'currentUser': True, 'result': 4},
-            #  {'username': 'siva', 'currentUser': False, 'result': 3},
-            #  {'username': 'anusuya', 'currentUser': False, 'result': 2},
-            #  {'username': 'john', 'currentUser': True, 'result': 5},
-            #  {'username': 'siva', 'currentUser': False, 'result': 1}]
-            #     print("resultList",resultList)
-
                 usernameList=[]
                 data={}
                 userResultData=[]

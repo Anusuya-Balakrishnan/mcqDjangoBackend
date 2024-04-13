@@ -84,8 +84,7 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "https://mcqfrontend.vercel.app",
-    "https://mcqbackend.vercel.app/mcq/"
-    # Add other origins as needed
+    "https://mcqbackend.vercel.app",
 ]
 ROOT_URLCONF = 'mcqProject.urls'
 
@@ -106,6 +105,11 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'mcqProject.wsgi.application'
+
+# WSGI_APPLICATION = 'mcqProject.wsgi.application'
+# WSGI_APPLICATION = WSGI_APPLICATION + ':application'
+
+TIMEOUT = 600  # Timeout in seconds
 
 
 # Database
