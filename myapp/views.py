@@ -14,6 +14,7 @@ from rest_framework.authentication import TokenAuthentication
 import ast
 from collections import OrderedDict
 import math
+from django.core.exceptions import ObjectDoesNotExist
 
 # from .emailAuthenticate import EmailBackend
 from django.contrib.auth import authenticate
@@ -620,71 +621,125 @@ def get_resultData(request):
     except:
         return Response({"Message": "invalid"})
 
-
 @api_view(["GET"])
 def leaderBoardApi(request):
     try:
+        # Retrieve the user associated with the token
         token = Token.objects.get(key=request.auth.key)
         user = token.user
-        serializer = CustomUserSerializer(user)
-        userData=serializer.data
-        currentUserName=userData.get("studentName")
-        # print("currentUserName",currentUserName)
-        if(request.method=="GET"):
-            try:
-                # Retrieve all ResultModel objects
-                all_results = ResultModel.objects.all()
 
-                # Serialize the queryset if needed
-                serializer = ResultSerializer(all_results, many=True)
-                result_data = json.loads(json.dumps(serializer.data))
-                resultList=[]
-                for eachResult in result_data:
-                    resultDict={}
-                    currentUser=False
-                    for eachKey in eachResult:
-                        if eachKey=="userID":
-                            # Retrieve CustomUser object by ID
-                            custom_user = CustomUser.objects.get(id=eachResult["userID"])
-                            # Serialize the CustomUser object to get the studentName
-                            custom_serializer = CustomUserSerializer(custom_user)
-                            user_data = custom_serializer.data
-                            user_name = user_data.get("studentName")
-                            if(user_name==currentUserName):
-                                currentUser=True
-                            resultDict["username"]=user_name
+        # Serialize the user data
+        serializer = CustomUserSerializer(user)
+        userData = serializer.data
+        currentUserName = userData.get("studentName")
+
+        # Retrieve all ResultModel objects
+        all_results = ResultModel.objects.all()
+
+        # Serialize the queryset
+        serializer = ResultSerializer(all_results, many=True)
+        result_data = serializer.data
+
+        # Prepare the leaderboard data
+        leaderboard_data = {}
+        user_results = {}
+
+        for result in result_data:
+            user_id = result.get("userID")
+            user_name = CustomUser.objects.get(id=user_id).studentName
+
+            if user_name not in user_results:
+                user_results[user_name] = {"result": 0, "noOfTestAttended": 0}
+
+            user_results[user_name]["result"] += result.get("result")
+            user_results[user_name]["noOfTestAttended"] += 1
+
+        # Calculate average result
+        for user_name, data in user_results.items():
+            data["result"] //= data["noOfTestAttended"]
+
+        # Sort leaderboard data based on result in descending order
+        sorted_leaderboard = sorted(user_results.items(), key=lambda x: x[1]["result"], reverse=True)
+
+        # Prepare final leaderboard data
+        leaderboard_data = [{"username": name, **data, "currentUser": name == currentUserName} for name, data in sorted_leaderboard]
+
+        return Response({"message": leaderboard_data})
+
+    except Token.DoesNotExist:
+        return Response({"error": "Invalid Token"}, status=status.HTTP_400_BAD_REQUEST)
+    
+    except ObjectDoesNotExist:
+        return Response({"error": "Object not found"}, status=status.HTTP_404_NOT_FOUND)
+    
+    except Exception as e:
+        return Response({"error": f"An error occurred: {e}"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+
+# @api_view(["GET"])
+# def leaderBoardApi(request):
+#     try:
+#         token = Token.objects.get(key=request.auth.key)
+#         user = token.user
+#         serializer = CustomUserSerializer(user)
+#         userData=serializer.data
+#         currentUserName=userData.get("studentName")
+#         # print("currentUserName",currentUserName)
+#         if(request.method=="GET"):
+#             try:
+#                 # Retrieve all ResultModel objects
+#                 all_results = ResultModel.objects.all()
+
+#                 # Serialize the queryset if needed
+#                 serializer = ResultSerializer(all_results, many=True)
+#                 result_data = json.loads(json.dumps(serializer.data))
+#                 resultList=[]
+#                 for eachResult in result_data:
+#                     resultDict={}
+#                     currentUser=False
+#                     for eachKey in eachResult:
+#                         if eachKey=="userID":
+#                             # Retrieve CustomUser object by ID
+#                             custom_user = CustomUser.objects.get(id=eachResult["userID"])
+#                             # Serialize the CustomUser object to get the studentName
+#                             custom_serializer = CustomUserSerializer(custom_user)
+#                             user_data = custom_serializer.data
+#                             user_name = user_data.get("studentName")
+#                             if(user_name==currentUserName):
+#                                 currentUser=True
+#                             resultDict["username"]=user_name
                             
-                        elif eachKey=="result":
-                            resultDict["result"]=eachResult[eachKey]
-                        resultDict["currentUser"]=currentUser
-                    resultList.append(resultDict)
-                usernameList=[]
-                data={}
-                userResultData=[]
-                for eachData in resultList:
-                    if eachData["username"] in usernameList:
-                        for userResult in userResultData:
-                            if userResult["username"]==eachData["username"]:
-                                userResult["result"]= (userResult["result"]+eachData["result"])//2
-                                userResult["noOfTestAttended"]+=1
-                    else:
-                        data={
-                            "username": eachData["username"],
-                            "result": eachData["result"],
-                            "currentUser":eachData["currentUser"],
-                            "noOfTestAttended":1
-                            }
-                        usernameList.append(eachData["username"])
-                        userResultData.append(data)
-                # Sort userResultData based on the "result" value in descending order
-                userResultData = sorted(userResultData, key=lambda x: x["result"], reverse=True)
-                print("userResultData",userResultData)
-                return Response({"message":userResultData})
-            except Exception as e:
-                return Response({"error":f"error message{e}"})
-        return Response({"message":"invalid Request"})
-    except:
-        return Response({"Message":"invalid"})
+#                         elif eachKey=="result":
+#                             resultDict["result"]=eachResult[eachKey]
+#                         resultDict["currentUser"]=currentUser
+#                     resultList.append(resultDict)
+#                 usernameList=[]
+#                 data={}
+#                 userResultData=[]
+#                 for eachData in resultList:
+#                     if eachData["username"] in usernameList:
+#                         for userResult in userResultData:
+#                             if userResult["username"]==eachData["username"]:
+#                                 userResult["result"]= (userResult["result"]+eachData["result"])//2
+#                                 userResult["noOfTestAttended"]+=1
+#                     else:
+#                         data={
+#                             "username": eachData["username"],
+#                             "result": eachData["result"],
+#                             "currentUser":eachData["currentUser"],
+#                             "noOfTestAttended":1
+#                             }
+#                         usernameList.append(eachData["username"])
+#                         userResultData.append(data)
+#                 # Sort userResultData based on the "result" value in descending order
+#                 userResultData = sorted(userResultData, key=lambda x: x["result"], reverse=True)
+#                 print("userResultData",userResultData)
+#                 return Response({"message":userResultData})
+#             except Exception as e:
+#                 return Response({"error":f"error message{e}"})
+#         return Response({"message":"invalid Request"})
+#     except:
+#         return Response({"Message":"invalid"})
 
 def getAnswer(resultData):
     questionNos=list(resultData.keys())
