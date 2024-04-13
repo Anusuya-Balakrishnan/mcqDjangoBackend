@@ -52,6 +52,7 @@ def quizName_update_delete(request):
 
     elif request.method == "DELETE":  # Delete functionality
         try:
+            print("HEllo Delete\n")
             mcq_instance = McqListDatatModel.objects.get(id=request.data.get('mcqId'))
             mcq_instance.delete()
             return Response({"data": "success"}, status=status.HTTP_204_NO_CONTENT)

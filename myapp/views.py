@@ -448,7 +448,9 @@ def get_questions(request, languageId, topicId):
 
 def get_results_by_user( user_id):
     # Retrieve the user based on user_id
-    user = get_object_or_404(CustomUser, id=user_id)
+    user=CustomUser.objects.get(id=user_id)
+
+    # user = get_object_or_404(CustomUser, id=user_id)
 
     # Filter ResultModel instances based on the user
     results = ResultModel.objects.filter(userID=user)
