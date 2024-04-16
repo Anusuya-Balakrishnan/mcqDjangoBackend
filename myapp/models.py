@@ -209,3 +209,10 @@ class ResultModel(models.Model):
             self.id = last_used_id.id + 1 if last_used_id else 1
 
         super().save(*args, **kwargs)
+
+
+class LeaderBoardModel(models.Model):
+    userID = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
+    username=models.TextField()
+    result=models.IntegerField()
+    noOfTestAttended=models.IntegerField()

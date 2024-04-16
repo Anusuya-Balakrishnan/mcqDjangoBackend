@@ -74,3 +74,10 @@ class ResultSerializer(serializers.ModelSerializer):
         model=ResultModel
         fields = '__all__'
         read_only_fields = ['id']
+
+
+class LeaderBoardSerializer(serializers.ModelSerializer):
+    class Meta:
+        model=LeaderBoardModel
+        fields = '__all__'
+        read_only_fields = ['id']

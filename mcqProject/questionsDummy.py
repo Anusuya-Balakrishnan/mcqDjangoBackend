@@ -5910,7 +5910,7 @@ jdbc={
 "questions": {
 "question": "In JDBC, what does a SQLException indicate?",
 "code": "",
-"options": [
+"option": [
 "A successful execution of a SQL query.",
 "An error occurred during the execution of a SQL query.",
 "A warning message from the database server.",

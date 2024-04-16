@@ -465,6 +465,7 @@ def get_results_by_user( user_id):
 
 
 def addResultDatatoDatabase(result_data):
+    print("result_data",result_data)
     serializer = ResultSerializer(data=result_data)
     if serializer.is_valid():
         serializer.save()
@@ -478,7 +479,7 @@ def get_resultValue(resultData):
     correctCount=0
     skippedCount=0
     wrongCount=0
-    print("resultData",resultData)
+    
     for eachData in resultData:
         if(resultData[eachData]["selectedAnswer"]=="time out"):
             skippedCount+=1
@@ -491,7 +492,28 @@ def get_resultValue(resultData):
     
     return {"correctCount":correctCount,"wrongCount":wrongCount,"skippedCount":skippedCount}
 
-        
+def addLeaderBoardData(leaderBoardData):
+    try:
+        # Try to get the existing leaderboard object
+        leaderObject = LeaderBoardModel.objects.get(userID=leaderBoardData["userID"])
+
+        # Update the fields of the existing object
+        leaderObject.result =(leaderObject.result+ leaderBoardData.get("result"))//2
+        leaderObject.noOfTestAttended +=1
+        # Save the updated object
+        leaderObject.save()
+
+
+    except:
+        # If the object does not exist, create a new one
+        serializer = LeaderBoardSerializer(data=leaderBoardData)
+        if serializer.is_valid():
+            serializer.save()
+        else:
+            print(serializer.errors)
+    
+
+
 @api_view(["POST"])
 def add_resultData(request):
     try:
@@ -516,10 +538,11 @@ def add_resultData(request):
                     current_question_id.append(int(i))                    
                     if(resultQuestionList[i]['isCorrect']):
                         result+=1
-                
+                userIdValue=CustomUser.objects.get(id=userId).id
+                userName=CustomUser.objects.get(id=userId).studentName
                 return_value=get_results_by_user(userId)
                 result_data = {
-                    'userID': CustomUser.objects.get(id=userId).id,
+                    'userID': userIdValue,
                     'answeredQuestions': resultQuestionList,
                     'topicId': TopicModel.objects.get(id=int(topicId)).id,
                     'languageId': LanguageModel.objects.get(id=int(languageId)).id,
@@ -527,12 +550,20 @@ def add_resultData(request):
                     'result':result
                     
                     }
-                print("return_value",return_value)
+                print("resultQuestionList",resultQuestionList)
+                # print("return_value",return_value)
                 if( not bool(return_value)):  
                     addResultDatatoDatabase(result_data)
                     resultDict=get_resultValue(resultData=resultQuestionList)
+                    leaderBoardData={"username":userName,"userID":userIdValue,"result":result,"noOfTestAttended":1}
+
+
+                    # adding leaderboard data
+                    addLeaderBoardData(leaderBoardData)
+
+
                     resultDict["topicName"]=TopicModel.objects.get(id=int(topicId)).topicName
-                        # true for new student
+                    # true for new student
                     return Response({"message": True,"data":resultDict})
                 else:
                     answer_value=[]
@@ -627,45 +658,13 @@ def leaderBoardApi(request):
         # Retrieve the user associated with the token
         token = Token.objects.get(key=request.auth.key)
         user = token.user
-
         # Serialize the user data
         serializer = CustomUserSerializer(user)
-        userData = serializer.data
-        currentUserName = userData.get("studentName")
-
-        # Retrieve all ResultModel objects
-        all_results = ResultModel.objects.all()
-
-        # Serialize the queryset
-        serializer = ResultSerializer(all_results, many=True)
-        result_data = serializer.data
-
-        # Prepare the leaderboard data
-        leaderboard_data = {}
-        user_results = {}
-
-        for result in result_data:
-            user_id = result.get("userID")
-            user_name = CustomUser.objects.get(id=user_id).studentName
-
-            if user_name not in user_results:
-                user_results[user_name] = {"result": 0, "noOfTestAttended": 0}
-
-            user_results[user_name]["result"] += result.get("result")
-            user_results[user_name]["noOfTestAttended"] += 1
-
-        # Calculate average result
-        for user_name, data in user_results.items():
-            data["result"] //= data["noOfTestAttended"]
-
-        # Sort leaderboard data based on result in descending order
-        sorted_leaderboard = sorted(user_results.items(), key=lambda x: x[1]["result"], reverse=True)
-
-        # Prepare final leaderboard data
-        leaderboard_data = [{"username": name, **data, "currentUser": name == currentUserName} for name, data in sorted_leaderboard]
-
-        return Response({"message": leaderboard_data})
-
+        leaderBoardObjects=LeaderBoardModel.objects.all()
+        leaderBoardSerializer=LeaderBoardSerializer(leaderBoardObjects,many=True)
+        data=leaderBoardSerializer.data
+        print(data)
+        return Response({"data":data})
     except Token.DoesNotExist:
         return Response({"error": "Invalid Token"}, status=status.HTTP_400_BAD_REQUEST)
     
@@ -674,6 +673,69 @@ def leaderBoardApi(request):
     
     except Exception as e:
         return Response({"error": f"An error occurred: {e}"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+# @api_view(["GET"])
+# def leaderBoardApi(request):
+#     try:
+#         # Retrieve the user associated with the token
+#         token = Token.objects.get(key=request.auth.key)
+#         user = token.user
+#         # Serialize the user data
+#         serializer = CustomUserSerializer(user)
+#         userData = serializer.data
+#         currentUserName = userData.get("studentName")
+
+#         # Retrieve all ResultModel objects
+#         all_results = ResultModel.objects.all()
+
+#         # Serialize the queryset
+#         serializer = ResultSerializer(all_results, many=True)
+#         result_data = serializer.data
+        
+#         # Prepare the leaderboard data
+#         leaderboard_data = {}
+#         user_results = {}
+
+#         for result in result_data:
+#             user_id = result.get("userID")
+#             user_name = CustomUser.objects.get(id=user_id).studentName
+
+#             if user_name not in user_results:
+#                 user_results[user_name] = {"result": 0, "noOfTestAttended": 0}
+            
+#             user_results[user_name]["userID"]=user_id
+#             user_results[user_name]["result"] += result.get("result")
+#             user_results[user_name]["noOfTestAttended"] += 1
+
+#         # Calculate average result
+#         for user_name, data in user_results.items():
+#             data["result"] //= data["noOfTestAttended"]
+
+#         # Sort leaderboard data based on result in descending order
+#         sorted_leaderboard = sorted(user_results.items(), key=lambda x: x[1]["result"], reverse=True)
+        
+#         # Prepare final leaderboard datag
+#         # leaderboard_data = [{"username": name, **data, "currentUser": name == currentUserName} for name, data in sorted_leaderboard]
+#         leaderboard_data = [{"username": name, **data} for name, data in sorted_leaderboard]
+#         # for eachData in leaderboard_data:
+#         #     print(eachData)
+#         #     serializer = LeaderBoardSerializer(data=eachData)
+#         #     if serializer.is_valid():
+#         #         print("saved")
+#         #         serializer.save()
+#         #     else:
+#         #         print(serializer.errors)
+
+#         return Response({"message": leaderboard_data})
+
+#     except Token.DoesNotExist:
+#         return Response({"error": "Invalid Token"}, status=status.HTTP_400_BAD_REQUEST)
+    
+#     except ObjectDoesNotExist:
+#         return Response({"error": "Object not found"}, status=status.HTTP_404_NOT_FOUND)
+    
+#     except Exception as e:
+#         return Response({"error": f"An error occurred: {e}"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
 # @api_view(["GET"])
