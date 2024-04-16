@@ -343,7 +343,7 @@ def add_topic(request):
         serializer = CustomUserSerializer(user)
         if(request.method=="POST"):
             try:
-                existing_topicName = TopicModel.objects.get(topicName=request.data.get('topicName'))
+                existing_topicName = TopicModel.objects.get(topicName=request.data.get('topicName'),languageId=request.data.get('languageId'))
                 return Response({"message": "Language already created"})
             except TopicModel.DoesNotExist:
                 serializer = TopicSerializer(data=request.data)
@@ -465,7 +465,7 @@ def get_results_by_user( user_id):
 
 
 def addResultDatatoDatabase(result_data):
-    print("result_data",result_data)
+    
     serializer = ResultSerializer(data=result_data)
     if serializer.is_valid():
         serializer.save()
@@ -496,19 +496,19 @@ def addLeaderBoardData(leaderBoardData):
     try:
         # Try to get the existing leaderboard object
         leaderObject = LeaderBoardModel.objects.get(userID=leaderBoardData["userID"])
+        print("\n leaderObject")
 
         # Update the fields of the existing object
         leaderObject.result =(leaderObject.result+ leaderBoardData.get("result"))//2
         leaderObject.noOfTestAttended +=1
         # Save the updated object
         leaderObject.save()
-
-
     except:
         # If the object does not exist, create a new one
         serializer = LeaderBoardSerializer(data=leaderBoardData)
         if serializer.is_valid():
             serializer.save()
+            print("success")
         else:
             print(serializer.errors)
     
@@ -550,14 +550,12 @@ def add_resultData(request):
                     'result':result
                     
                     }
-                print("resultQuestionList",resultQuestionList)
+                leaderBoardData={"username":userName,"userID":userIdValue,"result":result,"noOfTestAttended":1}
                 # print("return_value",return_value)
                 if( not bool(return_value)):  
                     addResultDatatoDatabase(result_data)
                     resultDict=get_resultValue(resultData=resultQuestionList)
-                    leaderBoardData={"username":userName,"userID":userIdValue,"result":result,"noOfTestAttended":1}
-
-
+                    
                     # adding leaderboard data
                     addLeaderBoardData(leaderBoardData)
 
@@ -592,8 +590,10 @@ def add_resultData(request):
                             # false for person already completed this quiz
                         return Response({"message": False,"data":resultDict})
                     else:
-                        
+                        print("User")
                         addResultDatatoDatabase(result_data)
+                        # adding leaderboard data
+                        addLeaderBoardData(leaderBoardData)
                         resultDict=get_resultValue(resultData=resultQuestionList)
                         resultDict["topicName"]=TopicModel.objects.get(id=int(topicId)).topicName
                         # true for new student
