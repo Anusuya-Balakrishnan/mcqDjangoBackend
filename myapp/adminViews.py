@@ -58,3 +58,77 @@ def quizName_update_delete(request):
             return Response({"data": "success"}, status=status.HTTP_204_NO_CONTENT)
         except McqListDatatModel.DoesNotExist:
             return Response({"data": "failure"}, status=status.HTTP_404_NOT_FOUND)
+
+@api_view(['GET','POST','PATCH','DELETE'])
+def languages_list_update(request,mcqId):
+    try:
+        if(request.method=="GET"):
+            languages = LanguageModel.objects.filter(mcqId=mcqId)
+            serializer = LanguageModelSerializer(languages, many=True)
+            return Response({"languages":serializer.data}) 
+        elif request.method == "POST":
+            try:
+                existing_language = LanguageModel.objects.get(languageName=request.data.get('languageName'))
+                return Response({"message": "Language already created"})
+            except LanguageModel.DoesNotExist:
+                serializer = LanguageModelSerializer(data=request.data)
+                if serializer.is_valid(raise_exception=True):
+                    serializer.save()
+                    return Response({"data": serializer.data, "message": "Language added successfully"})
+                return Response({"message": "error"})
+        elif request.method == "PATCH":
+            try:
+                language = LanguageModel.objects.get(id=request.data.get("id"), mcqId=mcqId)
+            except LanguageModel.DoesNotExist:
+                return Response({"message": "Language not found"}, status=404)
+            
+            serializer = LanguageModelSerializer(language, data=request.data, partial=True)
+            
+            if serializer.is_valid():
+                serializer.save()
+                return Response({"message": "Language updated successfully"})
+            
+            return Response(serializer.errors, status=400)
+        
+        elif request.method == "DELETE":
+            try:
+                language = LanguageModel.objects.get(id=request.data.get("id"), mcqId=mcqId)
+            except LanguageModel.DoesNotExist:
+                return Response({"message": "Language not found"}, status=404)
+            
+            language.delete()
+            return Response({"message": "Language deleted successfully"})
+    except Exception as e:
+        return Response({"Message": f"error ${e}"})
+    
+
+@api_view(['GET','POST','PATCH','DELETE'])
+def topic_list_update(request,languageId):
+    try:
+        if request.method=="GET":
+            topic = TopicModel.objects.filter(languageId=languageId)
+            serializer = TopicSerializer(topic, many=True)
+            return Response({"data":serializer.data})
+            # # collecting id of all topic in one language and then sorted in ascending order
+            # for eachData in serializer.data:
+            #     topicList.append(json.loads(json.dumps(eachData)).get("id"))
+        elif request.method=="POST":
+            try:
+                existing_topicName = TopicModel.objects.get(topicName=request.data.get('topicName'),languageId=request.data.get('languageId'))
+                return Response({"message": "topic already created"})
+            except TopicModel.DoesNotExist:
+                serializer = TopicSerializer(data=request.data)
+                if serializer.is_valid(raise_exception=True):
+                    serializer.save()
+                    return Response({ "message": "topic added successfully"})
+                return Response({"Message": "error"})
+        elif request.method == "DELETE":
+            try:
+                topic = TopicModel.objects.get(id=request.data.get("id"), languageId=languageId)
+            except TopicModel.DoesNotExist:
+                return Response({"message": "topic not found"}, status=404)
+            
+            topic.delete()
+            return Response({"message": "topic deleted successfully"})
+    except Exception as e:
+        return Response({"Message": f"error ${e}"})
