@@ -379,8 +379,8 @@ def add_questions(request):
 @api_view(['POST'])
 def add_many_questions(request):
     try:
-        token = Token.objects.get(key=request.auth.key)
-        user = token.user
+        # token = Token.objects.get(key=request.auth.key)
+        # user = token.user
         if request.method == "POST":
             questions_data = request.data.get('questions', [])
 

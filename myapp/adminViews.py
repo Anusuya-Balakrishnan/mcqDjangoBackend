@@ -109,9 +109,7 @@ def topic_list_update(request,languageId):
             topic = TopicModel.objects.filter(languageId=languageId)
             serializer = TopicSerializer(topic, many=True)
             return Response({"data":serializer.data})
-            # # collecting id of all topic in one language and then sorted in ascending order
-            # for eachData in serializer.data:
-            #     topicList.append(json.loads(json.dumps(eachData)).get("id"))
+            
         elif request.method=="POST":
             try:
                 existing_topicName = TopicModel.objects.get(topicName=request.data.get('topicName'),languageId=request.data.get('languageId'))
@@ -122,6 +120,17 @@ def topic_list_update(request,languageId):
                     serializer.save()
                     return Response({ "message": "topic added successfully"})
                 return Response({"Message": "error"})
+        elif request.method=="PATCH":
+            try:
+                topic = TopicModel.objects.get(id=request.data.get("id"), languageId=languageId)
+            except TopicModel.DoesNotExist:
+                return Response({"message": "Topic not found"}, status=404)
+            
+            serializer = TopicSerializer(topic, data=request.data, partial=True)
+            if serializer.is_valid():
+                serializer.save()
+                return Response({"message": "Topic updated successfully"})
+            return Response(serializer.errors, status=400)
         elif request.method == "DELETE":
             try:
                 topic = TopicModel.objects.get(id=request.data.get("id"), languageId=languageId)
@@ -132,3 +141,50 @@ def topic_list_update(request,languageId):
             return Response({"message": "topic deleted successfully"})
     except Exception as e:
         return Response({"Message": f"error ${e}"})
+
+
+@api_view(['GET','POST'])
+def questions_list_update(request,topicId):
+    try:
+        if(request.method=="GET"):
+            questions = QuestionModel.objects.filter(topicId=topicId)
+            serializer = QuestionSerializer(questions, many=True)
+            questions_values = []
+            regular_dict=[]
+            id_list=[]
+            for item in serializer.data:
+                # get all questions OrderedDict from main data and stored into list
+                regular_dict.append(json.loads(json.dumps(item["questions"])))
+                # get id of each questions
+                id_list.append(item["id"])
+            try:
+                for each in regular_dict:
+                    ordered_dict = eval(each, {'OrderedDict': OrderedDict})
+                    # converting OrderedDict into python dictionary 
+                    myDict={}
+                    for key, value in ordered_dict.items():
+                        myDict[key]=value
+                    questions_values.append(myDict)
+            except Exception as e:
+                print("error",e)
+            result={}
+            for id,question in zip(id_list,questions_values):
+                result[id]=question
+            
+            return Response({"data":result})
+        elif request.method == "POST":
+            questions_data = request.data.get('questions', [])
+            # Validate and save each question in the list
+            responses = []
+            for question_data in questions_data:
+                serializer = QuestionSerializer(data=question_data)
+                if serializer.is_valid():
+                    serializer.save()
+                    responses.append({"message": "Question added successfully"})
+                else:
+                    responses.append({"message": "Validation error", "errors": serializer.errors})
+
+            return Response(responses, status=status.HTTP_201_CREATED)
+
+    except Exception as e:
+       return Response({"Message": f"error ${e}"})

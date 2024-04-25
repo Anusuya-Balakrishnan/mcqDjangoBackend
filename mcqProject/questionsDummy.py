@@ -3,7 +3,7 @@ basicJava={"questions":
  [
 {
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"Who invented Java Programming?",
 "code":"",
@@ -16,7 +16,7 @@ basicJava={"questions":
 },
 {
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"What is the purpose of Java?",
 "code":"",
@@ -29,7 +29,7 @@ basicJava={"questions":
 },
 {
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"What is the main characteristic of Java that makes it suitable for developing cross-platform applications?",
 "code":"",
@@ -42,7 +42,7 @@ basicJava={"questions":
 },
 {
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"What are the two main components of Java?",
 "code":"",
@@ -55,7 +55,7 @@ basicJava={"questions":
 },
 {
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"What is the Java Development Kit (JDK)?",
 "code":"",
@@ -68,7 +68,7 @@ basicJava={"questions":
 },
 {
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"What is the Java Virtual Machine (JVM)?",
 "code":"",
@@ -81,7 +81,7 @@ basicJava={"questions":
 },
 {
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"Which of the following is not a feature of Java?",
 "code":"",
@@ -94,7 +94,7 @@ basicJava={"questions":
 },
 {
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"What is bytecode in Java?",
 "code":"",
@@ -107,7 +107,7 @@ basicJava={"questions":
 },
 {
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"What is the entry point for a Java program?",
 "code":"",
@@ -120,7 +120,7 @@ basicJava={"questions":
 },
 {
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"Which tool is used to compile Java source code?",
 "code":"",
@@ -133,7 +133,7 @@ basicJava={"questions":
 },
 {
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"What is the syntax for a single-line comment in Java?",
 "code":"",
@@ -146,7 +146,7 @@ basicJava={"questions":
 },
 {
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"What is the main advantage of using an IDE for Java development?",
 "code":"",
@@ -159,7 +159,7 @@ basicJava={"questions":
 }
 ,{
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"Which statement best describes the Java programming language?",
 "code":"",
@@ -172,7 +172,7 @@ basicJava={"questions":
 },
 {
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"Which part of the JDK contains tools such as javac and java?",
 "code":"",
@@ -184,7 +184,7 @@ basicJava={"questions":
 "time":1
 },{
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"Which of the following is true about Java comments?",
 "code":"",
@@ -403,7 +403,7 @@ javaBeginner1={"questions":[
 
 {
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"What is the output of the following code snippet?",
 "code":"String str = \"Hello\";\nSystem.out.println(str.substring(2, 4));",
@@ -417,7 +417,7 @@ javaBeginner1={"questions":[
 ,
 {
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"Which of the following is not a valid access specifier in Java?",
 "code":"",
@@ -431,7 +431,7 @@ javaBeginner1={"questions":[
 ,
 {
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"What does the \"break\" statement do in Java?",
 "code":"",
@@ -445,7 +445,7 @@ javaBeginner1={"questions":[
 ,
 {
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"Which of the following is not a valid loop in Java?",
 "code":"",
@@ -459,7 +459,7 @@ javaBeginner1={"questions":[
 ,
 {
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"What is the output of the following code snippet?",
 "code":"int i = 10;\nSystem.out.println(i++);",
@@ -473,7 +473,7 @@ javaBeginner1={"questions":[
 ,
 {
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"What is the output of the following code snippet?",
 "code":"System.out.println(Math.min(Double.MIN_VALUE, 0.0));",
@@ -487,7 +487,7 @@ javaBeginner1={"questions":[
 ,
 {
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"What is the output of the following code snippet?",
 "code":"System.out.println(10 + 20 + \"Hello\");",
@@ -501,7 +501,7 @@ javaBeginner1={"questions":[
 ,
 {
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"Which of the following is not a Java keyword?",
 "code":"",
@@ -515,7 +515,7 @@ javaBeginner1={"questions":[
 ,
 {
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"What is the output of the following code snippet?",
 "code":"System.out.println(\"5\" + 3 + 2);",
@@ -529,7 +529,7 @@ javaBeginner1={"questions":[
 ,
 {
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"Which of the following is used to create an object in Java?",
 "code":"",
@@ -543,7 +543,7 @@ javaBeginner1={"questions":[
 ,
 {
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"What is the output of the following code snippet?",
 "code":"System.out.println(5 == 5.0);",
@@ -557,7 +557,7 @@ javaBeginner1={"questions":[
 ,
 {
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"What is the output of the following code snippet?",
 "code":"System.out.println(10 % 3);",
@@ -571,7 +571,7 @@ javaBeginner1={"questions":[
 ,
 {
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"Which of the following statements is true about interfaces in Java?",
 "code":"",
@@ -585,7 +585,7 @@ javaBeginner1={"questions":[
 ,
 {
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"What is the output of the following code snippet?",
 "code":"System.out.println(\"abc\".toUpperCase());",
@@ -599,7 +599,7 @@ javaBeginner1={"questions":[
 ,
 {
 "languageId":1,
-"topicId":21,
+"topicId":1,
 "questions":{
 "question":"What is the correct way to declare a string variable in Java?",
 "code":"",

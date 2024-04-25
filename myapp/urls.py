@@ -36,7 +36,8 @@ urlpatterns = [
     path("quiz_list/",adminViews.quiz_List,name="add_get_quiz"),
     path("quiz_update_delete/",adminViews.quizName_update_delete,name="update_delete_quiz"),
     path("languages_list_update/<int:mcqId>/",adminViews.languages_list_update,name="languages_list_update"),
-    path("topic_list_update/<int:languageId>/", adminViews.topic_list_update,name='topic_list_update')
+    path("topic_list_update/<int:languageId>/", adminViews.topic_list_update,name='topic_list_update'),
+    path("questions_list_update/<int:topicId>/",adminViews.questions_list_update,name='questions_list_update')
 ]
 
 # {
