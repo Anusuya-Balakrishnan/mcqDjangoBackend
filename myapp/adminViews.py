@@ -143,7 +143,7 @@ def topic_list_update(request,languageId):
         return Response({"Message": f"error ${e}"})
 
 
-@api_view(['GET','POST'])
+@api_view(['GET','POST','DELETE','PATCH'])
 def questions_list_update(request,topicId):
     try:
         if(request.method=="GET"):
@@ -167,24 +167,43 @@ def questions_list_update(request,topicId):
                     questions_values.append(myDict)
             except Exception as e:
                 print("error",e)
-            result={}
+            result=[]
             for id,question in zip(id_list,questions_values):
-                result[id]=question
+                question['id']=id
+                result.append(question)
             
             return Response({"data":result})
         elif request.method == "POST":
-            questions_data = request.data.get('questions', [])
+            question_data = request.data
             # Validate and save each question in the list
-            responses = []
-            for question_data in questions_data:
-                serializer = QuestionSerializer(data=question_data)
-                if serializer.is_valid():
-                    serializer.save()
-                    responses.append({"message": "Question added successfully"})
-                else:
-                    responses.append({"message": "Validation error", "errors": serializer.errors})
+            responses = {}
+            serializer = QuestionSerializer(data=question_data)
+            if serializer.is_valid():
+                serializer.save()
+                responses={"message": "Question added successfully"}
+            else:
+                responses={"message": "Validation error", "errors": serializer.errors}
+                
 
             return Response(responses, status=status.HTTP_201_CREATED)
-
+        elif request.method=="PATCH":
+            try:
+                question = QuestionModel.objects.get(id=request.data.get("id"), topicId=topicId)
+            except QuestionModel.DoesNotExist:
+                return Response({"message": "question not found"}, status=404)
+            
+            serializer = QuestionSerializer(question, data=request.data, partial=True)
+            if serializer.is_valid():
+                serializer.save()
+                return Response({"message": "question updated successfully"})
+            return Response(serializer.errors, status=400)
+        elif (request.method=="DELETE"):
+            try:
+                question = QuestionModel.objects.get(id=request.data.get('id'))
+            except QuestionModel.DoesNotExist:
+                return Response({"message": "question not found"}, status=404)
+            question.delete()
+            return Response({"message": "question deleted successfully"})
+                
     except Exception as e:
        return Response({"Message": f"error ${e}"})
