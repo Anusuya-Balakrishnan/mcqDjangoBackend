@@ -428,13 +428,20 @@ def get_questions(request, languageId, topicId):
                     # get id of each questions
                     id_list.append(item["id"])
                 try:
+                    print("\nregular_dict",regular_dict)
                     for each in regular_dict:
+                        # print("\neach",each)
+                
                         ordered_dict = eval(each, {'OrderedDict': OrderedDict})
                         # converting OrderedDict into python dictionary 
                         myDict={}
                         for key, value in ordered_dict.items():
                             myDict[key]=value
                         questions_values.append(myDict)
+                        # # Convert the OrderedDict to a regular Python dictionary
+                        # question_dict = {key: value for key, value in each.items()}
+                        # questions_values.append(question_dict)
+                    # print("questions_values",questions_values)
                 except Exception as e:
                     print("error",e)
                 result={}
